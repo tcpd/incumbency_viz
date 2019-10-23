@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <title>Incumbency in the Lok Sabha</title>
 
     <script type="text/javascript" src="assets/jquery.min.js"></script>
@@ -9,104 +9,114 @@
     <script data-require="d3@4.0.0" data-semver="4.0.0" src="assets/d3.v4.min.js"></script>
     <script type="text/javascript" src="assets/d3-legend.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/GE.css">
-    <script src="assets/incumbency.js"></script>
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Montserrat" rel="stylesheet">
+</head>
 
-  <body>
+<body>
+    <div class="header">
+        <h1>Incumbency profile of the <span class="assembly-number"></span> Lok Sabha</h1>
 
-  <div class="header">
-  <h1>Incumbency profile of the <span class="assembly-number"></span> Lok Sabha</h1>
+        <div class="help">
+            <i>About this visualization: Each box represents an MP elected in the 2019 general elections. The color of
+                the box indicates the previous party of the MP.
+                Only the most successful parties are shown; other parties are clubbed into "Other".
 
-      <div class="help">
-          <i>About this visualization: Each box represents an MP elected in the 2019 general elections. The color of the box indicates the previous party of the MP.
-              Only the most successful parties are shown; other parties are clubbed into "Other".
+                Hover on a box to see more details such as constituency, year and position. Unsuccessful attempts are
+                shown in grey.
 
-              Hover on a box to see more details such as constituency, year and position. Unsuccessful attempts are shown in grey.
+                The number in the box is the total number of terms in which the person has been an MP, including the new
+                term.
+                Change the Label setting to see the number of terms contested instead.
 
-              The number in the box is the total number of terms in which the person has been an MP, including the new term.
-              Change the Label setting to see the number of terms contested instead.
+                You can also change the Position setting to "All candidates" instead of just the winners. Squares
+                indicate winners and circles indicate those who lost.
+                To search for a person or constituency, type the name in the search box. <br /><br /><br />
 
-              You can also change the Position setting to "All candidates" instead of just the winners. Squares indicate winners and circles indicate those who lost.
-              To search for a person or constituency, type the name in the search box. <br/><br/><br/>
+            </i>
+        </div>
 
-          </i>
-      </div>
+        <div class="controls">
 
-    <div class="controls">
+            <div class="input-container">
+                <label for="search">Search</label>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" size="28"
+                    type='text' class="select-search" id='search' placeholder="Person, constituency or party">
+            </div>
 
-      <label style="margin-left:20px;left:130px" for="search">Search</label>
-    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" size="28" type = 'text' class="select-search" id = 'search' placeholder="Person, constituency or party">
+            <div class="input-container">
+                <label for="assemblies">Assembly</label>
+                <select id="assemblies" onchange="location = this.value">
+                    <option selected="selected" style="display: none;">Select</option>
+                    <option value="?a=3">3rd Assembly</option>
+                    <option value="?a=4">4th Assembly</option>
+                    <option value="?a=5">5th Assembly</option>
+                    <option value="?a=6">6th Assembly</option>
+                    <option value="?a=7">7th Assembly</option>
+                    <option value="?a=8">8th Assembly</option>
+                    <option value="?a=9">9th Assembly</option>
+                    <option value="?a=10">10th Assembly</option>
+                    <option value="?a=11">11th Assembly</option>
+                    <option value="?a=12">12th Assembly</option>
+                    <option value="?a=13">13th Assembly</option>
+                    <option value="?a=14">14th Assembly</option>
+                    <option value="?a=15">15th Assembly</option>
+                    <option value="?a=16">16th Assembly</option>
+                    <option value="?a=17">17th Assembly</option>
+                </select>
+            </div>
 
-    <div style="display:none;">
+            <div class="input-container">
+                <label for="label">Label</label>
+                <select class="select-label" id="label" style="width:130px">
+                    <option value="NO_LABEL">No label</option>
+                    <option value="TIMES_WON" selected='selected'>Times Won</option>
+                    <option value="TIMES_CONTESTED">Times Contested</option>
+                </select>
+            </div>
 
-    <label style="margin-left:20px" for="assemblies">Assembly</label>
-    <select id = "assemblies">
-      <option value=3>3rd Assembly</option>
-      <option value=4>4th Assembly</option> 
-      <option value=5>5th Assembly</option>
-      <option value=6>6th Assembly</option> 
-      <option value=7>7th Assembly</option> 
-      <option value=8>8th Assembly</option>
-      <option value=9>9th Assembly</option>
-      <option value=10>10th Assembly</option>
-      <option value=11>11th Assembly</option>
-      <option value=12>12th Assembly</option>
-      <option value=13>13th Assembly</option>
-      <option value=14>14th Assembly</option> 
-      <option value=15>15th Assembly</option>
-      <option value=16>16th Assembly</option> 
-      <option value=17 selected="selected">17th Assembly</option>
-  </select>
-    </div>
+            <div class="input-container">
+                <label for="wonlost">Position</label>
+                <select class="select-wonlost" id="wonlost">
+                    <option value="1" selected="selected">Only winners</option>
+                    <option value="2">All candidates</option>
+                    <!--<option value=2>Lost</option>-->
+                </select>
+            </div>
 
-  <label style="margin-left:20px" for="label">Label</label>
-  <select class="select-label" id = "label" style="width:130px">
-      <option value="NO_LABEL">No label</option>
-      <option value="TIMES_WON" selected='selected'>Times Won</option>
-      <option value="TIMES_CONTESTED">Times Contested</option>
-  </select>
+            <div class="input-container">
+                <label sfor="turncoats">Experience</label>
+                <select class="select-turncoats" id="turncoats">
+                    <option value="ALL" selected='selected'>All</option>
+                    <option value="NEWCOMERS">Newcomers</option>
+                    <option value="PREVIOUSLY_CONTESTED">Previously Contested</option>
+                    <option value="TURNCOATS">Turncoats</option>
+                </select>
+            </div>
 
-  <label style="margin-left:20px" for="wonlost">Position</label>
-  <select class="select-wonlost" id= "wonlost">
-      <option value="1" selected="selected">Only winners</option>
-      <option value="2" >All candidates</option>
-      <!--<option value=2>Lost</option>-->
-  </select>
+            <div class="input-container">
+                <label for="Sex">Gender</label>
+                <select class="select-sex" id="sex">
+                    <option value="ALL" selected='selected'>All</option>
+                    <option value="FEMALE">Female</option>
+                    <option value="MALE">Male</option>
+                    <option value="OTHER">Other</option>
+                </select>
+            </div>
 
-  <label style="margin-left:20px" for="turncoats">Experience</label>
-  <select class="select-turncoats" id="turncoats">
-      <option value="ALL" selected='selected'>All</option>
-      <option value="NEWCOMERS">Newcomers</option>
-      <option value="PREVIOUSLY_CONTESTED">Previously Contested</option>
-      <option value="TURNCOATS">Turncoats</option>
-  </select>
+        </div>
 
-
-    <label style="margin-left:20px" for="Sex">Gender</label>
-    <select class="select-sex" id="sex">
-        <option value="ALL" selected='selected'>All</option>
-        <option value="FEMALE">Female</option>
-        <option value="MALE">Male</option>
-        <option value="OTHER">Other</option>
-    </select>
-
-    </div>
-
-  </div>
-    <div id="viz">
-        <div class="tooltip" style="opacity:0"></div>
-    </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-    <hr/>
-    <div style="text-align:center;font-size:90%;color:gray">
-        Visualization developed by Shivangi Tikekar and Sudheendra Hangal. <br/>Age data from <a target="_blank" href="//adrindia.org/">ADR</a>. Images from <a target="_blank" href="//prsindia.org">PRS</a> and Lok Sabha.<br/>
-        &copy; <a target="_blank" href="//tcpd.ashoka.edu.in">Trivedi Center for Political Data</a>, <a target="_blank" href="//ashoka.edu.in">Ashoka University</a><br/>
-    </div>
-  </body>
-
+        <div id="viz">
+            <div class="tooltip" style="opacity:0"></div>
+        </div>
+        <div class="footer">
+            <hr />
+            Visualization developed by Shivangi Tikekar and Sudheendra Hangal.
+            <br />Age data from <a target="_blank" href="//adrindia.org/">ADR</a>. Images from <a target="_blank"
+                href="//prsindia.org">PRS</a> and Lok Sabha.
+            <br /> &copy; <a target="_blank" href="//tcpd.ashoka.edu.in">Trivedi Center for Political Data</a>, <a
+                target="_blank" href="//ashoka.edu.in">Ashoka University</a>
+            <br />
+        </div>
+</body>
+<script src="assets/incumbency.js"></script>
 </html>
