@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Incumbency in the Haryana Vidhan Sabha</title>
+
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/randomColor.min.js"></script>
+    <script data-require="d3@4.0.0" data-semver="4.0.0" src="assets/d3.v4.min.js"></script>
+    <script type="text/javascript" src="assets/d3-legend.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/GE.css">
+    <script src="assets/hr_incumbency.js"></script>
+  </head>
+
+  <body>
+
+  <div class="header">
+  <h1>Incumbency profile of the <span class="assembly-number">Haryana Vidhan Sabha</span></h1>
+
+      <div class="help">
+          <i>About this visualization: Each box represents an MLA consteting in the general elections to State Legislative Assembly. The color of the box indicates the previous party of the MP
+              Only the most successful parties are shown; other parties are clubbed into "Other".
+
+              Hover on a box to see more details such as constituency, year and position. Unsuccessful attempts are shown in grey.
+
+              The number in the box is the total number of terms in which the person has been an MP, including the new term.
+              Change the Label setting to see the number of terms contested instead.
+
+              You can also change the Position setting to "All candidates" instead of just the winners. Squares indicate winners and circles indicate those who lost.
+              To search for a person or constituency, type the name in the search box. <br/><br/><br/>
+
+          </i>
+      </div>
+
+    <div class="controls">
+
+      <label style="margin-left:20px;left:130px" for="search">Search</label>
+    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" size="28" type = 'text' class="select-search" id = 'search' placeholder="Person, constituency or party">
+
+ <!--   <div style="display:none;">
+
+    <label style="margin-left:20px" for="assemblies">Assembly</label>
+    <select class="select-label" id = "assemblies" style="width:130px">
+      <option value=1>1st Assembly</option>
+      <option value=2>2nd Assembly</option> 
+      <option value=3>3rd Assembly</option>
+      <option value=4>4th Assembly</option> 
+      <option value=5>5th Assembly</option> 
+      <option value=6>6th Assembly</option>
+      <option value=7>7th Assembly</option>
+      <option value=8>8th Assembly</option>
+      <option value=9>9th Assembly</option>
+      <option value=10>10th Assembly</option>
+      <option value=11>11th Assembly</option>
+      <option value=12>12th Assembly</option> 
+      <option value=13 selected="selected">13th Assembly</option>
+
+  </select>
+    </div>
+-->
+  <label style="margin-left:20px" for="label">Label</label>
+  <select class="select-label" id = "label" style="width:130px">
+      <option value="NO_LABEL">No label</option>
+      <option value="TIMES_WON" selected='selected'>Times Won</option>
+      <option value="TIMES_CONTESTED" >Times Contested</option>
+  </select>
+
+  <label style="margin-left:20px" for="wonlost">Position</label>
+  <select class="select-wonlost" id= "wonlost">
+      <option value="1" selected="selected">Only winners</option>
+      <option value="2" >All candidates</option>
+      <!--<option value=2>Lost</option>-->
+  </select>
+
+  <label style="margin-left:20px" for="turncoats">Experience</label>
+  <select class="select-turncoats" id="turncoats">
+      <option value="ALL" selected='selected'>All</option>
+      <option value="NEWCOMERS">Newcomers</option>
+      <option value="PREVIOUSLY_CONTESTED">Previously Contested</option>
+      <option value="TURNCOATS">Turncoats</option>
+  </select>
+
+
+    <label style="margin-left:20px" for="Sex">Gender</label>
+    <select class="select-sex" id="sex">
+        <option value="ALL" selected='selected'>All</option>
+        <option value="FEMALE">Female</option>
+        <option value="MALE">Male</option>
+        <option value="OTHER">Other</option>
+    </select>
+
+    </div>
+
+  </div>
+    <div id="viz">
+        <div class="tooltip" style="opacity:0"></div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <hr/>
+    <div style="text-align:center;font-size:90%;color:gray">
+        Visualization developed by Shivangi Tikekar and Sudheendra Hangal. <br/>Age data from <a target="_blank" href="//adrindia.org/">ADR</a>. Images from <a target="_blank" href="//affidavit.eci.gov.in">ECI</a>.<br/>
+        &copy; <a target="_blank" href="//tcpd.ashoka.edu.in">Trivedi Center for Political Data</a>, <a target="_blank" href="//ashoka.edu.in">Ashoka University</a><br/>
+    </div>
+  </body>
+
+</html>
