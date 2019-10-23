@@ -4,6 +4,8 @@ var assemblyNo = params.get('a') ? parseInt(params.get('a')) :13;
 var MAX_PARTIES_TO_SHOW = params.get("p") ? params.get("p") :9;
 
 $('.assembly-number').html(assemblyNo == 3 ? "3rd" : (assemblyNo + "th"));
+$('#assemblies option[value="select"').html(assemblyNo == 3 ? "3rd" : (assemblyNo + "th") +  " Assembly").change();
+
 
 var url = './hr-incumbency-' + assemblyNo + '.csv'; //change json source here
 
