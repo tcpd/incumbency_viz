@@ -45,8 +45,8 @@
 
         <div class="input-container">
             <label for="assemblies">Assembly</label>
-            <select id="assemblies" onchange="location = this.value">
-                <option selected="selected">Select</option>
+            <select id="assemblies" onchange="value !== 'select' ? location = this.value : location">
+                <option value="select" selected disabled hidden>Select</option>
                 <option value="?a=3">3rd Assembly</option>
                 <option value="?a=4">4th Assembly</option>
                 <option value="?a=5">5th Assembly</option>
