@@ -3,13 +3,14 @@
 library(data.table)
 library(jsonlite)
 library(readr)
+library(dplyr)
 
 
-filePath <- '~/github/tcpd_data/data/AE/oct_19_working/HR_AE19_working_mastersheet.csv'
+filePath <- '~/github/tcpd_data/data/AE/Data/Jharkhand/derived/mastersheet.csv'
 
-data = fread(filePath)
+data = fread(filePath, na="")
 #dt <- dt[dt$No_Mandates > 0]
-data <- data[Party != 'NOTA' & Candidate != 'NOTA', c("Assembly_No", "Poll_No", "Year", "Candidate", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage", "Age")]
+data <- data[Party != 'NOTA' , c("Assembly_No", "Poll_No", "Year", "Candidate", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage", "Age")]
 
 # filter dt down to only rows whose pid is present in this assembly
 for (assembly in min(data$Assembly_No):max(data$Assembly_No)) {
@@ -40,19 +41,21 @@ for (assembly in min(data$Assembly_No):max(data$Assembly_No)) {
   terms_contested_by_pid = dt[, .(Terms_Contested=length(unique(Assembly_No))), by=c('pid')]
   dt = merge (dt, terms_contested_by_pid, by=c('pid'), all.x = TRUE)
   
-  fwrite(dt, file=paste0('../hr-incumbency-',assembly,'.csv'))
+  fwrite(dt, file=paste0('../jh-incumbency-',assembly,'.csv'))
 }
 
 # read the pics table from both LS and PRS and assign the link in the last row to that pid
-pics = fread('~/github/tcpd_data/data/AE/oct_19_working/haryana_candidates_pictures.csv',na="")
-source("~/github/tcpd_data/data/GE/scripts/helper.R")
-pics = normalizePartyAbb(pics,"party_list")
+# = fread('~/github/tcpd_data/data/AE/oct_19_working/maharashtra_candidates_pictures.csv',na="")
+#source("~/github/tcpd_data/data/GE/scripts/helper.R")
+#pics = normalizePartyAbb(pics,"party_list")
+#pics = fread("~/github/tcpd_data/data/AE/oct_19_working/JH_AE19_working_mastersheet.csv",stringsAsFactors = F,na="") %>% subset(Party!="NOTA" & !is.na(picture_link),select=c("pid","picture_link")) %>% unique()
+#names(pics)[which(names(pics)=="picture_link")]=="link"
+#fwrite(pics,"../jh-pids.csv")
+#curr.data = subset(data,Assembly_No ==4)
 
-curr_data = subset(data,Assembly_No ==13)
-
-mrg = left_join(pics,curr_data[,c("State_Name","Constituency_Name","Candidate","Party","Position","pid")],by=c("state_list"= "State_Name","constituency_list"="Constituency_Name","name_list"="Candidate","party_list"="Party"))
-dt = data.table(mrg)
-pics_affidavit   = dt[, .(link=.SD[nrow(.SD)]$picture_link_list), by=.(pid)]
+#mrg = left_join(pics,curr_data[,c("State_Name","Constituency_Name","Candidate","Party","Position","pid")],by=c("state_list"= "State_Name","constituency_list"="Constituency_Name","name_list"="Candidate","party_list"="Party"))
+#dt = data.table(mrg)
+#pics_affidavit   = dt[, .(link=.SD[nrow(.SD)]$picture_link_list), by=.(pid)]
 #pics_ls = fread ('~/github/tcpd_data/data/GE/GE_19_working/pictures_with_pids.csv');
 #pics_ls = pics_ls[, .(link=.SD[nrow(.SD)]$link), by=.(pid)]
 
@@ -71,5 +74,5 @@ pics_affidavit   = dt[, .(link=.SD[nrow(.SD)]$picture_link_list), by=.(pid)]
 #   }
 # }
 
-fwrite(pics_affidavit, file='../hr-pids.csv')
+#fwrite(pics_affidavit, file='../mh-pids.csv')
 
