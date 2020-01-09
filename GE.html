@@ -47,7 +47,17 @@
             </div>
 
             <div class="input-container">
-                <label for="assemblies">Assembly</label>
+                <label>Assembly</label>
+                <select onchange="location = this.value;">
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/GE.html" selected='selected'>Lok Sabha</option>
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/HR.html">Haryana</option>
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/JH.html">Jharkhand</option>
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/MH.html">Maharashtra</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label for="assemblies">Assembly Number</label>
                 <select id="assemblies" onchange="value !== 'select' ? location = this.value : location">
                     <option value="select" selected disabled hidden>Select</option>
                     <option value="?a=3">3rd Assembly</option>
