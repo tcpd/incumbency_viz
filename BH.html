@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Incumbency in the Delhi Vidhan Sabha</title>
+    <title>Incumbency in the Bihar Vidhan Sabha</title>
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
@@ -17,7 +17,7 @@
 <body>
 
     <div class="header">
-        <h1>Incumbency profile of the <span class="assembly-number"></span> Delhi Vidhan Sabha</h1>
+        <h1>Incumbency profile of the <span class="assembly-number"></span> Bihar Vidhan Sabha</h1>
 
         <div class="help">
             <p><i>About this visualization: Each box represents an MLA contesting in the general elections to State
@@ -50,11 +50,12 @@
             <div class="input-container">
                 <label>Assembly</label>
                 <select onchange="location = this.value;">
-                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/DL.html" selected='selected'>Delhi</option>
-                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/BH.html">Bihar</option>
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/BH.html" selected='selected'>Bihar</option>
+                    <option value="https://lokdhaba.ashoka.edu.in/incumbency/DL.html">Delhi</option>
                     <option value="https://lokdhaba.ashoka.edu.in/incumbency/GE.html">Lok Sabha</option>
                     <option value="https://lokdhaba.ashoka.edu.in/incumbency/JH.html">Jharkhand</option>
                     <option value="https://lokdhaba.ashoka.edu.in/incumbency/MH.html">Maharashtra</option>
+
                 </select>
             </div>
 
@@ -62,7 +63,6 @@
                 <label for="assemblies">Assembly Number</label>
                 <select id="assemblies" onchange="value !== 'select' ? location = this.value : location">
                     <option value="select" selected disabled hidden>Select</option>
-                    <option value="?a=2">2nd Assembly</option>
                     <option value="?a=3">3rd Assembly</option>
                     <option value="?a=4">4th Assembly</option>
                     <option value="?a=5">5th Assembly</option>
@@ -72,6 +72,12 @@
                     <option value="?a=9">9th Assembly</option>
                     <option value="?a=10">10th Assembly</option>
                     <option value="?a=11">11th Assembly</option>
+                    <option value="?a=12">12th Assembly</option>
+                    <option value="?a=13">13th Assembly</option>
+                    <option value="?a=14">14th Assembly</option>
+                    <option value="?a=15">15th Assembly</option>
+                    <option value="?a=16">16th Assembly</option>
+                    <option value="?a=17">17th Assembly</option>
                 </select>
             </div>
 
@@ -87,8 +93,8 @@
             <div class="input-container">
                 <label for="wonlost">Position</label>
                 <select class="select-wonlost" id="wonlost">
-                    <option value="1" selected="selected">Only winners</option>
-                    <option value="2">All candidates</option>
+                    <option value="1" >Only winners</option>
+                    <option value="2" selected="selected">All candidates</option>
                     <!--<option value=2>Lost</option>-->
                 </select>
             </div>
@@ -128,6 +134,6 @@
             <br />
         </div>
 </body>
-<script src="assets/dl_incumbency.js"></script>
+<script src="assets/bh_incumbency.js"></script>
 
 </html>
