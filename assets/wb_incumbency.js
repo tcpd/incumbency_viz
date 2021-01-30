@@ -1,13 +1,13 @@
 var params = new URL(document.location).searchParams;
-var assemblyNo = params.get('a') ? parseInt(params.get('a')) : 17;
-var MAX_PARTIES_TO_SHOW = params.get('p') ? params.get('p') : 9;
+var assemblyNo = params.get('a') ? parseInt(params.get('a')) : 16;
+var MAX_PARTIES_TO_SHOW = params.get('p') ? params.get('p') : 4;
 
 $('.assembly-number').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th');
 $('#assemblies option[value="select"').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th' + ' Assembly').change();
 
-var url = './bh-incumbency-' + assemblyNo + '.csv'; //change json source here
+var url = './wb-incumbency-' + assemblyNo + '.csv'; //change json source here
 
-var pids_url = './bh-pids.csv';
+var pids_url = './wb-pids.csv';
 
 function LOG(s) {
 	if (console) {
