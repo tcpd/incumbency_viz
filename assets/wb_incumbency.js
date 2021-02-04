@@ -1,13 +1,20 @@
 var params = new URL(document.location).searchParams;
 var assemblyNo = params.get('a') ? parseInt(params.get('a')) : 16;
-var MAX_PARTIES_TO_SHOW = params.get('p') ? params.get('p') : 4;
+var MAX_PARTIES_TO_SHOW = params.get('p') ? params.get('p') : 7;
 
 $('.assembly-number').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th');
 $('#assemblies option[value="select"').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th' + ' Assembly').change();
 
 var url = './wb-incumbency-' + assemblyNo + '.csv'; //change json source here
 
+document.getElementById('downloadlink').href = url;
+
 var pids_url = './wb-pids.csv';
+
+var party_color_url = './colours.csv';
+var party_names_url = './wb-party-expanded.csv';
+
+
 
 function LOG(s) {
 	if (console) {
@@ -15,33 +22,34 @@ function LOG(s) {
 	}
 }
 
+function sum( obj ) {
+  return Object.keys(obj).reduce((sum,key)=>sum+parseFloat(obj[key]||0),0);
+}
+
+function getKeyAbovePercentage(object, value) {
+	const total = Object.values(object).reduce((t, n) => t + n)
+	LOG('total seats: ' + total)
+	for (var i in object) { // we do the conversion here
+  object[i] = (object[i] / total * 100) ;
+	}
+	//var perc = Object.keys(object).reduce()
+  return Object.keys(object).filter(key => object[key] >= value);
+}
+
 var fixedPartyColours = [];
-fixedPartyColours['BJP'] = '#ff9933';
-fixedPartyColours['INC'] = '#138808';
-fixedPartyColours['INC(I)'] = '#138808';
-fixedPartyColours['IND'] = '#008080';
-fixedPartyColours['INLD'] = '#2C7A56';
-fixedPartyColours['JD'] = '#ff005c';
-fixedPartyColours['RJD'] = '#ff005c';
-fixedPartyColours['AIRJP'] = '#009999';
-fixedPartyColours['JD(U)'] = '#8e47d2';
-fixedPartyColours['SP'] = '#990000';
-fixedPartyColours['BSP'] = '#99003d';
-fixedPartyColours['BJNKP'] = '#333300';
-fixedPartyColours['GPP'] = '#ffcc00';
-fixedPartyColours['None'] = '#707070';
-fixedPartyColours['JP'] = '#536896';
-fixedPartyColours['JNP'] = '#536896';
-fixedPartyColours['JNP(JP)'] = '#536896';
-fixedPartyColours['Other'] = '#000000';
-fixedPartyColours['SHS'] = '#e80839';
-fixedPartyColours['DMK'] = '#08ded0';
-fixedPartyColours['BJD'] = '#015275';
-fixedPartyColours['YSRCP'] = '#930227';
-fixedPartyColours['AITC'] = '#00137f';
-fixedPartyColours['TRS'] = '#c40da5';
-fixedPartyColours['Other'] = '#000';
-fixedPartyColours['AAAP'] = '#08ded0';
+d3.csv(party_color_url, function(party_cols) {
+	party_cols.forEach(function(d){
+		fixedPartyColours[d.Party] = d.Color;
+	})
+});
+
+
+partyNames =[];
+d3.csv(party_names_url, function(party_names) {
+	party_names.forEach(function(d){
+		partyNames[d.Party] = d.Expanded_Party_Name;
+	})
+});
 
 function commatize(nStr) {
 	if (!nStr) return '';
@@ -104,15 +112,19 @@ d3.csv(pids_url, function(pids_data) {
 		});
 
 		LOG('num seats: ' + numSeats);
+		//LOG('new top parties:' + getKeyAbovePercentage(numSeats,2 ));
 
 		allParties = allParties.sort(function(partyA, partyB) {
 			var aCount = !numSeats[partyA] ? 0 : numSeats[partyA];
-			var bCount = !numSeats[partyA] ? 0 : numSeats[partyB];
+			var bCount = !numSeats[partyB] ? 0 : numSeats[partyB];
 			return bCount - aCount;
 		});
 
+		LOG('all parties: ' + allParties);
 		// top parties have their own column in the viz. all others are clubbed into "Other"
-		var topParties = allParties.slice(0, Math.min(allParties.length, MAX_PARTIES_TO_SHOW));
+		//var topParties = allParties.slice(0, Math.min(allParties.length, MAX_PARTIES_TO_SHOW));
+		//keeping parties with seatshares greater >= 2 as top parties
+		var topParties = getKeyAbovePercentage(numSeats,2 )
 		// e.g. topParties is something like ['BJP', 'INC', 'AITC', 'DMK', 'SHS', 'YSRCP', 'TRS', 'BJD'];
 		LOG('top parties: ' + topParties);
 
@@ -213,76 +225,27 @@ d3.csv(pids_url, function(pids_data) {
 							tooltipText += string_for_row(k) + '<br/>';
 						});
 
-						LOG(tooltipText);
+						//LOG(tooltipText);
 						return tooltipText;
 					})
 					.style('left', d3.event.pageX + 5 + 'px') // offset the tooltip location a bit from the event's pageX/Y
 					.style('top', d3.event.pageY - 28 + 'px');
 			}
 
-			function do_mouseover(d) {
+			function pty_mouseover(cell) {
 				var tooltip = d3.select('.tooltip');
 				tooltip.transition().duration(200).style('opacity', 1.0);
 				tooltip
 					.html(function() {
-						function string_for_row(row) {
-							var win_or_lose_class = row.Position === 1 ? 'won' : 'lost';
-							var result =
-								'<span class="' +
-								win_or_lose_class +
-								'">' +
-								row.Constituency_Name +
-								' (' +
-								row.Year +
-								') ' +
-								row.Oth_Current +
-								', #' +
-								row.Position +
-								'</span>';
-							if (row.Poll_No > 0) {
-								result += '<span class="bypoll">BYE POLL</span>';
-							}
-							return result;
-						}
-
-						// get the img link - first matching link in pids table, or empty if no match
-						var img_link = '';
-						var pid = d.pid;
-						for (var x = 0; x < pids_data.length; x++) {
-							if (pids_data[x].pid === pid) {
-								img_link = pids_data[x].link;
-								break;
-							}
-						}
-
 						// add the initial tooltip
-						var tooltipText = '<img class="profile-pic" src="' + img_link + '"/> ' + '<br/>';
-						tooltipText += '<span class="cand-name">' + d.Candidate.toUpperCase() + '</span><br/>';
-						tooltipText += string_for_row(d) + '<br/>';
-						if (d.Age) tooltipText += d.Age + ' years<br/>';
-						// tooltipText += '<i>Votes</i>: ' + commatize(d.Votes) + ' (' + d.Vote_Share_Percentage + '%) <br/>';
-						// tooltipText += '<i>Margin</i>: ' + commatize(d.Margin) + ' (' + d.Margin_Percentage + '%) <br/>';
-
-						// then add the history. This is only the history in prev. assemblies.
-						// note this is history on all rows, not just currently filtered rows
-						// Possible improvement: show in history if same cand. has contested another seat in the same assembly also.
-						var candHistory = mydata.filter(function(k) {
-							return k.pid === d.pid && d.Assembly_No > k.Assembly_No;
-						});
-						candHistory.sort(function(a, b) {
-							return b.Year - a.Year;
-						});
-						tooltipText += '<hr style="color:darkgray;background-color:darkgray;margin-bottom:3px;"/>';
-						candHistory.forEach(function(k) {
-							tooltipText += string_for_row(k) + '<br/>';
-						});
-
-						LOG(tooltipText);
+						var tooltipText = cell.label;
+						//LOG(tooltipText);
 						return tooltipText;
 					})
 					.style('left', d3.event.pageX + 5 + 'px') // offset the tooltip location a bit from the event's pageX/Y
 					.style('top', d3.event.pageY - 28 + 'px');
 			}
+
 
 			function do_mouseout() {
 				var tooltip = d3.select('.tooltip');
