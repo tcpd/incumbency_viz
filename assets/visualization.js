@@ -166,7 +166,7 @@ assemblies.forEach(function(i,index){
 sel1.appendChild(fragment1)
 
 var pre = assembly[0].File_Prefix;
-var url = './'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
+var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
 
 document.getElementById('downloadlink').href = url;
 
@@ -178,10 +178,10 @@ if(st==="LS"){
 
 document.getElementById('browselink').href = ld_url;
 
-var pids_url = './'+ pre +'-pids.csv';
+var pids_url = 'data/'+ pre +'-pids.csv';
 
-var party_color_url = './colours.csv';
-var party_names_url = './'+pre+'-party-expanded.csv';
+var party_color_url = 'data/colours.csv';
+var party_names_url = 'data/'+pre+'-party-expanded.csv';
 
 
 
