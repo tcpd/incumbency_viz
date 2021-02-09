@@ -6,8 +6,8 @@ library(jsonlite)
 library(readr)
 library(dplyr)
 
-assembly = "West_Bengal"
-outFilePre = "wb"
+assembly = "Bihar"
+outFilePre = "bh"
 if(assembly == "Lok_Sabha"){
   filePath <- '~/github/tcpd_data/data/GE/Data/derived/mastersheet.csv'
   partyFile <- '~/github/tcpd_data/data/GE/Data/derived/lokdhaba/ge_party_statistics.csv'
@@ -27,10 +27,11 @@ fwrite(expanded.party.names,paste0("../",outFilePre,"-party-expanded.csv"))
 data = fread(filePath, na="")
 cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 if("Age" %in% names(data)){
-  cols_to_get = c(cols_to_get)
+  cols_to_get = c(cols_to_get,"Age")
 }
 #dt <- dt[dt$No_Mandates > 0]
 data <- data[Party != 'NOTA' , ]
+data = subset(data, select = cols_to_get)
 
 # filter dt down to only rows whose pid is present in this assembly
 for (assembly in min(data$Assembly_No):max(data$Assembly_No)) {

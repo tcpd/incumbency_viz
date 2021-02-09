@@ -1,13 +1,189 @@
+//Declare the data
+const data = [{
+  "State_Name": "West_Bengal",
+  "State_Code": "WB",
+  "File_Prefix": "wb",
+  "Min_Assembly":3,
+  "Max_Assembly" : 16,
+  "Name": "West Bengal Vidhan Sabha"
+  },{
+  "State_Name": "Bihar",
+  "State_Code": "BH",
+  "File_Prefix": "bh",
+  "Min_Assembly": 3,
+  "Max_Assembly":17,
+  "Name": "Bihar Vidhan Sabha"
+  },{
+  "State_Name": "Delhi",
+  "State_Code": "DL",
+  "File_Prefix": "dl",
+  "Min_Assembly": 2,
+  "Max_Assembly":11,
+  "Name": "Delhi Vidhan Sabha"
+  },
+  {
+  "State_Name": "Lok_Sabha",
+  "State_Code": "LS",
+  "File_Prefix": "ge",
+  "Min_Assembly": 3,
+  "Max_Assembly":17,
+  "Name": "Lok Sabha"
+  },
+  {
+    "State_Name": "Haryana",
+    "State_Code": "HR",
+    "File_Prefix": "hr",
+    "Min_Assembly": 1,
+    "Max_Assembly":13,
+    "Name": "Haryana Vidhan Sabha"
+  },
+  {
+    "State_Name": "Jharkhand",
+    "State_Code": "JH",
+    "File_Prefix": "jh",
+    "Min_Assembly": 1,
+    "Max_Assembly":4,
+    "Name": "Jharkhand Vidhan Sabha"
+  },
+  {
+    "State_Name": "Maharashtra",
+    "State_Code": "MH",
+    "File_Prefix": "mh",
+    "Min_Assembly": 1,
+    "Max_Assembly":13,
+    "Name": "Maharashtra Vidhan Sabha"
+  }]
+//const data = require('./Assemblies.json');
+
 var params = new URL(document.location).searchParams;
-var assemblyNo = params.get('a') ? parseInt(params.get('a')) : 17;
-var MAX_PARTIES_TO_SHOW = params.get('p') ? params.get('p') : 14;
+var st = params.get('s') ? params.get('s') : data[0].State_Code;
+// $('#assembly option[value="select"').html(st).change();
+var assembly= data.filter(function(i){return i.State_Code === st})
+$('.assembly-name').html(assembly[0].Name);
+var assemblyNo = params.get('a') ? parseInt(params.get('a')) : parseInt(assembly[0].Max_Assembly);
+$('.assembly-number').html(assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th"));
 
-$('.assembly-number').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th');
-$('#assemblies option[value="select"').html(assemblyNo == 3 ? '3rd' : assemblyNo + 'th' + ' Assembly').change();
+$('.representative-name').html(st==="LS"?"MP":"MLA");
+// $('#assemblies1 option[value="select"').html((assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th")) +  " Assembly").change();
 
-var url = './bh-incumbency-' + assemblyNo + '.csv'; //change json source here
+$("#assembly").change(function() {
+    // var optionValue = $(this).val();
+    // var url = window.location.href.split("?")[0];
+    // window.location = url + "?s=" + optionValue;
+    var val = $(this).val(); // This should be the new CurrencyCode, extracted from a select box
+         var pag = window.location.pathname;
+         var url = window.location.search;
+             url = url.replace("?", "").split("&"); // Clean up the URL, and create an array with each query parameter
 
-var pids_url = './bh-pids.csv';
+         var n = -1;
+         for (var count = 0; count < url.length; count++) {
+             if (!url[count].indexOf("s")) { // Figure out if if/where the Currency is set in the array, then break out
+                 n = count;
+                 break;
+             }
+         }
+
+         if (n !=-1) {
+            url.splice(n,1); // If the Currency was set, remove it from the array
+         }
+
+         var len = url.length;
+         var newUrl = url.join("&"); // Restringify the array
+
+         if (len > 0) { // Check whether or not the currency is the only parameter, then build new URL with ? or &
+            newUrl = pag + "?" + newUrl + "&s=" + val;
+         } else {
+            newUrl = pag + newUrl + "?s=" + val;
+         }
+
+         window.location.href = newUrl; // Finished, let's go!
+});
+
+
+$("#assemblies").change( function(){
+  var val = $(this).val(); // This should be the new CurrencyCode, extracted from a select box
+       var pag = window.location.pathname;
+       var url = window.location.search;
+           url = url.replace("?", "").split("&"); // Clean up the URL, and create an array with each query parameter
+
+       var n = -1;
+       for (var count = 0; count < url.length; count++) {
+           if (!url[count].indexOf("a")) { // Figure out if if/where the Currency is set in the array, then break out
+               n = count;
+               break;
+           }
+       }
+
+       if (n !=-1) {
+          url.splice(n,1); // If the Currency was set, remove it from the array
+       }
+
+       var len = url.length;
+       var newUrl = url.join("&"); // Restringify the array
+
+       if (len > 0) { // Check whether or not the currency is the only parameter, then build new URL with ? or &
+          newUrl = pag + "?" + newUrl + "&a=" + val;
+       } else {
+          newUrl = pag + newUrl + "?a=" + val;
+       }
+
+       window.location.href = newUrl; // Finished, let's go!
+} );
+
+
+
+
+var sel = document.getElementById('assembly');
+var fragment = document.createDocumentFragment();
+
+
+data.forEach(function(data, index) {
+    var opt = document.createElement('option');
+    opt.innerHTML = data.State_Name.replace("_"," ");
+    opt.value = data.State_Code;
+    if(data.State_Code=== st){
+      opt.setAttribute("selected", "selected");
+    }
+    fragment.appendChild(opt);
+});
+
+sel.appendChild(fragment);
+
+
+var sel1 = document.getElementById('assemblies');
+var fragment1 = document.createDocumentFragment();
+var assemblies = [];
+for(i = parseInt(assembly[0].Min_Assembly); i < parseInt(assembly[0].Max_Assembly) +1; i++){assemblies.push(i)}
+assemblies.forEach(function(i,index){
+  var opt = document.createElement('option');
+  opt.innerHTML = (i ===1 ? "1st": i=== 2 ? "2nd" : i===3 ? "3rd" : i +"th") + " Assembly";
+  opt.value =  i;
+  if(i == assemblyNo){
+    opt.setAttribute("selected", "selected");
+  }
+  fragment1.appendChild(opt)
+});
+sel1.appendChild(fragment1)
+
+var pre = assembly[0].File_Prefix;
+var url = './'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
+
+document.getElementById('downloadlink').href = url;
+
+if(st==="LS"){
+  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
+}else{
+  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+assembly[0].State_Name+"&an="+assemblyNo;
+}
+
+document.getElementById('browselink').href = ld_url;
+
+var pids_url = './'+ pre +'-pids.csv';
+
+var party_color_url = './colours.csv';
+var party_names_url = './'+pre+'-party-expanded.csv';
+
+
 
 function LOG(s) {
 	if (console) {
@@ -15,33 +191,34 @@ function LOG(s) {
 	}
 }
 
+function sum( obj ) {
+  return Object.keys(obj).reduce((sum,key)=>sum+parseFloat(obj[key]||0),0);
+}
+
+function getKeyAbovePercentage(object, value) {
+	const total = Object.values(object).reduce((t, n) => t + n)
+	LOG('total seats: ' + total)
+	for (var i in object) { // we do the conversion here
+  object[i] = (object[i] / total * 100) ;
+	}
+	//var perc = Object.keys(object).reduce()
+  return Object.keys(object).filter(key => object[key] >= value);
+}
+
 var fixedPartyColours = [];
-fixedPartyColours['BJP'] = '#ff9933';
-fixedPartyColours['INC'] = '#138808';
-fixedPartyColours['INC(I)'] = '#138808';
-fixedPartyColours['IND'] = '#008080';
-fixedPartyColours['INLD'] = '#2C7A56';
-fixedPartyColours['JD'] = '#ff005c';
-fixedPartyColours['RJD'] = '#ff005c';
-fixedPartyColours['AIRJP'] = '#009999';
-fixedPartyColours['JD(U)'] = '#8e47d2';
-fixedPartyColours['SP'] = '#990000';
-fixedPartyColours['BSP'] = '#99003d';
-fixedPartyColours['BJNKP'] = '#333300';
-fixedPartyColours['GPP'] = '#ffcc00';
-fixedPartyColours['None'] = '#707070';
-fixedPartyColours['JP'] = '#536896';
-fixedPartyColours['JNP'] = '#536896';
-fixedPartyColours['JNP(JP)'] = '#536896';
-fixedPartyColours['Other'] = '#000000';
-fixedPartyColours['SHS'] = '#e80839';
-fixedPartyColours['DMK'] = '#08ded0';
-fixedPartyColours['BJD'] = '#015275';
-fixedPartyColours['YSRCP'] = '#930227';
-fixedPartyColours['AITC'] = '#00137f';
-fixedPartyColours['TRS'] = '#c40da5';
-fixedPartyColours['Other'] = '#000';
-fixedPartyColours['AAAP'] = '#08ded0';
+d3.csv(party_color_url, function(party_cols) {
+	party_cols.forEach(function(d){
+		fixedPartyColours[d.Party] = d.Color;
+	})
+});
+
+
+var partyNames =[];
+d3.csv(party_names_url, function(party_names) {
+	party_names.forEach(function(d){
+		partyNames[d.Party] = d.Expanded_Party_Name;
+	})
+});
 
 function commatize(nStr) {
 	if (!nStr) return '';
@@ -104,15 +281,19 @@ d3.csv(pids_url, function(pids_data) {
 		});
 
 		LOG('num seats: ' + numSeats);
+		//LOG('new top parties:' + getKeyAbovePercentage(numSeats,2 ));
 
 		allParties = allParties.sort(function(partyA, partyB) {
 			var aCount = !numSeats[partyA] ? 0 : numSeats[partyA];
-			var bCount = !numSeats[partyA] ? 0 : numSeats[partyB];
+			var bCount = !numSeats[partyB] ? 0 : numSeats[partyB];
 			return bCount - aCount;
 		});
 
+		LOG('all parties: ' + allParties);
 		// top parties have their own column in the viz. all others are clubbed into "Other"
-		var topParties = allParties.slice(0, Math.min(allParties.length, MAX_PARTIES_TO_SHOW));
+		//var topParties = allParties.slice(0, Math.min(allParties.length, MAX_PARTIES_TO_SHOW));
+		//keeping parties with seatshares greater >= 2 as top parties
+		var topParties = getKeyAbovePercentage(numSeats,2 )
 		// e.g. topParties is something like ['BJP', 'INC', 'AITC', 'DMK', 'SHS', 'YSRCP', 'TRS', 'BJD'];
 		LOG('top parties: ' + topParties);
 
@@ -213,76 +394,28 @@ d3.csv(pids_url, function(pids_data) {
 							tooltipText += string_for_row(k) + '<br/>';
 						});
 
-						LOG(tooltipText);
+						//LOG(tooltipText);
 						return tooltipText;
 					})
 					.style('left', d3.event.pageX + 5 + 'px') // offset the tooltip location a bit from the event's pageX/Y
 					.style('top', d3.event.pageY - 28 + 'px');
 			}
 
-			function do_mouseover(d) {
+			function pty_mouseover(e) {
 				var tooltip = d3.select('.tooltip');
 				tooltip.transition().duration(200).style('opacity', 1.0);
 				tooltip
 					.html(function() {
-						function string_for_row(row) {
-							var win_or_lose_class = row.Position === 1 ? 'won' : 'lost';
-							var result =
-								'<span class="' +
-								win_or_lose_class +
-								'">' +
-								row.Constituency_Name +
-								' (' +
-								row.Year +
-								') ' +
-								row.Oth_Current +
-								', #' +
-								row.Position +
-								'</span>';
-							if (row.Poll_No > 0) {
-								result += '<span class="bypoll">BYE POLL</span>';
-							}
-							return result;
-						}
-
-						// get the img link - first matching link in pids table, or empty if no match
-						var img_link = '';
-						var pid = d.pid;
-						for (var x = 0; x < pids_data.length; x++) {
-							if (pids_data[x].pid === pid) {
-								img_link = pids_data[x].link;
-								break;
-							}
-						}
-
 						// add the initial tooltip
-						var tooltipText = '<img class="profile-pic" src="' + img_link + '"/> ' + '<br/>';
-						tooltipText += '<span class="cand-name">' + d.Candidate.toUpperCase() + '</span><br/>';
-						tooltipText += string_for_row(d) + '<br/>';
-						if (d.Age) tooltipText += d.Age + ' years<br/>';
-						// tooltipText += '<i>Votes</i>: ' + commatize(d.Votes) + ' (' + d.Vote_Share_Percentage + '%) <br/>';
-						// tooltipText += '<i>Margin</i>: ' + commatize(d.Margin) + ' (' + d.Margin_Percentage + '%) <br/>';
-
-						// then add the history. This is only the history in prev. assemblies.
-						// note this is history on all rows, not just currently filtered rows
-						// Possible improvement: show in history if same cand. has contested another seat in the same assembly also.
-						var candHistory = mydata.filter(function(k) {
-							return k.pid === d.pid && d.Assembly_No > k.Assembly_No;
-						});
-						candHistory.sort(function(a, b) {
-							return b.Year - a.Year;
-						});
-						tooltipText += '<hr style="color:darkgray;background-color:darkgray;margin-bottom:3px;"/>';
-						candHistory.forEach(function(k) {
-							tooltipText += string_for_row(k) + '<br/>';
-						});
-
+						LOG(g)
+						var tooltipText = partyNames[g];
 						LOG(tooltipText);
 						return tooltipText;
 					})
 					.style('left', d3.event.pageX + 5 + 'px') // offset the tooltip location a bit from the event's pageX/Y
 					.style('top', d3.event.pageY - 28 + 'px');
 			}
+
 
 			function do_mouseout() {
 				var tooltip = d3.select('.tooltip');
@@ -605,7 +738,9 @@ d3.csv(pids_url, function(pids_data) {
 				svg
 					.append('g')
 					.attr('class', 'legendOrdinal')
-					.attr('transform', 'translate(' + width / (partywise.length * 2.5) + ',' + 5 + ')');
+					.attr('transform', 'translate(' + width / (partywise.length * 2.5) + ',' + 5 + ')')
+					.on('mouseover', pty_mouseover)
+					.on('mouseout', do_mouseout);
 
 				var legendOrdinal = d3
 					.legendColor()
