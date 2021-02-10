@@ -1,0 +1,54 @@
+[{
+  "State_Name": "West_Bengal",
+  "State_Code": "WB",
+  "File_Prefix": "wb",
+  "Min_Assembly":3,
+  "Max_Assembly" : 16,
+  "Name": "West Bengal Vidhan Sabha"
+  },{
+  "State_Name": "Bihar",
+  "State_Code": "BH",
+  "File_Prefix": "bh",
+  "Min_Assembly": 3,
+  "Max_Assembly":17,
+  "Name": "Bihar Vidhan Sabha"
+  },{
+  "State_Name": "Delhi",
+  "State_Code": "DL",
+  "File_Prefix": "dl",
+  "Min_Assembly": 2,
+  "Max_Assembly":11,
+  "Name": "Delhi Vidhan Sabha"
+  },
+  {
+  "State_Name": "Lok_Sabha",
+  "State_Code": "LS",
+  "File_Prefix": "ge",
+  "Min_Assembly": 3,
+  "Max_Assembly":17,
+  "Name": "Lok Sabha"
+  },
+  {
+    "State_Name": "Haryana",
+    "State_Code": "HR",
+    "File_Prefix": "hr",
+    "Min_Assembly": 1,
+    "Max_Assembly":13,
+    "Name": "Haryana Vidhan Sabha"
+  },
+  {
+    "State_Name": "Jharkhand",
+    "State_Code": "JH",
+    "File_Prefix": "jh",
+    "Min_Assembly": 1,
+    "Max_Assembly":4,
+    "Name": "Jharkhand Vidhan Sabha"
+  },
+  {
+    "State_Name": "Maharashtra",
+    "State_Code": "MH",
+    "File_Prefix": "mh",
+    "Min_Assembly": 1,
+    "Max_Assembly":13,
+    "Name": "Maharashtra Vidhan Sabha"
+  }]
