@@ -59,7 +59,7 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
     terms_contested_by_pid = dt[, .(Terms_Contested=length(unique(Assembly_No))), by=c('pid')]
     dt = merge (dt, terms_contested_by_pid, by=c('pid'), all.x = TRUE)
     dt$Position[which(dt$Position < 0 )] = NA
-    dt$Terms= NULL
+    dt$No_Terms= NULL
     fwrite(dt, file=paste0('../data/',outFilePre,'-incumbency-',assembly,'.csv'))
   }
   
@@ -79,7 +79,7 @@ for(i in 1:nrow(assemblies)){
     filePath <- paste0('~/github/tcpd_data/data/AE/Data/',assembly,'/derived/mastersheet.csv')
     partyFile <- paste0('~/github/tcpd_data/data/AE/Data/',assembly,'/derived/lokdhaba/ae_party_statistics.csv')
   }
-  createPartyExpanded(partyFile, outFilePre)
+  #createPartyExpanded(partyFile, outFilePre)
   createAssemblyData(filePath, cols_to_get, outFilePre)
 }
 
