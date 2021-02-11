@@ -168,7 +168,7 @@ sel1.appendChild(fragment1)
 var pre = assembly[0].File_Prefix;
 var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
 
-document.getElementById('downloadlink').href = url;
+// document.getElementById('downloadlink').href = url;
 
 if(st==="LS"){
   var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
@@ -251,6 +251,7 @@ d3.csv(pids_url, function(pids_data) {
 			d.No_Mandates = parseInt(d.Terms);
 			d.Contested = parseInt(d.Terms_Contested);
 			d.Assembly_No = parseInt(d.Assembly_No);
+      d.Poll_No = parseInt(d.Poll_No);
 			d.Age = parseInt(d.Age);
 			d.Year = parseInt(d.Year);
 			// enable these rows if we want to show more info in the person's info box
@@ -270,7 +271,12 @@ d3.csv(pids_url, function(pids_data) {
 			}
 		}
 
-		// # of seats won by party (all assemblies, not just the one being shown). This will be used for generating the sort order of parties.
+    let yr = allRows.find(function(i){
+      return i.Assembly_No === assemblyNo && i.Poll_No === 0
+    }).Year;
+    $('.year-of-election').html('('+yr+')');
+
+    // # of seats won by party (all assemblies, not just the one being shown). This will be used for generating the sort order of parties.
 		var numSeats = { Other: 0 };
 		allRows.forEach(function(data) {
 			var party = data.Party;
@@ -350,6 +356,8 @@ d3.csv(pids_url, function(pids_data) {
 								'">' +
 								row.Constituency_Name +
 								' (' +
+                row.Assembly_No+
+                'a, '+
 								row.Year +
 								') ' +
 								row.Oth_Current +

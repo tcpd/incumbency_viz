@@ -17,26 +17,17 @@
 <body>
 
     <div class="header">
-        <h1>Incumbency profile of the <span class="assembly-number"></span> <span class = "assembly-name"></span></h1>
+        <h1>Incumbency profile of the <span class="assembly-number"></span> <span class = "assembly-name"></span> <span class="year-of-election"></span></h1>
 
         <div class="help">
-            <p><i>About this visualization: Each box represents an <span class = "representative-name"></span> contesting in the general elections to State
-                    Legislative
-                    Assembly. The color of the box indicates the previous party of the <span class = "representative-name"></span>
-                    Only the most successful parties are shown; other parties are clubbed into "Other".
 
-                    Hover on a box to see more details such as constituency, year and position. Unsuccessful attempts
-                    are shown in
-                    grey.
-
-                    The number in the box is the total number of terms in which the person has been an MP, including the
-                    new term.
-                    Change the Label setting to see the number of terms contested instead.
-
-                    You can also change the Position setting to "All candidates" instead of just the winners. Squares
-                    indicate
-                    winners and circles indicate those who lost.
-                    To search for a person or constituency, type the name in the search box.</i></p>
+            <p><i>
+              Each box represents an <span class = "representative-name"></span> contesting in the elections to the Legislative House. The House and Assembly Number are to be selected by the user .
+              The colour of the box indicates the previous party of the <span class = "representative-name"></span>, or the current party affiliation for first-time contesters.
+              Only parties with more than 2% seats are shown, other parties are clubbed into "Other".
+              Hover on a box to see more details such as constituency, assembly #, year and position. Unsuccessful attempts are shown in grey. The number in the box is the total number of assemblies in which the person has been an <span class = "representative-name"></span>, including the selected assembly.
+              Change the Label setting to see the number of assemblies contested instead. You can also change the Position setting to "All candidates" instead of just the winners. Squares indicate winners and circles indicate those who lost. To search for a person or constituency, type the name in the search box.
+            </i></p>
         </div>
 
         <div class="controls">
@@ -104,8 +95,8 @@
             <div class="tooltip" style="opacity:0"></div>
         </div>
         <div class="footer">
-          <a id = "browselink" href=''>Browse detailed results.</a>
-          <br /><a id ="downloadlink" href=''>Download visualization data</a>
+          <a id = "browselink" href=''>Browse/download detailed results.</a>
+          <!-- <br /><a id ="downloadlink" href=''>Download visualization data</a> -->
             <hr />Visualization originally developed by Shivangi Tikekar and Sudheendra Hangal.
             <br /> &copy; <a target="_blank" href="//tcpd.ashoka.edu.in">Trivedi Center for Political Data</a>, <a
                 target="_blank" href="//ashoka.edu.in">Ashoka University</a>
