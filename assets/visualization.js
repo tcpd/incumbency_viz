@@ -415,9 +415,9 @@ d3.csv(pids_url, function(pids_data) {
 				tooltip
 					.html(function() {
 						// add the initial tooltip
-						LOG(g)
-						var tooltipText = partyNames[g];
-						LOG(tooltipText);
+						//LOG(e)
+						var tooltipText = partyNames[e.replace(/[\[\]'0-9]+/g,'')];
+						//LOG(tooltipText);
 						return tooltipText;
 					})
 					.style('left', d3.event.pageX + 5 + 'px') // offset the tooltip location a bit from the event's pageX/Y
@@ -587,7 +587,7 @@ d3.csv(pids_url, function(pids_data) {
 				var legendParties = [];
 				for (i = 0; i < partywise.length; i++) {
 					if (partywise[i][0]) {
-						legendParties.push(partywise[i][0].Party);
+						legendParties.push(partywise[i][0].Party +'['+partywise[i].length+']');
 					} else {
 						partywise.splice(i, 1);
 					}
@@ -596,7 +596,7 @@ d3.csv(pids_url, function(pids_data) {
 				//get colour range for legend parties
 				var legendColours = [];
 				for (i = 0; i < legendParties.length; i++) {
-					legendColours.push(partyColours[legendParties[i]]);
+					legendColours.push(partyColours[legendParties[i].replace(/[\[\]'0-9]+/g,'')]);
 				}
 
 				//declare colour scale
@@ -746,9 +746,7 @@ d3.csv(pids_url, function(pids_data) {
 				svg
 					.append('g')
 					.attr('class', 'legendOrdinal')
-					.attr('transform', 'translate(' + width / (partywise.length * 2.5) + ',' + 5 + ')')
-					.on('mouseover', pty_mouseover)
-					.on('mouseout', do_mouseout);
+					.attr('transform', 'translate(' + width / (partywise.length * 2.5) + ',' + 5 + ')');
 
 				var legendOrdinal = d3
 					.legendColor()
@@ -756,7 +754,9 @@ d3.csv(pids_url, function(pids_data) {
 					//.shape("path", d3.symbol().type(d3.symbolTriangle).size(100)())
 					.shapeWidth(25)
 					.shapePadding(width / (partywise.length * 1.35))
-					.scale(colourScale);
+					.scale(colourScale)
+          .on('cellover', pty_mouseover)
+					.on('cellout', do_mouseout);
 
 				svg.select('.legendOrdinal').call(legendOrdinal);
 
