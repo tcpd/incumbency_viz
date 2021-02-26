@@ -1,0 +1,5 @@
+pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Terms,Terms_Contested
+AEMN198645,8,1,2001,VIVEK RAJ WANGKHEM,,Manipur,KSHETRIGAO,SAP,,12655,M,1,1,FALSE,FALSE,60.97,4554,21.94,,1,1
+AEMN199035,7,0,1995,IRENGBAM SANATOMBA,,Manipur,KHETRIGAO,BJP,,762,M,5,3,FALSE,FALSE,3.68,0,0,,,2
+AEMN199035,7,1,1998,Irengbam Sanatomba Singh,,Manipur,KSHETRIGAO,BJP,BJP,914,M,6,3,FALSE,FALSE,4.62,0,0,,,2
+AEMN199035,8,1,2001,IRENGBAM SANATOMBA SINGH,,Manipur,KSHETRIGAO,INC,BJP,8101,M,2,3,TRUE,FALSE,39.03,0,0,,,2

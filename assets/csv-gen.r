@@ -7,8 +7,9 @@ library(readr)
 library(dplyr)
 
 assemblies = fromJSON("assemblies.json")
+tcpd_git_link = "~/github/tcpd_data/data/"
 
-cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
+cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
 
 
@@ -20,7 +21,7 @@ createPartyExpanded = function(partyFile, outFilePre){
 
 createAssemblyData = function(filePath, cols_to_get, outFilePre){
   data = fread(filePath, na="")
-  
+
   if("Age" %in% names(data)){
     cols_to_get = c(cols_to_get,"Age")
   }
@@ -31,39 +32,39 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
   # filter dt down to only rows whose pid is present in this assembly
   for (assembly in min(data$Assembly_No):max(data$Assembly_No)) {
     print (paste('Generating data for assembly# ', assembly))
-    
+
     dt = data[Assembly_No <= assembly] # filter out all rows after this assembly
-    
+
     # get pids of everyone who has a line in this assembly...
     # ... but drop INDs and non-winning-parties parties unless their Position is < 3 to avoid the long tail of insignificant cands
-    
+
     party_seat_count = dt[Assembly_No == assembly & Position == 1, .(count = .N), by='Party']
     winning_parties = party_seat_count$Party # only winning parties will have an entry in this table
     this_assembly_pids = unique(dt[Assembly_No == assembly & (Position < 3 | (Party %in% winning_parties & Party != 'IND'))]$pid)
-    
+
     print (paste("winning parties = ", winning_parties))
-    
+
     dt = dt[pid %in% this_assembly_pids]
     # only keep those rows with a pid in this assembly
-    
+
     terms_served_by_pid = dt[Position == 1, .(Terms=length(unique(Assembly_No))), by=c('pid')]
     dt = merge (dt, terms_served_by_pid, by=c('pid'), all.x=TRUE)
-    
+
     # fix the #mandates and contested to be whatever it is up to the current assembly
     # otherwise rows for the same pid will have different values in these columns
     dt[, No_Terms:=max(No_Terms), by=c('pid')]
     dt[, Contested:=max(Contested), by=c('pid')]
-    
-    
-    
+
+
+
     terms_contested_by_pid = dt[, .(Terms_Contested=length(unique(Assembly_No))), by=c('pid')]
     dt = merge (dt, terms_contested_by_pid, by=c('pid'), all.x = TRUE)
     dt$Position[which(dt$Position < 0 )] = NA
     dt$No_Terms= NULL
     fwrite(dt, file=paste0('../data/',outFilePre,'-incumbency-',assembly,'.csv'))
   }
-  
-  
+
+
 }
 
 
@@ -72,14 +73,14 @@ for(i in 1:nrow(assemblies)){
   assembly = state$State_Name
   outFilePre = state$File_Prefix
   if(assembly == "Lok_Sabha"){
-    filePath <- '~/github/tcpd_data/data/GE/Data/derived/mastersheet.csv'
-    partyFile <- '~/github/tcpd_data/data/GE/Data/derived/lokdhaba/ge_party_statistics.csv'
-    
+    filePath <- paste0(tcpd_git_link,'GE/Data/derived/mastersheet.csv')
+    partyFile <- paste0(tcpd_git_link,'GE/Data/derived/lokdhaba/ge_party_statistics.csv')
+
   }else{
-    filePath <- paste0('~/github/tcpd_data/data/AE/Data/',assembly,'/derived/mastersheet.csv')
-    partyFile <- paste0('~/github/tcpd_data/data/AE/Data/',assembly,'/derived/lokdhaba/ae_party_statistics.csv')
+    filePath <- paste0(tcpd_git_link,'AE/Data/',assembly,'/derived/mastersheet.csv')
+    partyFile <- paste0(tcpd_git_link,'AE/Data/',assembly,'/derived/lokdhaba/ae_party_statistics.csv')
   }
-  #createPartyExpanded(partyFile, outFilePre)
+  createPartyExpanded(partyFile, outFilePre)
   createAssemblyData(filePath, cols_to_get, outFilePre)
 }
 
