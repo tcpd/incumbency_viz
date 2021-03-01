@@ -7,52 +7,116 @@ const data = [{
   "Max_Assembly" : 16,
   "Name": "West Bengal Vidhan Sabha"
   },{
-  "State_Name": "Bihar",
-  "State_Code": "BH",
-  "File_Prefix": "bh",
-  "Min_Assembly": 3,
-  "Max_Assembly":17,
-  "Name": "Bihar Vidhan Sabha"
-  },{
-  "State_Name": "Delhi",
-  "State_Code": "DL",
-  "File_Prefix": "dl",
-  "Min_Assembly": 2,
-  "Max_Assembly":11,
-  "Name": "Delhi Vidhan Sabha"
-  },
-  {
-  "State_Name": "Lok_Sabha",
-  "State_Code": "LS",
-  "File_Prefix": "ge",
-  "Min_Assembly": 3,
-  "Max_Assembly":17,
-  "Name": "Lok Sabha"
-  },
-  {
-    "State_Name": "Haryana",
-    "State_Code": "HR",
-    "File_Prefix": "hr",
-    "Min_Assembly": 1,
-    "Max_Assembly":13,
-    "Name": "Haryana Vidhan Sabha"
-  },
-  {
-    "State_Name": "Jharkhand",
-    "State_Code": "JH",
-    "File_Prefix": "jh",
-    "Min_Assembly": 1,
-    "Max_Assembly":4,
-    "Name": "Jharkhand Vidhan Sabha"
-  },
-  {
-    "State_Name": "Maharashtra",
-    "State_Code": "MH",
-    "File_Prefix": "mh",
-    "Min_Assembly": 1,
-    "Max_Assembly":13,
-    "Name": "Maharashtra Vidhan Sabha"
-  }]
+    "State_Name": "Bihar",
+    "State_Code": "BH",
+    "File_Prefix": "bh",
+    "Min_Assembly": 3,
+    "Max_Assembly":17,
+    "Name": "Bihar Vidhan Sabha"
+    },{
+      "State_Name": "Delhi",
+      "State_Code": "DL",
+      "File_Prefix": "dl",
+      "Min_Assembly": 2,
+      "Max_Assembly":11,
+      "Name": "Delhi Vidhan Sabha"
+    },
+    {
+      "State_Name": "Lok_Sabha",
+      "State_Code": "LS",
+      "File_Prefix": "ge",
+      "Min_Assembly": 3,
+      "Max_Assembly":17,
+      "Name": "Lok Sabha"
+    },
+    {
+      "State_Name": "Haryana",
+      "State_Code": "HR",
+      "File_Prefix": "hr",
+      "Min_Assembly": 1,
+      "Max_Assembly":13,
+      "Name": "Haryana Vidhan Sabha"
+    },
+    {
+      "State_Name": "Jharkhand",
+      "State_Code": "JH",
+      "File_Prefix": "jh",
+      "Min_Assembly": 1,
+      "Max_Assembly":4,
+      "Name": "Jharkhand Vidhan Sabha"
+    },
+    {
+      "State_Name": "Maharashtra",
+      "State_Code": "MH",
+      "File_Prefix": "mh",
+      "Min_Assembly": 1,
+      "Max_Assembly":13,
+      "Name": "Maharashtra Vidhan Sabha"
+    },
+    {
+      "State_Name": "Arunachal_Pradesh",
+      "State_Code": "AR",
+      "File_Prefix": "ar",
+      "Min_Assembly":1,
+      "Max_Assembly" : 10,
+      "Name": "Arunachal Pradesh Vidhan Sabha"
+    },
+    {
+      "State_Name": "Sikkim",
+      "State_Code": "SK",
+      "File_Prefix": "sk",
+      "Min_Assembly":1,
+      "Max_Assembly" : 9,
+      "Name": "Sikkim Vidhan Sabha"
+    },
+    {
+      "State_Name": "Assam",
+      "State_Code": "AS",
+      "File_Prefix": "as",
+      "Min_Assembly":3,
+      "Max_Assembly" : 14,
+      "Name": "Assam Vidhan Sabha"
+    },
+    {
+      "State_Name": "Manipur",
+      "State_Code": "MN",
+      "File_Prefix": "mn",
+      "Min_Assembly":1,
+      "Max_Assembly" : 12,
+      "Name": "Manipur Vidhan Sabha"
+    },
+    {
+      "State_Name": "Meghalaya",
+      "State_Code": "ML",
+      "File_Prefix": "ml",
+      "Min_Assembly":1,
+      "Max_Assembly" : 10,
+      "Name": "Meghalaya Vidhan Sabha"
+    },
+    {
+      "State_Name": "Mizoram",
+      "State_Code": "MZ",
+      "File_Prefix": "mz",
+      "Min_Assembly":1,
+      "Max_Assembly" : 12,
+      "Name": "Mizoram Vidhan Sabha"
+    },
+    {
+      "State_Name": "Nagaland",
+      "State_Code": "NL",
+      "File_Prefix": "nl",
+      "Min_Assembly":1,
+      "Max_Assembly" : 13,
+      "Name": "Nagaland Vidhan Sabha"
+    },
+    {
+      "State_Name": "Tripura",
+      "State_Code": "TR",
+      "File_Prefix": "tr",
+      "Min_Assembly":1,
+      "Max_Assembly" : 11,
+      "Name": "Tripura Vidhan Sabha"
+      }]
 //const data = require('./Assemblies.json');
 
 var params = new URL(document.location).searchParams;
