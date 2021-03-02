@@ -34,9 +34,14 @@
                     type='text' class="select-search" id='search' placeholder="Person, constituency or party">
             </div>
 
-
             <div class="input-container">
                 <label>House</label>
+                <select id= "house" >
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label>State</label>
                 <select id= "assembly" >
                 </select>
             </div>
@@ -71,6 +76,7 @@
                     <option value="ALL" selected='selected'>All</option>
                     <option value="NEWCOMERS">Newcomers</option>
                     <option value="PREVIOUSLY_CONTESTED">Previously Contested</option>
+                    <option value="POLITICAL_CLASS">Major political class</option>
                     <option value="TURNCOATS">Turncoats</option>
                 </select>
             </div>

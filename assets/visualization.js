@@ -1,135 +1,88 @@
+//function to compare strings
+function compareStrings(a, b) {
+  // Assuming you want case-insensitive comparison
+  a = a.toLowerCase();
+  b = b.toLowerCase();
+
+  return (a < b) ? -1 : (a > b) ? 1 : 0;
+}
+function LOG(s) {
+	if (console) {
+		console.log(s);
+	}
+}
+
+function sum( obj ) {
+  return Object.keys(obj).reduce((sum,key)=>sum+parseFloat(obj[key]||0),0);
+}
+
+function getKeyAbovePercentage(object, value) {
+	const total = Object.values(object).reduce((t, n) => t + n)
+	LOG('total seats: ' + total)
+	for (var i in object) { // we do the conversion here
+  object[i] = (object[i] / total * 100) ;
+	}
+	//var perc = Object.keys(object).reduce()
+  return Object.keys(object).filter(key => object[key] >= value);
+}
+function commatize(nStr) {
+	if (!nStr) return '';
+	nStr += '';
+	var x = nStr.split('.');
+	var x1 = x[0];
+	var x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
+
+
+
+
+
 //Declare the data
-const data = [{
-  "State_Name": "West_Bengal",
-  "State_Code": "WB",
-  "File_Prefix": "wb",
-  "Min_Assembly":3,
-  "Max_Assembly" : 16,
-  "Name": "West Bengal Vidhan Sabha"
-  },{
-    "State_Name": "Bihar",
-    "State_Code": "BH",
-    "File_Prefix": "bh",
-    "Min_Assembly": 3,
-    "Max_Assembly":17,
-    "Name": "Bihar Vidhan Sabha"
-    },{
-      "State_Name": "Delhi",
-      "State_Code": "DL",
-      "File_Prefix": "dl",
-      "Min_Assembly": 2,
-      "Max_Assembly":11,
-      "Name": "Delhi Vidhan Sabha"
-    },
-    {
-      "State_Name": "Lok_Sabha",
-      "State_Code": "LS",
-      "File_Prefix": "ge",
-      "Min_Assembly": 3,
-      "Max_Assembly":17,
-      "Name": "Lok Sabha"
-    },
-    {
-      "State_Name": "Haryana",
-      "State_Code": "HR",
-      "File_Prefix": "hr",
-      "Min_Assembly": 1,
-      "Max_Assembly":13,
-      "Name": "Haryana Vidhan Sabha"
-    },
-    {
-      "State_Name": "Jharkhand",
-      "State_Code": "JH",
-      "File_Prefix": "jh",
-      "Min_Assembly": 1,
-      "Max_Assembly":4,
-      "Name": "Jharkhand Vidhan Sabha"
-    },
-    {
-      "State_Name": "Maharashtra",
-      "State_Code": "MH",
-      "File_Prefix": "mh",
-      "Min_Assembly": 1,
-      "Max_Assembly":13,
-      "Name": "Maharashtra Vidhan Sabha"
-    },
-    {
-      "State_Name": "Arunachal_Pradesh",
-      "State_Code": "AR",
-      "File_Prefix": "ar",
-      "Min_Assembly":1,
-      "Max_Assembly" : 10,
-      "Name": "Arunachal Pradesh Vidhan Sabha"
-    },
-    {
-      "State_Name": "Sikkim",
-      "State_Code": "SK",
-      "File_Prefix": "sk",
-      "Min_Assembly":1,
-      "Max_Assembly" : 9,
-      "Name": "Sikkim Vidhan Sabha"
-    },
-    {
-      "State_Name": "Assam",
-      "State_Code": "AS",
-      "File_Prefix": "as",
-      "Min_Assembly":3,
-      "Max_Assembly" : 14,
-      "Name": "Assam Vidhan Sabha"
-    },
-    {
-      "State_Name": "Manipur",
-      "State_Code": "MN",
-      "File_Prefix": "mn",
-      "Min_Assembly":1,
-      "Max_Assembly" : 12,
-      "Name": "Manipur Vidhan Sabha"
-    },
-    {
-      "State_Name": "Meghalaya",
-      "State_Code": "ML",
-      "File_Prefix": "ml",
-      "Min_Assembly":1,
-      "Max_Assembly" : 10,
-      "Name": "Meghalaya Vidhan Sabha"
-    },
-    {
-      "State_Name": "Mizoram",
-      "State_Code": "MZ",
-      "File_Prefix": "mz",
-      "Min_Assembly":1,
-      "Max_Assembly" : 12,
-      "Name": "Mizoram Vidhan Sabha"
-    },
-    {
-      "State_Name": "Nagaland",
-      "State_Code": "NL",
-      "File_Prefix": "nl",
-      "Min_Assembly":1,
-      "Max_Assembly" : 13,
-      "Name": "Nagaland Vidhan Sabha"
-    },
-    {
-      "State_Name": "Tripura",
-      "State_Code": "TR",
-      "File_Prefix": "tr",
-      "Min_Assembly":1,
-      "Max_Assembly" : 11,
-      "Name": "Tripura Vidhan Sabha"
-      }]
+const data = [{"State_Name":"West_Bengal","State_Code":"WB","Assembly":"VS","File_Prefix":"wb","Min_Assembly":3,"Max_Assembly":16,"Name":"West Bengal Vidhan Sabha"},{"State_Name":"Bihar","State_Code":"BH","Assembly":"VS","File_Prefix":"bh","Min_Assembly":3,"Max_Assembly":17,"Name":"Bihar Vidhan Sabha"},{"State_Name":"Delhi","State_Code":"DL","Assembly":"VS","File_Prefix":"dl","Min_Assembly":2,"Max_Assembly":11,"Name":"Delhi Vidhan Sabha"},{"State_Name":"All_States","State_Code":"all","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Lok Sabha"},{"State_Name":"Haryana","State_Code":"HR","Assembly":"VS","File_Prefix":"hr","Min_Assembly":1,"Max_Assembly":13,"Name":"Haryana Vidhan Sabha"},{"State_Name":"Jharkhand","State_Code":"JH","Assembly":"VS","File_Prefix":"jh","Min_Assembly":1,"Max_Assembly":4,"Name":"Jharkhand Vidhan Sabha"},{"State_Name":"Maharashtra","State_Code":"MH","Assembly":"VS","File_Prefix":"mh","Min_Assembly":1,"Max_Assembly":13,"Name":"Maharashtra Vidhan Sabha"},{"State_Name":"Arunachal_Pradesh","State_Code":"AR","Assembly":"VS","File_Prefix":"ar","Min_Assembly":1,"Max_Assembly":10,"Name":"Arunachal Pradesh Vidhan Sabha"},{"State_Name":"Sikkim","State_Code":"SK","Assembly":"VS","File_Prefix":"sk","Min_Assembly":1,"Max_Assembly":9,"Name":"Sikkim Vidhan Sabha"},{"State_Name":"Assam","State_Code":"AS","Assembly":"VS","File_Prefix":"as","Min_Assembly":3,"Max_Assembly":14,"Name":"Assam Vidhan Sabha"},{"State_Name":"Manipur","State_Code":"MN","Assembly":"VS","File_Prefix":"mn","Min_Assembly":1,"Max_Assembly":12,"Name":"Manipur Vidhan Sabha"},{"State_Name":"Meghalaya","State_Code":"ML","Assembly":"VS","File_Prefix":"ml","Min_Assembly":1,"Max_Assembly":10,"Name":"Meghalaya Vidhan Sabha"},{"State_Name":"Mizoram","State_Code":"MZ","Assembly":"VS","File_Prefix":"mz","Min_Assembly":1,"Max_Assembly":12,"Name":"Mizoram Vidhan Sabha"},{"State_Name":"Nagaland","State_Code":"NL","Assembly":"VS","File_Prefix":"nl","Min_Assembly":1,"Max_Assembly":13,"Name":"Nagaland Vidhan Sabha"},{"State_Name":"Tripura","State_Code":"TR","Assembly":"VS","File_Prefix":"tr","Min_Assembly":1,"Max_Assembly":11,"Name":"Tripura Vidhan Sabha"},{"State_Name":"Andhra_Pradesh","State_Code":"AP","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Andhra Pradesh Lok Sabha"},{"State_Name":"Assam","State_Code":"AS","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Assam Lok Sabha"},{"State_Name":"Bihar","State_Code":"BH","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Bihar Lok Sabha"},{"State_Name":"Delhi","State_Code":"DL","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Delhi Lok Sabha"},{"State_Name":"Gujarat","State_Code":"GJ","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Gujarat Lok Sabha"},{"State_Name":"Himachal_Pradesh","State_Code":"HP","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Himachal Pradesh Lok Sabha"},{"State_Name":"Kerala","State_Code":"KL","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Kerala Lok Sabha"},{"State_Name":"Madhya_Pradesh","State_Code":"MP","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Madhya Pradesh Lok Sabha"},{"State_Name":"Madras","State_Code":"MD","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":4,"Name":"Madras Lok Sabha"},{"State_Name":"Maharashtra","State_Code":"MH","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Maharashtra Lok Sabha"},{"State_Name":"Manipur","State_Code":"MN","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Manipur Lok Sabha"},{"State_Name":"Mysore","State_Code":"KA","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":5,"Name":"Mysore Lok Sabha"},{"State_Name":"Odisha","State_Code":"OD","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Odisha Lok Sabha"},{"State_Name":"Punjab","State_Code":"PB","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Punjab Lok Sabha"},{"State_Name":"Rajasthan","State_Code":"RJ","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Rajasthan Lok Sabha"},{"State_Name":"Tripura","State_Code":"TR","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Tripura Lok Sabha"},{"State_Name":"Uttar_Pradesh","State_Code":"UP","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"Uttar Pradesh Lok Sabha"},{"State_Name":"West_Bengal","State_Code":"WB","Assembly":"LS","File_Prefix":"ge","Min_Assembly":3,"Max_Assembly":17,"Name":"West Bengal Lok Sabha"},{"State_Name":"Andaman_&_Nicobar_Islands","State_Code":"AN","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Andaman & Nicobar Islands Lok Sabha"},{"State_Name":"Chandigarh","State_Code":"CH","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Chandigarh Lok Sabha"},{"State_Name":"Dadra_&_Nagar_Haveli","State_Code":"DN","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Dadra & Nagar Haveli Lok Sabha"},{"State_Name":"Goa,_Daman_&_Diu","State_Code":"GDD","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":8,"Name":"Goa, Daman & Diu Lok Sabha"},{"State_Name":"Haryana","State_Code":"HR","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Haryana Lok Sabha"},{"State_Name":"Jammu_&_Kashmir","State_Code":"JK","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Jammu & Kashmir Lok Sabha"},{"State_Name":"Lakshadweep","State_Code":"LD","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Lakshadweep Lok Sabha"},{"State_Name":"Nagaland","State_Code":"NL","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Nagaland Lok Sabha"},{"State_Name":"Puducherry","State_Code":"PY","Assembly":"LS","File_Prefix":"ge","Min_Assembly":4,"Max_Assembly":17,"Name":"Puducherry Lok Sabha"},{"State_Name":"Tamil_Nadu","State_Code":"TN","Assembly":"LS","File_Prefix":"ge","Min_Assembly":5,"Max_Assembly":17,"Name":"Tamil Nadu Lok Sabha"},{"State_Name":"Arunachal_Pradesh","State_Code":"AR","Assembly":"LS","File_Prefix":"ge","Min_Assembly":6,"Max_Assembly":17,"Name":"Arunachal Pradesh Lok Sabha"},{"State_Name":"Karnataka","State_Code":"KA","Assembly":"LS","File_Prefix":"ge","Min_Assembly":6,"Max_Assembly":17,"Name":"Karnataka Lok Sabha"},{"State_Name":"Meghalaya","State_Code":"ML","Assembly":"LS","File_Prefix":"ge","Min_Assembly":6,"Max_Assembly":17,"Name":"Meghalaya Lok Sabha"},{"State_Name":"Mizoram","State_Code":"MZ","Assembly":"LS","File_Prefix":"ge","Min_Assembly":6,"Max_Assembly":17,"Name":"Mizoram Lok Sabha"},{"State_Name":"Sikkim","State_Code":"SK","Assembly":"LS","File_Prefix":"ge","Min_Assembly":6,"Max_Assembly":17,"Name":"Sikkim Lok Sabha"},{"State_Name":"Daman_&_Diu","State_Code":"DD","Assembly":"LS","File_Prefix":"ge","Min_Assembly":9,"Max_Assembly":17,"Name":"Daman & Diu Lok Sabha"},{"State_Name":"Goa","State_Code":"GA","Assembly":"LS","File_Prefix":"ge","Min_Assembly":9,"Max_Assembly":17,"Name":"Goa Lok Sabha"},{"State_Name":"Chhattisgarh","State_Code":"CG","Assembly":"LS","File_Prefix":"ge","Min_Assembly":14,"Max_Assembly":17,"Name":"Chhattisgarh Lok Sabha"},{"State_Name":"Jharkhand","State_Code":"JH","Assembly":"LS","File_Prefix":"ge","Min_Assembly":14,"Max_Assembly":17,"Name":"Jharkhand Lok Sabha"},{"State_Name":"Uttarakhand","State_Code":"UK","Assembly":"LS","File_Prefix":"ge","Min_Assembly":14,"Max_Assembly":17,"Name":"Uttarakhand Lok Sabha"},{"State_Name":"Telangana","State_Code":"TG","Assembly":"LS","File_Prefix":"ge","Min_Assembly":15,"Max_Assembly":17,"Name":"Telangana Lok Sabha"}]
+
 //const data = require('./Assemblies.json');
 
 var params = new URL(document.location).searchParams;
-var st = params.get('s') ? params.get('s') : data[0].State_Code;
+var et = params.get('e') ? params.get('e') : 'LS';
+var st = params.get('s') ? params.get('s') : data.filter(function(i){return i.Assembly === et})[0].State_Code;
 // $('#assembly option[value="select"').html(st).change();
-var assembly= data.filter(function(i){return i.State_Code === st})
+var assembly= data.filter(function(i){return i.Assembly === et && i.State_Code === st})
+
 $('.assembly-name').html(assembly[0].Name);
 var assemblyNo = params.get('a') ? parseInt(params.get('a')) : parseInt(assembly[0].Max_Assembly);
 $('.assembly-number').html(assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th"));
 
-$('.representative-name').html(st==="LS"?"MP":"MLA");
+$('.representative-name').html(et==="LS"?"MP":"MLA");
 // $('#assemblies1 option[value="select"').html((assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th")) +  " Assembly").change();
 
+var pre = assembly[0].File_Prefix;
+var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
+
+// document.getElementById('downloadlink').href = url;
+
+if(et==="LS"){
+  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
+}else{
+  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+assembly[0].State_Name+"&an="+assemblyNo;
+}
+
+document.getElementById('browselink').href = ld_url;
+
+var pids_url = 'data/'+ pre +'-pids.csv';
+
+var party_color_url = 'data/colours.csv';
+var party_names_url = 'data/'+pre+'-party-expanded.csv';
+
+
+
+
+
+//<update select inputs and urls>
 $("#assembly").change(function() {
     // var optionValue = $(this).val();
     // var url = window.location.href.split("?")[0];
@@ -194,6 +147,57 @@ $("#assemblies").change( function(){
        window.location.href = newUrl; // Finished, let's go!
 } );
 
+$("#house").change( function(){
+  var val = $(this).val(); // This should be the new CurrencyCode, extracted from a select box
+       var pag = window.location.pathname;
+       var url = window.location.search;
+           url = url.replace("?", "").split("&"); // Clean up the URL, and create an array with each query parameter
+
+       // var n = -1;
+       // for (var count = 0; count < url.length; count++) {
+       //     if (!url[count].indexOf("e")) { // Figure out if if/where the Currency is set in the array, then break out
+       //         n = count;
+       //         break;
+       //     }
+       // }
+       //
+       // if (n !=-1) {
+       //    url.splice(n,1); // If the Currency was set, remove it from the array
+       // }
+       url.splice(url.indexOf("s"),1)
+       url.splice(url.indexOf("e"),1)
+       url.splice(url.indexOf("a"),1)
+       var len = url.length;
+       var newUrl = url.join("&"); // Restringify the array
+
+       if (len > 0) { // Check whether or not the currency is the only parameter, then build new URL with ? or &
+          newUrl = pag + "?" + newUrl + "&e=" + val;
+       } else {
+          newUrl = pag + newUrl + "?e=" + val;
+       }
+
+       window.location.href = newUrl; // Finished, let's go!
+} );
+
+var et_elem = document.getElementById('house');
+var frag = document.createDocumentFragment();
+var opt = document.createElement('option');
+opt.innerHTML = "Lok Sabha";
+opt.value = "LS";
+if(et === "LS"){
+  opt.setAttribute("selected","selected");
+}
+frag.appendChild(opt);
+
+var opt = document.createElement('option');
+opt.innerHTML = "Vidhan Sabha";
+opt.value = "VS";
+if(et === "VS"){
+  opt.setAttribute("selected","selected");
+}
+frag.appendChild(opt);
+
+et_elem.appendChild(frag);
 
 
 
@@ -201,7 +205,12 @@ var sel = document.getElementById('assembly');
 var fragment = document.createDocumentFragment();
 
 
+data.sort(function(a,b){
+    return  compareStrings(a.State_Name,b.State_Name);
+  });
+
 data.forEach(function(data, index) {
+  if(data.Assembly === et){
     var opt = document.createElement('option');
     opt.innerHTML = data.State_Name.replace("_"," ");
     opt.value = data.State_Code;
@@ -209,6 +218,8 @@ data.forEach(function(data, index) {
       opt.setAttribute("selected", "selected");
     }
     fragment.appendChild(opt);
+  }
+
 });
 
 sel.appendChild(fragment);
@@ -228,46 +239,9 @@ assemblies.forEach(function(i,index){
   fragment1.appendChild(opt)
 });
 sel1.appendChild(fragment1)
-
-var pre = assembly[0].File_Prefix;
-var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
-
-// document.getElementById('downloadlink').href = url;
-
-if(st==="LS"){
-  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
-}else{
-  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+assembly[0].State_Name+"&an="+assemblyNo;
-}
-
-document.getElementById('browselink').href = ld_url;
-
-var pids_url = 'data/'+ pre +'-pids.csv';
-
-var party_color_url = 'data/colours.csv';
-var party_names_url = 'data/'+pre+'-party-expanded.csv';
+//</update select inputs and urls>
 
 
-
-function LOG(s) {
-	if (console) {
-		console.log(s);
-	}
-}
-
-function sum( obj ) {
-  return Object.keys(obj).reduce((sum,key)=>sum+parseFloat(obj[key]||0),0);
-}
-
-function getKeyAbovePercentage(object, value) {
-	const total = Object.values(object).reduce((t, n) => t + n)
-	LOG('total seats: ' + total)
-	for (var i in object) { // we do the conversion here
-  object[i] = (object[i] / total * 100) ;
-	}
-	//var perc = Object.keys(object).reduce()
-  return Object.keys(object).filter(key => object[key] >= value);
-}
 
 var fixedPartyColours = [];
 d3.csv(party_color_url, function(party_cols) {
@@ -284,18 +258,8 @@ d3.csv(party_names_url, function(party_names) {
 	})
 });
 
-function commatize(nStr) {
-	if (!nStr) return '';
-	nStr += '';
-	var x = nStr.split('.');
-	var x1 = x[0];
-	var x2 = x.length > 1 ? '.' + x[1] : '';
-	var rgx = /(\d+)(\d{3})/;
-	while (rgx.test(x1)) {
-		x1 = x1.replace(rgx, '$1' + ',' + '$2');
-	}
-	return x1 + x2;
-}
+
+
 
 // read the pids file and then the raw data file
 d3.csv(pids_url, function(pids_data) {
@@ -513,9 +477,16 @@ d3.csv(pids_url, function(pids_data) {
 			// get current assembly rows
 			var filteredRows;
 			{
-				filteredRows = mydata.filter(function(i) {
-					return i.Assembly_No === parseInt(assemblyNo);
-				});
+        if(st=== "all"){
+          filteredRows = mydata.filter(function(i) {
+  					return i.Assembly_No === parseInt(assemblyNo);
+  				});
+        } else{
+          filteredRows = mydata.filter(function(i) {
+  					return i.Assembly_No === parseInt(assemblyNo) && i.State_Name === assembly[0].State_Name;
+  				});
+        }
+
 
 				if (wonlost === '1') {
 					filteredRows = filteredRows.filter(function(i) {
@@ -530,6 +501,10 @@ d3.csv(pids_url, function(pids_data) {
 				} else if (turncoats === 'PREVIOUSLY_CONTESTED') {
 					filteredRows = filteredRows.filter(function(i) {
 						return i.Contested > 1;
+					});
+				} else if (turncoats === 'POLITICAL_CLASS') {
+					filteredRows = filteredRows.filter(function(i) {
+						return i.No_Mandates > 2;
 					});
 				} else if (turncoats === 'NEWCOMERS') {
 					filteredRows = filteredRows.filter(function(i) {
@@ -847,13 +822,14 @@ d3.csv(pids_url, function(pids_data) {
 		var refresh = function() {
 			//var assemblyNo = $('#assemblies').val();
 			var labels = $('.select-label').val();
+      //var house = $('.select-house').val();
 			var wonlost = $('.select-wonlost').val();
 			var turncoats = $('.select-turncoats').val();
 			var sex = $('.select-sex').val();
 			var searchTerm = $('.select-search').val();
 			//d3.selectAll("svg").transition().duration(400).style("opacity", 0).remove();
 			d3.selectAll('svg').remove();
-			generateViz(allRows, assemblyNo, labels, wonlost, turncoats, sex, searchTerm);
+			generateViz(allRows, assemblyNo, labels, wonlost, turncoats, sex, searchTerm,);
 		};
 
 		// handle on click event
