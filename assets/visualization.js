@@ -66,7 +66,12 @@ var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json sourc
 // document.getElementById('downloadlink').href = url;
 
 if(et==="LS"){
-  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
+  if(st==="all"){
+    var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
+  }else{
+    var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st="+assembly[0].State_Name+"&an="+assemblyNo;
+  }
+
 }else{
   var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+assembly[0].State_Name+"&an="+assemblyNo;
 }
