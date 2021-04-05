@@ -125,6 +125,42 @@
       "Name": "Nagaland Vidhan Sabha"
     },
     {
+      "State_Name": "Tamil_Nadu",
+      "State_Code": "TN",
+      "File_Prefix": "tn",
+      "Assembly": "VS",
+      "Min_Assembly":1,
+      "Max_Assembly" : 11,
+      "Name": "Tamil Nadu Vidhan Sabha"
+    },
+    {
+      "State_Name": "Kerala",
+      "State_Code": "KL",
+      "File_Prefix": "kl",
+      "Assembly": "VS",
+      "Min_Assembly":3,
+      "Max_Assembly" : 15,
+      "Name": "Kerala Vidhan Sabha"
+    },
+    {
+      "State_Name": "Odisha",
+      "State_Code": "OD",
+      "File_Prefix": "od",
+      "Assembly": "VS",
+      "Min_Assembly":3,
+      "Max_Assembly" : 16,
+      "Name": "Odisha Vidhan Sabha"
+    },
+    {
+      "State_Name": "Puducherry",
+      "State_Code": "PY",
+      "File_Prefix": "py",
+      "Assembly": "VS",
+      "Min_Assembly":1,
+      "Max_Assembly" : 13,
+      "Name": "Puducherry Vidhan Sabha"
+    },
+    {
       "State_Name": "Tripura",
       "State_Code": "TR",
       "File_Prefix": "tr",

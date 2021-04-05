@@ -12,7 +12,6 @@ tcpd_git_link = "~/github/tcpd_data/data/"
 cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
 
-
 createPartyExpanded = function(partyFile, outFilePre){
   party_data = fread(partyFile, na="")
   expanded.party.names = unique(subset(party_data,!is.na(Expanded_Party_Name),select=c("Party","Expanded_Party_Name")))
@@ -28,7 +27,7 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
   #dt <- dt[dt$No_Mandates > 0]
   data <- data[Party != 'NOTA' , ]
   data = subset(data, select = cols_to_get)
-  
+
   # filter dt down to only rows whose pid is present in this assembly
   for (assembly in min(data$Assembly_No):max(data$Assembly_No)) {
     print (paste('Generating data for assembly# ', assembly))
@@ -72,7 +71,7 @@ for(i in 1:nrow(assemblies)){
   state = assemblies[i,]
   assembly = state$State_Name
   outFilePre = state$File_Prefix
-  if(assembly == "Lok_Sabha"){
+  if(assembly == "All_States"){
     filePath <- paste0(tcpd_git_link,'GE/Data/derived/mastersheet.csv')
     partyFile <- paste0(tcpd_git_link,'GE/Data/derived/lokdhaba/ge_party_statistics.csv')
 
