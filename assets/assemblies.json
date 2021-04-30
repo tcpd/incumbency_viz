@@ -4,7 +4,7 @@
   "Assembly": "VS",
   "File_Prefix": "wb",
   "Min_Assembly":3,
-  "Max_Assembly" : 16,
+  "Max_Assembly" : 17,
   "Name": "West Bengal Vidhan Sabha"
   },
   {
@@ -85,7 +85,7 @@
       "Assembly": "VS",
       "File_Prefix": "as",
       "Min_Assembly":3,
-      "Max_Assembly" : 14,
+      "Max_Assembly" : 15,
       "Name": "Assam Vidhan Sabha"
     },
     {
@@ -130,7 +130,7 @@
       "File_Prefix": "tn",
       "Assembly": "VS",
       "Min_Assembly":1,
-      "Max_Assembly" : 11,
+      "Max_Assembly" : 12,
       "Name": "Tamil Nadu Vidhan Sabha"
     },
     {
@@ -139,7 +139,7 @@
       "File_Prefix": "kl",
       "Assembly": "VS",
       "Min_Assembly":3,
-      "Max_Assembly" : 15,
+      "Max_Assembly" : 16,
       "Name": "Kerala Vidhan Sabha"
     },
     {
@@ -157,7 +157,7 @@
       "File_Prefix": "py",
       "Assembly": "VS",
       "Min_Assembly":1,
-      "Max_Assembly" : 13,
+      "Max_Assembly" : 14,
       "Name": "Puducherry Vidhan Sabha"
     },
     {
