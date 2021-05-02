@@ -9,7 +9,7 @@ library(dplyr)
 assemblies = fromJSON("assemblies.json")
 tcpd_git_link = "~/github/tcpd_data/data/"
 
-cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name", "Party", "Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
+cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name", "Party","Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
 
 createPartyExpanded = function(partyFile, outFilePre){
@@ -23,6 +23,9 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
 
   if("Age" %in% names(data)){
     cols_to_get = c(cols_to_get,"Age")
+  }
+  if("Alliance" %in% names(data)){
+    cols_to_get = c(cols_to_get,"Alliance")
   }
   #dt <- dt[dt$No_Mandates > 0]
   data <- data[Party != 'NOTA' , ]
