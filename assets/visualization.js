@@ -257,6 +257,7 @@ d3.csv(party_color_url, function(party_cols) {
 
 
 var partyNames =[];
+partyNames["Other"]= "Other parties"
 d3.csv(party_names_url, function(party_names) {
 	party_names.forEach(function(d){
 		partyNames[d.Party] = d.Expanded_Party_Name;
