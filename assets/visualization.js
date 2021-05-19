@@ -319,7 +319,8 @@ d3.csv(pids_url, function(pids_data) {
 				else numSeats[party] = 1;
 			}
 		});
-
+    var totalSeats = Object.values(numSeats).reduce((t, n) => t + n);
+    $('.totalSeats').html('Total Seats in Assembly : '+totalSeats);
 
     if(sum(numSeats)===0){
       allRows.forEach(function(data) {
