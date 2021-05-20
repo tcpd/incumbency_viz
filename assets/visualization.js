@@ -343,7 +343,7 @@ d3.csv(pids_url, function(pids_data) {
 			}
 		});
     var totalSeats = Object.values(numSeats).reduce((t, n) => t + n);
-    $('.totalSeats').html('Total Seats in Assembly (inclusive of any bye election): '+totalSeats);
+    $('.totalSeats').html('Total seats in assembly (inclusive of any bye-elections): '+totalSeats);
 
     if(sum(numSeats)===0){
       allRows.forEach(function(data) {
