@@ -12,6 +12,11 @@
     <script type="text/javascript" src="assets/d3-legend.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/GE.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Montserrat" rel="stylesheet">
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#PopUp").modal('show');
+    });
+    </script>
 </head>
 
 <body>
@@ -20,10 +25,57 @@
         <h1>Incumbency profile of the <span class="assembly-number"></span> <span class = "assembly-name"></span> <span class="year-of-election"></span></h1>
 
         <div class="help">
+            <!-- Trigger/Open The PopUp -->
+            <div class="pubtnd">
+            <button id="PopUpBtn" class="pubtn"><b>GUIDE</b></button>
+            </div>
 
-            <p>
-              <b>About this visualization:</b><i>Each box represents an <span class = "representative-name"></span> contesting in the elections to the Legislative House. The House and Assembly Number are to be selected by the user . The colour of the box indicates the previous party of the <span class = "representative-name"></span>, or the current party affiliation for first-time contesters. Only parties with more than 2% seats are shown; other parties are clubbed into "Other". Independent candidates are marked "IND". Hover on a box to see more details such as constituency, assembly #, year and position. Unsuccessful attempts are shown in grey. Change the Label settings to change the number displayed in each candidate box, like Total Number of assemblies which an <span class = "representative-name"></span> has contested or won, including the selected assembly. You can also change the Position setting to "All candidates" instead of just the winners. Squares indicate winners and circles indicate those who lost. To search for a person or constituency, type the name in the search box.
-              </i></p>
+            <!-- The PopUp -->
+            <div id="PopUp" class="modal">
+              <!-- PopUp content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2>About this Visualisation</h2>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Each box represents an MP / MLA contesting in the elections to the Legislative House. </li>
+                    <li>Squares indicate winners and circles indicate candidates who lost. </li>
+                    <li>The colour of the box indicates the previous party of the MP, or the current party affiliation for first-time contesters. </li>
+                    <li>For convenience of viewing, this tool displays data only for:
+                      <ul>
+                        <li>All candidates who came 1st or 2nd in the election, regardless of their party affiliation </li>
+                        <li>All candidates who belong to a party that won more than 2% seats of the seats (major parties), regardless of their position</li>
+                        <li>Or both</li>
+                      </ul>
+                    </li>
+                    <li>Candidates who came 1st or 2nd, but are not from a major party are put collectively in “Other Parties”</li>
+                    <li>To search for a person or constituency, type the name in the search box.</li>
+                    <li>The House and Assembly Number are to be selected by the user. </li>
+                    <li>Change the Label settings to change the number displayed in each candidate box, like Total Number of Assemblies which a candidate has contested or won.</li>
+                    <li>You can change the Position setting to "All candidates" instead of “Winners”. </li>        
+                    <li>Hover on a box to see more details such as constituency, assembly number, year and position. 
+                      <ul>
+                        <li>Each entry in the pop-up box, starting from the left, is to be read as follows - Constituency (Assembly Number, Year of Election) Party, Position.</li>
+                        <li>So for example, CHINDWARA(16a, 2014) INC, #1 is to be read as:
+                          <ul>
+                            <li>The constituency is Chindwara</li>
+                            <li>The election was held in the 16th Assembly</li>
+                            <li>The election was held in the year 2014</li>
+                            <li>The candidate ran on a ticket from the party INC</li>
+                            <li>The candidate placed #1 in the election</li>
+                          </ul>
+                        </li>
+                        <li>Unsuccessful attempts are shown in grey. </li>
+                      </ul>
+                        </li>
+                    <li>Independent candidates are marked "IND".</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>            
         </div>
 
         <div class="controls">
