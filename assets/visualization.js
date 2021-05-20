@@ -342,7 +342,8 @@ d3.csv(pids_url, function(pids_data) {
 				else numSeats[party] = 1;
 			}
 		});
-
+    var totalSeats = Object.values(numSeats).reduce((t, n) => t + n);
+    $('.totalSeats').html('Total Seats in Assembly (inclusive of any bye election): '+totalSeats);
 
     if(sum(numSeats)===0){
       allRows.forEach(function(data) {
@@ -702,7 +703,7 @@ d3.csv(pids_url, function(pids_data) {
 			var width = (SYMBOLS_PER_ROW + 1) * partywise.length * (Math.sqrt(symbolSize) + 3); // horizontal
 			var height = (TOP_MARGIN + MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW) * Math.sqrt(symbolSize);
 
-			var svg = d3.select('#viz').append('svg').attr('width', width + LEGEND_MARGIN).attr('height', height);
+			var svg = d3.select('#viz').append('svg').attr('width', width ).attr('height', height).attr('align','center');
 
 			//generate shapes for this col
 			var col = -SYMBOLS_PER_ROW;
