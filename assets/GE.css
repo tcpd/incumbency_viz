@@ -195,6 +195,7 @@ div.help {
 a.pubtna{
   text-decoration: underline;
   color:#D4122F!important;
+  cursor: pointer;
 }
 
 a.pubtna:hover{
