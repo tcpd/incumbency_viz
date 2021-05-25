@@ -335,16 +335,21 @@ d3.csv(pids_url, function(pids_data) {
 
     // # of seats won by party (all assemblies, not just the one being shown). This will be used for generating the sort order of parties.
 		var numSeats = { Other: 0 };
+    var totSeats = 0;
 		allRows.forEach(function(data) {
 			var party = data.Party;
 			if (data.Position === 1 && data.Assembly_No === assemblyNo) {
 				if (numSeats[party]) numSeats[party]++;
 				else numSeats[party] = 1;
+        if(data.Poll_No ===0 && (data.State_Name === assembly[0].State_Name || (assembly[0].Assembly ==="LS" && assembly[0].State_Name ==="All_States"))){
+          totSeats++;
+        }
+
 			}
 		});
 
-    //var totalElections = Object.values(numSeats).reduce((t, n) => t + n);
-    //$('.totalSeats').html('Total seats in assembly: '+totalSeats+' (Total elections including bye-elections: '+totalElections+')');
+    var totElections = Object.values(numSeats).reduce((t, n) => t + n);
+    $('.totalSeats').html(totSeats+" seats in the " + (assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th")) + " "+assembly[0].Name);//+' (Total elections including bye-elections: '+totElections+')');
 
     if(sum(numSeats)===0){
       allRows.forEach(function(data) {
@@ -553,7 +558,7 @@ d3.csv(pids_url, function(pids_data) {
 					filteredRows = filteredRows.filter(function(i) {
 						return i.Contested > 1;
 					});
-				} else if (turncoats === 'POLITICAL_CLASS') {
+				} else if (turncoats === 'STABLE_POLITICAL_CLASS') {
 					filteredRows = filteredRows.filter(function(i) {
 						return i.No_Mandates > 2;
 					});
@@ -590,10 +595,11 @@ d3.csv(pids_url, function(pids_data) {
           totalElections++;
   			}
   		});
-      var lab1 = wonlost==='1'?"seats":"candidates";
-      var lab2 = wonlost==='1'?"elections":"candidates";
+      var lab1 = wonlost==='1'?"seats won":"candidates";
+      var lab2 = wonlost==='1'?"winners":"candidates";
+      //var lab3 = turncoats === sex ? "": "("+sex.toLowerCase()+ " " +turncoats.toLowerCase().replaceAll("_", " ") +")";
       //$('.totalSeats').html('Total seats : '+totalSeats).tooltip({title: 'Total elections (including bye-elections) : '+totalElections, html: true, placement: "right"});
-      $('.totalSeats').html('Total '+lab1+' : '+totalSeats+ ' (Total '+lab2+' including bye-elections: '+totalElections+')');
+      $('.totalWinners').html('Total '+lab1+': '+totalSeats+ ' (Total '+lab2+' including bye-elections: '+totalElections+')');
       //$('.totalSeats').tooltip(html('(Total elections including bye-elections: '+totalElections+')'));
 
 

@@ -174,16 +174,17 @@
             </div>
 
             <div class="input-container">
-                <label sfor="turncoats">Experience</label>
+                <label sfor="turncoats">Electoral Experience</label>
                 <a class="infotooltip" href="#">
                 <img class="static" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg" alt="(i)" height="13" width="13"/>
                 <!--https://icon-library.net/images/italics-icon/italics-icon-13.jpg, https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg-->
                 <span class="custom info">
                     Filter for candidates based on their political history.<br><br>
-                    <em><b>Newcomers</b></em> :  Filter for only those candidates who have stood for elections for the first time<br><br>
-                    <em><b>Previously Contested</b></em> :  Filter for those candidates who have contested at least once before. In other words, filter for candidates who are not newcomers<br><br>
-                    <em><b>Stable political class</b></em> : Filter for those candidates who have served more than two terms.<br><br>
-                    <em><b>Turncoats</b></em> :  Filter for candidates who contested earlier from a different party.
+                    <em><b>Newcomers</b></em> :  Contested elections for the first time<br><br>
+                    <em><b>Rerunning Incumbents</b></em> :  Sitting MP/MLAs at the time of elections<br><br>
+                    <em><b>Previously Contested</b></em> :  Contested at least once before (candidates who are not newcomers)<br><br>
+                    <em><b>Stable political class</b></em> : Candidates who have served more than two terms<br><br>
+                    <em><b>Turncoats</b></em> :  Candidates who contested earlier from a different party.
                 </span>
                 </a>
                 <select class="select-turncoats" id="turncoats">
@@ -191,7 +192,7 @@
                     <option value="NEWCOMERS">Newcomers</option>
                     <option value="INCUMBENTS">Rerunning Incumbents</option>
                     <option value="PREVIOUSLY_CONTESTED">Previously Contested</option>
-                    <option value="POLITICAL_CLASS">Stable political class</option>
+                    <option value="STABLE_POLITICAL_CLASS">Stable political class</option>
                     <option value="TURNCOATS">Turncoats</option>
                 </select>
             </div>
@@ -216,8 +217,9 @@
         </div>
 
       <div id="Seats" align="center" >
-        <br>
         <span class = "totalSeats"></span>
+        <br>
+        <span class = "totalWinners"></span>
         <br>
         <br>
       </div>
