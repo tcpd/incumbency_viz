@@ -595,11 +595,11 @@ d3.csv(pids_url, function(pids_data) {
           totalElections++;
   			}
   		});
-      var lab1 = wonlost==='1'?"seats won":"candidates";
+      //var lab1 = wonlost==='1'?"seats won":"candidates";
       var lab2 = wonlost==='1'?"winners":"candidates";
       //var lab3 = turncoats === sex ? "": "("+sex.toLowerCase()+ " " +turncoats.toLowerCase().replaceAll("_", " ") +")";
       //$('.totalSeats').html('Total seats : '+totalSeats).tooltip({title: 'Total elections (including bye-elections) : '+totalElections, html: true, placement: "right"});
-      $('.totalWinners').html('Total '+lab1+': '+totalSeats+ ' (Total '+lab2+' including bye-elections: '+totalElections+')');
+      $('.totalWinners').html('Total '+lab2+': '+totalSeats+ ' (Including bye-elections: '+totalElections+')');
       //$('.totalSeats').tooltip(html('(Total elections including bye-elections: '+totalElections+')'));
 
 
@@ -908,12 +908,31 @@ d3.csv(pids_url, function(pids_data) {
 		};
 
 		// handle on click event
+		$('#search').keyup(function() {  
+		  // If value is not empty
+		  if ($(this).val().length == 0) {
+		    // Hide the element
+		    $('.show_hide').hide();
+		  } else {
+		    // Otherwise show it
+		    $('.show_hide').show();
+		  }
+		}).keyup();
+
+    $(".select-wonlost,.select-turncoats,.select-sex").change(function () {
+            if ($(".select-wonlost").val() != "1" || $(".select-turncoats").val() != "ALL" || $(".select-sex").val() != "ALL") {
+                $(".seat-info").show();
+            } else {
+                $(".seat-info").hide();
+            }
+    });
+
 		$('.select-assemblies,.select-label,.select-wonlost,.select-turncoats,.select-sex,.select-search').on(
 			'change',
 			refresh
 		);
 		$('.select-search').on('keyup', refresh);
-
 		refresh();
+    $(".seat-info").hide();
 	});
 });
