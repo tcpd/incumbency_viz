@@ -136,6 +136,21 @@
                 <select id="assemblies">
                 </select>
             </div>
+            <div class="input-container">
+                <label for="bye">Election Type</label>
+                <a class="infotooltip" href="#">
+                <img class="static" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg" alt="(i)" height="13" width="13"/>
+                <!--https://icon-library.net/images/italics-icon/italics-icon-13.jpg, https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg-->
+                <span class="custom info">
+                    Choose to include bye-elections or not.<br><br>
+                </span>
+                </a>
+                <select class="select-bye" id="bye">
+                    <option value="ALL" selected='selected'>All Elections</option>
+                    <option value="GEN">General Elections</option>
+                    <option value="BYE">Bye-Elections</option>
+                </select>
+            </div>
         </div>
         <div class="controls">
 
@@ -214,22 +229,45 @@
                     <option value="OTHER">Other</option>
                 </select>
             </div>
-
-        </div>
-        <div class="seat-info">
-            <span class = "totalWinners"></span>
-            <a class="infotooltip" href="#">
+            
+            <div class="input-container">
+                <label for="Res">Constituency Type</label>
+                <a class="infotooltip" href="#">
                 <img class="static" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg" alt="(i)" height="13" width="13"/>
                 <!--https://icon-library.net/images/italics-icon/italics-icon-13.jpg, https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg-->
                 <span class="custom info">
-                    <!--em>State</em-->This information is calculated on the selected filters.
+                    <!--em>State</em-->Filter by reserveration of constituency
                 </span>
                 </a>
+                <select class="select-res" id="res">
+                    <option value="ALL" selected='selected'>All</option>
+                    <option value="GEN">General</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                </select>
+            </div>
+
         </div>
+        <!--div class="seat-info">
+            <span class = "totalWinners"></span>
+            <a class="infotooltip" href="#">
+                <img class="static" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg" alt="(i)" height="13" width="13"/>
+                <span class="custom info">
+                </span>
+                </a>
+        </div-->
 
       <div id="Seats" align="center" >
         <br>
-        <span class = "totalSeats"></span>
+        <span class = "totalSeats"></span> <span class="year-of-election"></span>;
+        <span class = "totalWinners"></span>
+        <a class="infotooltip" href="#">
+            <img class="static" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg" alt="(i)" height="13" width="13"/>
+            <!--https://icon-library.net/images/italics-icon/italics-icon-13.jpg, https://upload.wikimedia.org/wikipedia/commons/2/25/Info_icon-72a7cf.svg-->
+            <span class="custom info">
+                <!--em>State</em-->This information is calculated on the selected filters.
+            </span>
+        </a>
         <br>
         <br>
       </div>

@@ -422,7 +422,7 @@ d3.csv(pids_url, function(pids_data) {
 			}
 		}
 
-		var generateViz = function(mydata, assemblyNo, labels, wonlost, turncoats, sex, searchTerm) {
+		var generateViz = function(mydata, assemblyNo, labels, wonlost, turncoats, sex, searchTerm, bye, res) {
 			function do_mouseover(d) {
 				var tooltip = d3.select('.tooltip');
 				tooltip.transition().duration(200).style('opacity', 1.0);
@@ -529,6 +529,7 @@ d3.csv(pids_url, function(pids_data) {
 			// get current assembly rows
 			var filteredRows;
 			{
+
         if(st=== "all"){
           filteredRows = mydata.filter(function(i) {
   					return i.Assembly_No === parseInt(assemblyNo);
@@ -537,6 +538,16 @@ d3.csv(pids_url, function(pids_data) {
           filteredRows = mydata.filter(function(i) {
   					return i.Assembly_No === parseInt(assemblyNo) && i.State_Name === assembly[0].State_Name;
   				});
+        }
+
+        if(bye==='GEN'){
+          filteredRows=filteredRows.filter(function(i){
+            return i.Poll_No===0;
+          });
+        } else if(bye==='BYE'){
+          filteredRows=filteredRows.filter(function(i){
+            return i.Poll_No>0;
+          });
         }
 
 
@@ -582,6 +593,12 @@ d3.csv(pids_url, function(pids_data) {
 					});
 				}
 
+        if(res!='ALL') {
+          filteredRows=filteredRows.filter(function(i){
+            return i.Constituency_Type===res;
+          });
+        }
+
 				LOG('filtered rows ' + filteredRows.length);
 			}
 
@@ -596,10 +613,12 @@ d3.csv(pids_url, function(pids_data) {
   			}
   		});
       //var lab1 = wonlost==='1'?"seats won":"candidates";
-      var lab2 = wonlost==='1'?"winners":"candidates";
+      //var lab2 = wonlost==='1'?"winners":"candidates";
+      var lab5 = wonlost==='1'?"Seats":"Candidates";
       //var lab3 = turncoats === sex ? "": "("+sex.toLowerCase()+ " " +turncoats.toLowerCase().replaceAll("_", " ") +")";
       //$('.totalSeats').html('Total seats : '+totalSeats).tooltip({title: 'Total elections (including bye-elections) : '+totalElections, html: true, placement: "right"});
-      $('.totalWinners').html('Total '+lab2+': '+totalSeats+ ' (Including bye-elections: '+totalElections+')');
+      //$('.totalWinners').html('Total '+lab2+': '+totalSeats+ ' (Including bye-elections: '+totalElections+')');
+      $('.totalWinners').html(lab5+' displayed: '+totalElections);
       //$('.totalSeats').tooltip(html('(Total elections including bye-elections: '+totalElections+')'));
 
 
@@ -902,9 +921,11 @@ d3.csv(pids_url, function(pids_data) {
 			var turncoats = $('.select-turncoats').val();
 			var sex = $('.select-sex').val();
 			var searchTerm = $('.select-search').val();
+      var bye = $('.select-bye').val();
+      var res=$('.select-res').val();
 			//d3.selectAll("svg").transition().duration(400).style("opacity", 0).remove();
 			d3.selectAll('svg').remove();
-			generateViz(allRows, assemblyNo, labels, wonlost, turncoats, sex, searchTerm,);
+			generateViz(allRows, assemblyNo, labels, wonlost, turncoats, sex, searchTerm, bye,res);
 		};
 
 		// handle on click event
@@ -927,7 +948,7 @@ d3.csv(pids_url, function(pids_data) {
             }
     });
 
-		$('.select-assemblies,.select-label,.select-wonlost,.select-turncoats,.select-sex,.select-search').on(
+		$('.select-assemblies,.select-label,.select-wonlost,.select-turncoats,.select-sex,.select-search,.select-bye,.select-res').on(
 			'change',
 			refresh
 		);
