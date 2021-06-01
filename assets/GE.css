@@ -68,7 +68,12 @@ h1{
 
 .controls {
   display: flex;
+}
 
+.seat-info{
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align:center;
 }
 
 .input-container {
@@ -189,7 +194,7 @@ div.help {
 }
 
 .pubtnd{
-  text-align: center;
+  text-align: center!important;
 }
 
 a.pubtna{
