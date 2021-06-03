@@ -299,3 +299,7 @@ a.infotooltip img.static {
     margin: 0;
     vertical-align: top;
 }
+
+.totalSeats{
+  color: #505050;
+}

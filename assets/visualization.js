@@ -349,7 +349,7 @@ d3.csv(pids_url, function(pids_data) {
 		});
 
     var totElections = Object.values(numSeats).reduce((t, n) => t + n);
-    $('.totalSeats').html(totSeats+" seats in the " + (assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th")) + " "+assembly[0].Name);//+' (Total elections including bye-elections: '+totElections+')');
+    $('.totalSeats').html(totSeats+" seats in the " + (assemblyNo == 1 ? "1st" :assemblyNo == 2 ? "2nd" :assemblyNo == 3 ? "3rd" : (assemblyNo + "th")) + " "+assembly[0].Name+' ('+yr+')');//+' (Total elections including bye-elections: '+totElections+')');
 
     if(sum(numSeats)===0){
       allRows.forEach(function(data) {
@@ -618,7 +618,7 @@ d3.csv(pids_url, function(pids_data) {
       //var lab3 = turncoats === sex ? "": "("+sex.toLowerCase()+ " " +turncoats.toLowerCase().replaceAll("_", " ") +")";
       //$('.totalSeats').html('Total seats : '+totalSeats).tooltip({title: 'Total elections (including bye-elections) : '+totalElections, html: true, placement: "right"});
       //$('.totalWinners').html('Total '+lab2+': '+totalSeats+ ' (Including bye-elections: '+totalElections+')');
-      $('.totalWinners').html(lab5+' displayed: '+totalElections);
+      $('.totalWinners').html(lab5+' displayed (based on selected filters): <b>'+totalElections+'</b>');
       //$('.totalSeats').tooltip(html('(Total elections including bye-elections: '+totalElections+')'));
 
 
