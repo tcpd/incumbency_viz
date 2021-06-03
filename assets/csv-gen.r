@@ -9,7 +9,7 @@ library(dplyr)
 assemblies = fromJSON("assemblies.json")
 tcpd_git_link = "~/github/tcpd_data/data/"
 
-cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name", "Party","Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
+cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name","Constituency_Type", "Party","Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
 
 createPartyExpanded = function(partyFile, outFilePre){
