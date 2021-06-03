@@ -746,12 +746,12 @@ d3.csv(pids_url, function(pids_data) {
 			}
 
 			var TOP_MARGIN = 30;
-			var LEGEND_MARGIN = 300; // in x dimension
+			var LEGEND_MARGIN = 100; // in x dimension
 
 			var width = (SYMBOLS_PER_ROW + 1) * partywise.length * (Math.sqrt(symbolSize) + 3); // horizontal
 			var height = (TOP_MARGIN + MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW) * Math.sqrt(symbolSize);
 
-			var svg = d3.select('#viz').append('svg').attr('width', width ).attr('height', height).attr('align','center');
+			var svg = d3.select('#viz').append('svg').attr('width', width + (wonlost === '2'?LEGEND_MARGIN:0) ).attr('height', height).attr('align','center');
 
 			//generate shapes for this col
 			var col = -SYMBOLS_PER_ROW;
@@ -929,7 +929,7 @@ d3.csv(pids_url, function(pids_data) {
 		};
 
 		// handle on click event
-		$('#search').keyup(function() {  
+		$('#search').keyup(function() {
 		  // If value is not empty
 		  if ($(this).val().length == 0) {
 		    // Hide the element
