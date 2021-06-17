@@ -1,4 +1,13 @@
 [{
+  "State_Name": "Jammu_&_Kashmir",
+  "State_Code": "JK",
+  "Assembly": "VS",
+  "File_Prefix": "jk",
+  "Min_Assembly":1,
+  "Max_Assembly" : 10,
+  "Name": "Jammu and Kashmir Vidhan Sabha"
+},
+{
   "State_Name": "West_Bengal",
   "State_Code": "WB",
   "Assembly": "VS",
