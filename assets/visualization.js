@@ -87,16 +87,21 @@ var pre = assembly[0].File_Prefix;
 var url = 'data/'+ pre+'-incumbency-' + assemblyNo + '.csv'; //change json source here
 
 // document.getElementById('downloadlink').href = url;
+if(assembly[0].State_Name==="Jammu_&_Kashmir"){
+	st_url="Jammu_%26_Kashmir";
+}else{
+	st_url=assembly[0].State_Name
+}
 
 if(et==="LS"){
   if(st==="all"){
     var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
   }else{
-    var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st="+assembly[0].State_Name+"&an="+assemblyNo;
+    var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st="+st_url+"&an="+assemblyNo;
   }
 
 }else{
-  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+assembly[0].State_Name+"&an="+assemblyNo;
+  var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+st_url+"&an="+assemblyNo;
 }
 
 document.getElementById('browselink').href = ld_url;
