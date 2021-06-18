@@ -240,7 +240,7 @@ data.sort(function(a,b){
 data.forEach(function(data, index) {
   if(data.Assembly === et){
     var opt = document.createElement('option');
-    opt.innerHTML = data.State_Name.replace("_"," ");
+    opt.innerHTML = data.State_Name.replaceAll("_"," ");
     opt.value = data.State_Code;
     if(data.State_Code=== st){
       opt.setAttribute("selected", "selected");
