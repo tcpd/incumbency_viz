@@ -375,3 +375,7 @@ img.logo {
   max-width: 15%;
   float: right;
 }
+
+h2.home{
+  text-align: left!important;
+}
