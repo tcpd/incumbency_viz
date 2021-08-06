@@ -1,4 +1,12 @@
 [{
+  "State_Name": "Gujarat",
+  "State_Code": "GJ",
+  "Assembly": "VS",
+  "File_Prefix": "gj",
+  "Min_Assembly":1,
+  "Max_Assembly" : 13,
+  "Name": "Gujarat Vidhan Sabha"
+},{
   "State_Name": "Jammu_&_Kashmir",
   "State_Code": "JK",
   "Assembly": "VS",
