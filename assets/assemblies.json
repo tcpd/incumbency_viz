@@ -1,4 +1,12 @@
 [{
+    "State_Name": "Rajasthan",
+    "State_Code": "RJ",
+    "Assembly": "VS",
+    "File_Prefix": "rj",
+    "Min_Assembly":3,
+    "Max_Assembly" : 15,
+    "Name": "Rajasthan Vidhan Sabha"
+  },{
   "State_Name": "Gujarat",
   "State_Code": "GJ",
   "Assembly": "VS",
