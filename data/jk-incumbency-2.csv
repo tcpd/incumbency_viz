@@ -1,7 +1,7 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
 AEJK104548,2,0,1967,M. M. SYEED,,Jammu_&_Kashmir,BIJIBEHARA,GEN,INC,,0,M,1,1,FALSE,FALSE,,0,,,,1,1
 AEJK104791,1,0,1962,SHAIK MOHAMMAD ABDULLAH,,Jammu_&_Kashmir,ZADIBAL,GEN,NC,,14093,M,1,2,FALSE,FALSE,83.76,11361,67.52,,,2,2
-AEJK104791,2,0,1967,S. ABDULLAH,,Jammu_&_Kashmir,ZADIBAL,GEN,JKN,NC,3599,M,1,2,TRUE,TRUE,52.1,1625,23.52,,,2,2
+AEJK104791,2,0,1967,S. ABDULLAH,,Jammu_&_Kashmir,ZADIBAL,GEN,JKN,NC,3599,M,1,2,FALSE,TRUE,52.1,1625,23.52,,,2,2
 AEJK105495,2,0,1967,M. YOUNAS,,Jammu_&_Kashmir,KARNAH,GEN,INC,,0,M,1,1,FALSE,FALSE,,0,,,,1,1
 AEJK105496,2,0,1967,M. S. TANTRAY,,Jammu_&_Kashmir,KUPWARA,GEN,INC,,0,M,1,1,FALSE,FALSE,,0,,,,1,1
 AEJK105499,2,0,1967,A. K. KHAN,,Jammu_&_Kashmir,BANDIPORA,GEN,JKN,,8288,M,2,1,FALSE,FALSE,37.36,7124,32.11,,,,1
