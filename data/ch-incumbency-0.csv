@@ -1,0 +1,6 @@
+pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
+,0,1,2001,Ajit Jogi,,Chhattisgarh,MARWAHI(ST),ST,INC,,71211,M,1,5,FALSE,FALSE,76.5,50758,54.53,,,1,1
+,0,1,2001,Amar Singh Khusro,,Chhattisgarh,MARWAHI(ST),ST,BJP,INC,20453,M,2,5,TRUE,FALSE,21.97,19546,21,,,1,1
+,0,1,2001,Deen Dayal Otti,,Chhattisgarh,MARWAHI(ST),ST,BSP,BJP,907,M,3,5,TRUE,FALSE,0.97,479,0.51,,,1,1
+,0,1,2001,Om Prakash Dhruw,,Chhattisgarh,MARWAHI(ST),ST,IND,BSP,428,M,4,5,FALSE,FALSE,0.46,343,0.37,,,1,1
+,0,1,2001,Govind,,Chhattisgarh,MARWAHI(ST),ST,IND,IND,85,M,5,5,FALSE,FALSE,0.09,0,0,,,1,1

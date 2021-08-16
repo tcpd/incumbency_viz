@@ -1,4 +1,20 @@
 [{
+    "State_Name": "Madhya_Pradesh",
+    "State_Code": "MP",
+    "Assembly": "VS",
+    "File_Prefix": "mp",
+    "Min_Assembly":3,
+    "Max_Assembly" : 15,
+    "Name": "Madhya Pradesh Vidhan Sabha"
+  },{
+    "State_Name": "Chhattisgarh",
+    "State_Code": "CH",
+    "Assembly": "VS",
+    "File_Prefix": "ch",
+    "Min_Assembly":1,
+    "Max_Assembly" : 4,
+    "Name": "Chhattisgarh Vidhan Sabha"
+  },{
     "State_Name": "Rajasthan",
     "State_Code": "RJ",
     "Assembly": "VS",
