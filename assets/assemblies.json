@@ -1,11 +1,19 @@
 [{
-    "State_Name": "Madhya_Pradesh",
-    "State_Code": "MP",
+    "State_Name": "Goa",
+    "State_Code": "GA",
     "Assembly": "VS",
-    "File_Prefix": "mp",
-    "Min_Assembly":3,
-    "Max_Assembly" : 15,
-    "Name": "Madhya Pradesh Vidhan Sabha"
+    "File_Prefix": "ga",
+    "Min_Assembly":1,
+    "Max_Assembly" : 7,
+    "Name": "Goa Vidhan Sabha"
+  },{
+    "State_Name": "Goa_Daman_&_Diu",
+    "State_Code": "GD",
+    "Assembly": "VS",
+    "File_Prefix": "gd",
+    "Min_Assembly":1,
+    "Max_Assembly" : 5,
+    "Name": "Goa Daman and Diu Vidhan Sabha"
   },{
     "State_Name": "Chhattisgarh",
     "State_Code": "CH",
