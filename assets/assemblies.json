@@ -1,4 +1,12 @@
 [{
+    "State_Name": "Himachal_Pradesh",
+    "State_Code": "HP",
+    "Assembly": "VS",
+    "File_Prefix": "hp",
+    "Min_Assembly":1,
+    "Max_Assembly" : 13,
+    "Name": "Himachal_Pradesh Vidhan Sabha"
+  },{
     "State_Name": "Punjab",
     "State_Code": "PB",
     "Assembly": "VS",
