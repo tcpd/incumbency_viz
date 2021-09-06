@@ -1,4 +1,12 @@
 [{
+    "State_Name": "Punjab",
+    "State_Code": "PB",
+    "Assembly": "VS",
+    "File_Prefix": "pb",
+    "Min_Assembly":3,
+    "Max_Assembly" : 15,
+    "Name": "Punjab Vidhan Sabha"
+  },{
     "State_Name": "Goa",
     "State_Code": "GA",
     "Assembly": "VS",
