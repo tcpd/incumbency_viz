@@ -5,7 +5,7 @@ library(data.table)
 library(jsonlite)
 library(readr)
 library(dplyr)
-
+args = commandArgs(TRUE)
 assemblies = fromJSON("assemblies.json")
 tcpd_git_link = "~/github/tcpd_data/data/"
 
@@ -70,7 +70,18 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
 }
 
 
-for(i in 1:nrow(assemblies)){
+
+if (length(args) > 0)  {
+  sts = which(assemblies$State_Code %in% args)
+  print(paste("Generating data for following state assemblies :",paste(assemblies$State_Name[sts],collapse = ", ")))
+  #stop ("Please provide 2 arguments:  Root directory of the  state name and the path to Vidhan Sabha number file.")
+}else if(length(args)==0){
+  sts = c(1:nrow(assemblies))
+  print("No Arguments given, generating data for all assemblies")
+}
+
+
+for(i in sts){
   state = assemblies[i,]
   assembly = state$State_Name
   outFilePre = state$File_Prefix
