@@ -1,4 +1,20 @@
 [{
+    "State_Name": "Uttar_Pradesh",
+    "State_Code": "UP",
+    "Assembly": "VS",
+    "File_Prefix": "up",
+    "Min_Assembly":3,
+    "Max_Assembly" : 17,
+    "Name": "Uttar Pradesh Vidhan Sabha"
+  },{
+      "State_Name": "Uttarakhand",
+      "State_Code": "UK",
+      "Assembly": "VS",
+      "File_Prefix": "uk",
+      "Min_Assembly":1,
+      "Max_Assembly" : 4,
+      "Name": "Uttarakhand Vidhan Sabha"
+    },{
     "State_Name": "Himachal_Pradesh",
     "State_Code": "HP",
     "Assembly": "VS",
