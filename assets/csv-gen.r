@@ -42,8 +42,8 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
 
     party_seat_count = dt[Assembly_No == assembly & Position == 1, .(count = .N), by='Party']
     winning_parties = party_seat_count$Party # only winning parties will have an entry in this table
-    this_assembly_pids = unique(dt[Assembly_No == assembly & ((Position < 2 & Party =='IND') | (Party != 'IND'))]$pid)
-
+    this_assembly_pids = unique(dt[Assembly_No == assembly ]$pid)
+    #& ((Position < 2 & Party =='IND') | (Party != 'IND'))
     print (paste("winning parties = ", winning_parties))
 
     dt = dt[pid %in% this_assembly_pids]
