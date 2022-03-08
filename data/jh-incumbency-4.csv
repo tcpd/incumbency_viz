@@ -1,14 +1,14 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
 ,3,1,2018,Babita Devi,,Jharkhand,GOMIYA,,JMM,,60552,,1,62,FALSE,FALSE,34.8,1341,0.77,,,2,2
-,3,1,2018,Lambodar Mahto,,Jharkhand,GOMIYA,,AJSUP,JMM,59211,,2,62,,FALSE,34.03,17173,9.87,,,2,2
-,3,1,2018,Madhav Lal Singh,,Jharkhand,GOMIYA,,BJP,AJSUP,42038,,3,62,,FALSE,24.16,38187,21.95,,,2,2
+,3,1,2018,Lambodar Mahto,,Jharkhand,GOMIYA,,AJSUP,JMM,59211,,2,62,TRUE,FALSE,34.03,17173,9.87,,,2,2
+,3,1,2018,Madhav Lal Singh,,Jharkhand,GOMIYA,,BJP,AJSUP,42038,,3,62,TRUE,FALSE,24.16,38187,21.95,,,2,2
 ,3,1,2018,Nikhil Kumar Soren,,Jharkhand,GOMIYA,,IND,BJP,1996,,5,62,FALSE,FALSE,1.15,573,0.33,,,2,2
 ,3,1,2018,HemLal Mahto,,Jharkhand,GOMIYA,,IND,IND,1423,,6,62,FALSE,FALSE,0.82,38,0.02,,,2,2
 ,3,1,2018,Umesh Kumr Mahto,,Jharkhand,GOMIYA,,JMM(Ulgulan),IND,1385,,7,62,FALSE,FALSE,0.8,499,0.29,,,2,2
 ,3,1,2018,Gautam Tiwari,,Jharkhand,GOMIYA,,IND,JMM(Ulgulan),886,,8,62,FALSE,FALSE,0.51,249,0.14,,,2,2
 ,3,1,2018,Dhananjay Kumar Prajapati,,Jharkhand,GOMIYA,,IND,IND,637,,9,62,FALSE,FALSE,0.37,43,0.02,,,2,2
 ,3,1,2018,Deonarayan Murmu,,Jharkhand,GOMIYA,,JDP,IND,594,,10,62,FALSE,FALSE,0.34,158,0.09,,,2,2
-,3,1,2018,Juli Devi,,Jharkhand,GOMIYA,,LJVM,JDP,436,,11,62,,FALSE,0.25,38,0.02,,,2,2
+,3,1,2018,Juli Devi,,Jharkhand,GOMIYA,,LJVM,JDP,436,,11,62,TRUE,FALSE,0.25,38,0.02,,,2,2
 ,3,1,2018,Tekochand Mahto,,Jharkhand,GOMIYA,,IND,LJVM,398,,12,62,FALSE,FALSE,0.23,84,0.05,,,2,2
 ,3,1,2018,MD. Sultan,,Jharkhand,GOMIYA,,RLSP,IND,314,,13,62,FALSE,FALSE,0.18,35,0.02,,,2,2
 ,3,1,2018,Khudi Ram Mahto,,Jharkhand,GOMIYA,,IND,RLSP,279,,14,62,FALSE,FALSE,0.16,0,0,,,2,2
@@ -22,13 +22,13 @@ pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Na
 ,3,1,2018,Deepak Kumar Manjhi,,Jharkhand,SILLI,,IND,JAP (L),236,,9,62,FALSE,FALSE,0.16,3,0,,,2,2
 ,3,1,2018,Dhanpati Mahto,,Jharkhand,SILLI,,IND,IND,233,,10,62,FALSE,FALSE,0.16,0,0,,,2,2
 ,3,1,2018,Sitaram Munda,,Jharkhand,SILLI,,JDP,IND,233,,11,62,FALSE,FALSE,0.16,0,0,,,2,2
-,3,1,2018,Naman Bixal Kongari,,Jharkhand,KOLEBIRA,ST,INC,JDP,40355,,1,62,,FALSE,33.93,9665,8.13,,,2,2
+,3,1,2018,Naman Bixal Kongari,,Jharkhand,KOLEBIRA,ST,INC,JDP,40355,,1,62,TRUE,FALSE,33.93,9665,8.13,,,2,2
 ,3,1,2018,Basant Soreng,,Jharkhand,KOLEBIRA,ST,BJP,INC,30690,,2,62,TRUE,FALSE,25.8,6888,5.79,,,2,2
-,3,1,2018,Anil Kandulna,,Jharkhand,KOLEBIRA,ST,RSP,BJP,23802,,3,62,,FALSE,20.01,7347,6.18,,,2,2
-,3,1,2018,Menon Ekka,,Jharkhand,KOLEBIRA,ST,Jharkhand Party,RSP,16455,,4,62,,FALSE,13.83,12503,10.51,,,2,2
+,3,1,2018,Anil Kandulna,,Jharkhand,KOLEBIRA,ST,RSP,BJP,23802,,3,62,TRUE,FALSE,20.01,7347,6.18,,,2,2
+,3,1,2018,Menon Ekka,,Jharkhand,KOLEBIRA,ST,Jharkhand Party,RSP,16455,,4,62,TRUE,FALSE,13.83,12503,10.51,,,2,2
 ,3,1,2018,Basant Dung-Dung,,Jharkhand,KOLEBIRA,ST,IND,Jharkhand Party,3952,,5,62,FALSE,FALSE,3.32,257,0.22,,,2,2
 ,4,1,2020,BASANT SOREN,ST,Jharkhand,DUMKA,ST,JMM,IND,80559,MALE,1,62,FALSE,FALSE,48.79,6842,4.14,41,,2,2
-,4,1,2020,LOIS MARANDI,ST,Jharkhand,DUMKA,ST,BJP,JMM,73717,FEMALE,2,62,,FALSE,44.65,70052,42.43,55,,2,2
+,4,1,2020,LOIS MARANDI,ST,Jharkhand,DUMKA,ST,BJP,JMM,73717,FEMALE,2,62,TRUE,FALSE,44.65,70052,42.43,55,,2,2
 ,4,1,2020,SUNITA MURMU,ST,Jharkhand,DUMKA,ST,IND,BJP,1864,FEMALE,4,62,FALSE,FALSE,1.13,366,0.22,33,,2,2
 ,4,1,2020,DULAR MARANDI,ST,Jharkhand,DUMKA,ST,Ambedkarite Party of India,IND,1498,FEMALE,5,62,FALSE,FALSE,0.91,660,0.4,25,,2,2
 ,4,1,2020,SANJAY TUDU,ST,Jharkhand,DUMKA,ST,IND,Ambedkarite Party of India,838,MALE,6,62,FALSE,FALSE,0.51,229,0.14,32,,2,2
@@ -40,23 +40,23 @@ pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Na
 ,4,1,2020,JAGARNATH PUJHAR,ST,Jharkhand,DUMKA,ST,IND,IND,354,MALE,12,62,FALSE,FALSE,0.21,135,0.08,39,,2,2
 ,4,1,2020,PRADIP TUDU,ST,Jharkhand,DUMKA,ST,IND,IND,219,MALE,13,62,FALSE,FALSE,0.13,0,0,25,,2,2
 ,4,1,2020,Kumar Jaimangal (Anup Singh),GENERAL,Jharkhand,BERMO,GEN,INC,IND,94022,MALE,1,62,FALSE,FALSE,49.36,14225,7.47,35,,2,2
-,4,1,2020,"Yogeshwar Mahto """"""""""""""""""""""""""""""""Batul""""""""""""""""""""""""""""""""",GENERAL,Jharkhand,BERMO,GEN,BJP,INC,79797,MALE,2,62,,FALSE,41.89,75516,39.64,65,,2,2
-,4,1,2020,Lal Chand Mahto,GENERAL,Jharkhand,BERMO,GEN,BSP,BJP,4281,MALE,3,62,,FALSE,2.25,1638,0.86,65,,2,2
-,4,1,2020,Baidya Nath Mahto,GENERAL,Jharkhand,BERMO,GEN,CPI,BSP,2643,MALE,4,62,,FALSE,1.39,103,0.05,64,,2,2
+,4,1,2020,"Yogeshwar Mahto """"""""""""""""""""""""""""""""Batul""""""""""""""""""""""""""""""""",GENERAL,Jharkhand,BERMO,GEN,BJP,INC,79797,MALE,2,62,TRUE,FALSE,41.89,75516,39.64,65,,2,2
+,4,1,2020,Lal Chand Mahto,GENERAL,Jharkhand,BERMO,GEN,BSP,BJP,4281,MALE,3,62,TRUE,FALSE,2.25,1638,0.86,65,,2,2
+,4,1,2020,Baidya Nath Mahto,GENERAL,Jharkhand,BERMO,GEN,CPI,BSP,2643,MALE,4,62,TRUE,FALSE,1.39,103,0.05,64,,2,2
 ,4,1,2020,Sunita Tudu,ST,Jharkhand,BERMO,GEN,IND,CPI,2540,FEMALE,5,62,FALSE,FALSE,1.33,432,0.23,35,,2,2
 ,4,1,2020,Dwarka Prasad Lala,GENERAL,Jharkhand,BERMO,GEN,IND,IND,1439,MALE,7,62,FALSE,FALSE,0.76,854,0.45,69,,2,2
 ,4,1,2020,Sameer Kumar Das,SC,Jharkhand,BERMO,GEN,IND,IND,585,MALE,8,62,FALSE,FALSE,0.31,46,0.02,46,,2,2
 ,4,1,2020,Dinesh Kumar Munda,ST,Jharkhand,BERMO,GEN,IND,IND,539,MALE,9,62,FALSE,FALSE,0.28,137,0.07,38,,2,2
 ,4,1,2020,Sujit Kumar Barnwal,GENERAL,Jharkhand,BERMO,GEN,Right to Recall Party,IND,402,MALE,10,62,FALSE,FALSE,0.21,17,0.01,30,,2,2
-,4,1,2020,Shankar Ghasi,GENERAL,Jharkhand,BERMO,GEN,Marxist Co-Ordination,Right to Recall Party,385,MALE,11,62,,FALSE,0.2,0,0,46,,2,2
-,4,1,2020,Kaleshwar Ravidas,SC,Jharkhand,BERMO,GEN,Republican Party of India (A),Marxist Co-Ordination,385,MALE,12,62,,FALSE,0.2,70,0.04,33,,2,2
+,4,1,2020,Shankar Ghasi,GENERAL,Jharkhand,BERMO,GEN,Marxist Co-Ordination,Right to Recall Party,385,MALE,11,62,TRUE,FALSE,0.2,0,0,46,,2,2
+,4,1,2020,Kaleshwar Ravidas,SC,Jharkhand,BERMO,GEN,Republican Party of India (A),Marxist Co-Ordination,385,MALE,12,62,TRUE,FALSE,0.2,70,0.04,33,,2,2
 ,4,1,2020,Kailash Chandra Mahto,GENERAL,Jharkhand,BERMO,GEN,IND,Republican Party of India (A),315,MALE,13,62,FALSE,FALSE,0.17,6,0,62,,2,2
 ,4,1,2020,Khirodhar Kisku,ST,Jharkhand,BERMO,GEN,IND,IND,309,MALE,14,62,FALSE,FALSE,0.16,28,0.01,30,,2,2
 ,4,1,2020,Ajay Renjan,GENERAL,Jharkhand,BERMO,GEN,IND,IND,281,MALE,15,62,FALSE,FALSE,0.15,4,0,34,,2,2
 ,4,1,2020,Baijnath Gorain,GENERAL,Jharkhand,BERMO,GEN,Peoples Party of India (Democratic),IND,277,MALE,16,62,FALSE,FALSE,0.15,87,0.05,45,,2,2
-,4,1,2020,Pankaj Prasad,GENERAL,Jharkhand,BERMO,GEN,Rashtriya Jansangharsh Swaraj Party,Peoples Party of India (Democratic),190,MALE,17,62,,FALSE,0.1,0,0,40,,2,2
-,4,1,2021,HAFIZUL HASSAN,GENERAL,Jharkhand,MADHUPUR,GEN,JMM,Rashtriya Jansangharsh Swaraj Party,110812,male,1,62,,FALSE,48,5247,2.27,46,,2,2
-,4,1,2021,GANGA NARAYAN SINGH,GENERAL,Jharkhand,MADHUPUR,GEN,BJP,JMM,105565,male,2,62,,FALSE,45.73,100442,43.51,42,,2,2
+,4,1,2020,Pankaj Prasad,GENERAL,Jharkhand,BERMO,GEN,Rashtriya Jansangharsh Swaraj Party,Peoples Party of India (Democratic),190,MALE,17,62,TRUE,FALSE,0.1,0,0,40,,2,2
+,4,1,2021,HAFIZUL HASSAN,GENERAL,Jharkhand,MADHUPUR,GEN,JMM,Rashtriya Jansangharsh Swaraj Party,110812,male,1,62,TRUE,FALSE,48,5247,2.27,46,,2,2
+,4,1,2021,GANGA NARAYAN SINGH,GENERAL,Jharkhand,MADHUPUR,GEN,BJP,JMM,105565,male,2,62,TRUE,FALSE,45.73,100442,43.51,42,,2,2
 ,4,1,2021,ASHOK KUMAR THAKUR,GENERAL,Jharkhand,MADHUPUR,GEN,IND,BJP,3924,male,4,62,FALSE,FALSE,1.7,1515,0.66,55,,2,2
 ,4,1,2021,RAJENDRA KUMAR,GENERAL,Jharkhand,MADHUPUR,GEN,IND,IND,2409,male,5,62,FALSE,FALSE,1.04,406,0.18,36,,2,2
 ,4,1,2021,UTTAM KUMAR YADAV,GENERAL,Jharkhand,MADHUPUR,GEN,IND,IND,2003,male,6,62,FALSE,FALSE,0.87,970,0.42,30,,2,2

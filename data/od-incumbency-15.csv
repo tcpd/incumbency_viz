@@ -1,10 +1,10 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
 ,15,1,2018,Rita Sahu,,Odisha,BIJEPUR,,BJD,,102871,,2,13,FALSE,FALSE,56.61,41932,23.08,,,,1
-,15,1,2018,Ashok Kumar Panigrahy,,Odisha,BIJEPUR,,BJP,BJD,60939,,3,13,,FALSE,33.54,0,0,,,,1
-,15,1,2018,Pranaya Kumar Sahu,,Odisha,BIJEPUR,,INC,BJP,10274,,5,13,,FALSE,5.65,0,0,,,,1
+,15,1,2018,Ashok Kumar Panigrahy,,Odisha,BIJEPUR,,BJP,BJD,60939,,3,13,TRUE,FALSE,33.54,0,0,,,,1
+,15,1,2018,Pranaya Kumar Sahu,,Odisha,BIJEPUR,,INC,BJP,10274,,5,13,TRUE,FALSE,5.65,0,0,,,,1
 ,15,1,2018,Ratha Xalxo,,Odisha,BIJEPUR,,IND,INC,981,,11,13,FALSE,FALSE,0.54,40,0.02,,,,1
 ,15,1,2018,Purnachandra Paik,,Odisha,BIJEPUR,,API,IND,941,,12,13,FALSE,FALSE,0.52,36,0.02,,,,1
-,15,1,2018,Demahari Harpal,,Odisha,BIJEPUR,,RPI(A),API,905,,13,13,,FALSE,0.5,261,0.14,,,,1
+,15,1,2018,Demahari Harpal,,Odisha,BIJEPUR,,RPI(A),API,905,,13,13,TRUE,FALSE,0.5,261,0.14,,,,1
 ,15,1,2018,Rajendra Puruhit,,Odisha,BIJEPUR,,IND,RPI(A),644,,14,13,FALSE,FALSE,0.35,101,0.06,,,,1
 ,15,1,2018,Chudamani Keshari,,Odisha,BIJEPUR,,IND,IND,543,,15,13,FALSE,FALSE,0.3,37,0.02,,,,1
 ,15,1,2018,Kumer Jal Yadav,,Odisha,BIJEPUR,,IND,IND,506,,16,13,FALSE,FALSE,0.28,50,0.03,,,,1
