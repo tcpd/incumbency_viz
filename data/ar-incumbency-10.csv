@@ -1,4 +1,6 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
+,10,1,2019,Smt. Chakat Aboh,ST,Arunachal_Pradesh,KHONSA WEST,ST,IND,,5705,FEMALE,1,2,FALSE,FALSE,59.14,1887,19.56,42,,1,1
+,10,1,2019,Shri Azet Homtok,ST,Arunachal_Pradesh,KHONSA WEST,ST,IND,IND,3818,MALE,2,2,FALSE,FALSE,39.58,3694,38.29,41,,1,1
 AEAR100000,10,0,2019,Nabam Rana,ST,Arunachal_Pradesh,DOIMUKH,ST,INC,,1623,M,3,1,FALSE,FALSE,10.02,1476,9.12,52,,,1
 AEAR100005,6,0,1999,WANGLIN LOWANGDONG,,Arunachal_Pradesh,BORDURIA- BAGAPANI,ST,IND,,2276,M,2,5,FALSE,FALSE,49.86,0,0,,,4,5
 AEAR100005,7,0,2004,WANGLIN LOWANGDONG,ST,Arunachal_Pradesh,BORDURIA- BOGAPANI,ST,IND,IND,2909,M,1,5,FALSE,FALSE,59.51,930,19.03,48,,4,5

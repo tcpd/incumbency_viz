@@ -1,4 +1,36 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
+,12,1,2018,Vishwajeet Patungrao Kadam,,Maharashtra,PALUS-KADEGAON,,Congress,,0,,1,32,FALSE,FALSE,,0,,,,2,2
+,13,1,2021,Antapurkar Jitesh Raosaheb,SC,Maharashtra,DEGLUR,SC,INC,Congress,108840,male,1,32,TRUE,FALSE,57.03,41933,21.97,32,,2,2
+,13,1,2021,Sabne Subhash Pirajirao,SC,Maharashtra,DEGLUR,SC,BJP,INC,66907,male,2,32,TRUE,FALSE,35.06,55559,29.11,51,,2,2
+,13,1,2021,Uttam Ramrao Ingole,SC,Maharashtra,DEGLUR,SC,Vanchit Bahujan Aaghadi,BJP,11348,male,3,32,TRUE,FALSE,5.95,10245,5.37,51,,2,2
+,13,1,2021,Waghmare Vimal Baburao,SC,Maharashtra,DEGLUR,SC,IND,Vanchit Bahujan Aaghadi,496,female,5,32,FALSE,FALSE,0.26,10,0.01,44,,2,2
+,13,1,2021,Comrade Prof.Sadashiv Rajaram Bhuyare,SC,Maharashtra,DEGLUR,SC,IND,IND,486,male,6,32,FALSE,FALSE,0.25,19,0.01,39,,2,2
+,13,1,2021,Kerurkar Vivek Pundlikrao,SC,Maharashtra,DEGLUR,SC,JD(S),IND,467,male,7,32,FALSE,FALSE,0.24,193,0.1,49,,2,2
+,13,1,2021,Bhagwan Govindrao Kandhare,SC,Maharashtra,DEGLUR,SC,IND,JD(S),274,male,8,32,FALSE,FALSE,0.14,31,0.02,43,,2,2
+,13,1,2021,Maroti Laxman Sonkamble,SC,Maharashtra,DEGLUR,SC,IND,IND,243,male,9,32,FALSE,FALSE,0.13,28,0.01,38,,2,2
+,13,1,2021,D. D.Waghmare,SC,Maharashtra,DEGLUR,SC,Republican Party of India (Khobragade),IND,215,male,10,32,FALSE,FALSE,0.11,32,0.02,60,,2,2
+,13,1,2021,Gajbhare Sahebrao Bhiwa,SC,Maharashtra,DEGLUR,SC,IND,Republican Party of India (Khobragade),183,male,11,32,FALSE,FALSE,0.1,28,0.01,47,,2,2
+,13,1,2021,Prof. Parmeshwar Shivdas Waghmare,SC,Maharashtra,DEGLUR,SC,Bahujan Bharat Party,IND,155,male,12,32,FALSE,FALSE,0.08,12,0.01,39,,2,2
+,13,1,2021,Arun Kondibarao Dapkekar,SC,Maharashtra,DEGLUR,SC,IND,Bahujan Bharat Party,143,male,13,32,FALSE,FALSE,0.07,0,0,58,,2,2
+,13,1,2021,Autade Samadhan Mahadev,GENERAL,Maharashtra,PANDHARPUR,GEN,BJP,IND,109450,male,1,32,FALSE,FALSE,48.15,3733,1.64,44,,2,2
+,13,1,2021,Bhalke Bhagirath Bharat,GENERAL,Maharashtra,PANDHARPUR,GEN,NCP,BJP,105717,male,2,32,TRUE,FALSE,46.51,102762,45.21,33,,2,2
+,13,1,2021,Autade Sidheshwar Baban,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,NCP,2955,male,3,32,FALSE,FALSE,1.3,1348,0.59,32,,2,2
+,13,1,2021,Godase Shaila Dhananjay,GENERAL,Maharashtra,PANDHARPUR,GEN,BVA,IND,1607,female,4,32,FALSE,FALSE,0.71,411,0.18,45,,2,2
+,13,1,2021,Birappa Madhukar Mote,GENERAL,Maharashtra,PANDHARPUR,GEN,Vanchit Bahujan Aaghadi,BVA,1196,male,5,32,TRUE,FALSE,0.53,169,0.07,31,,2,2
+,13,1,2021,Sachin Arun Shinde,GENERAL,Maharashtra,PANDHARPUR,GEN,SWP,Vanchit Bahujan Aaghadi,1027,male,6,32,TRUE,FALSE,0.45,178,0.08,31,,2,2
+,13,1,2021,Sudarshan Pandurang Masure,SC,Maharashtra,PANDHARPUR,GEN,IND,SWP,849,male,7,32,FALSE,FALSE,0.37,81,0.04,38,,2,2
+,13,1,2021,Sunil Suresh Gore,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,IND,768,male,8,32,FALSE,FALSE,0.34,39,0.02,33,,2,2
+,13,1,2021,Mane Santosh Mahadeo,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,IND,729,male,9,32,FALSE,FALSE,0.32,130,0.06,30,,2,2
+,13,1,2021,Sandip Janardan Kharat,SC,Maharashtra,PANDHARPUR,GEN,IND,IND,500,male,11,32,FALSE,FALSE,0.22,31,0.01,42,,2,2
+,13,1,2021,Aware Siddheshwar Bharat,GENERAL,Maharashtra,PANDHARPUR,GEN,Bahujan Maha Party,IND,469,male,12,32,FALSE,FALSE,0.21,57,0.03,30,,2,2
+,13,1,2021,Birudev Sukhdev Papare,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,Bahujan Maha Party,412,male,13,32,FALSE,FALSE,0.18,140,0.06,37,,2,2
+,13,1,2021,Mane Sanjay Nagnath,GENERAL,Maharashtra,PANDHARPUR,GEN,Maharashtra Vikas Aghadi,IND,272,male,14,32,FALSE,FALSE,0.12,66,0.03,34,,2,2
+,13,1,2021,Nagesh Prakash Pawar,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,Maharashtra Vikas Aghadi,206,male,15,32,FALSE,FALSE,0.09,69,0.03,36,,2,2
+,13,1,2021,Abhijeet Wamanrao Bichukale,SC,Maharashtra,PANDHARPUR,GEN,IND,IND,137,male,16,32,FALSE,FALSE,0.06,1,0,45,,2,2
+,13,1,2021,Adv. Sitaram Maruti Sonvale,SC,Maharashtra,PANDHARPUR,GEN,Bahujan Mukti Party,IND,136,male,17,32,FALSE,FALSE,0.06,22,0.01,55,,2,2
+,13,1,2021,Khandare Sudarshan Raychand,GENERAL,Maharashtra,PANDHARPUR,GEN,IND,Bahujan Mukti Party,114,male,18,32,FALSE,FALSE,0.05,20,0.01,35,,2,2
+,13,1,2021,Kapil Shankar Koli,ST,Maharashtra,PANDHARPUR,GEN,IND,IND,94,male,19,32,FALSE,FALSE,0.04,25,0.01,39,,2,2
+,13,1,2021,Dr. Rajaram Kondiba Bhosale,SC,Maharashtra,PANDHARPUR,GEN,Baliraja Party,IND,69,male,20,32,FALSE,FALSE,0.03,0,0,43,,2,2
 AEMH100252,8,0,1995,BHUMRE SANDIPANRAO ASARAM,,Maharashtra,PAITHAN,GEN,SHS,,43802,M,1,6,FALSE,FALSE,39.05,18233,16.26,,,5,6
 AEMH100252,9,0,1999,BHUMARE SANDIPANRAO ASARAM,,Maharashtra,PAITHAN,GEN,SHS,SHS,48266,M,1,6,FALSE,TRUE,48.71,21917,22.12,,,5,6
 AEMH100252,10,0,2004,BHUMARE SANDIPANRAO ASARAM,GEN,Maharashtra,P.AITHAN,GEN,SHS,SHS,48462,M,1,6,FALSE,TRUE,39.68,5126,4.2,42,,5,6

@@ -1,4 +1,5 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
+,12,1,2018,Vishwajeet Patungrao Kadam,,Maharashtra,PALUS-KADEGAON,,Congress,,0,,1,1,FALSE,FALSE,,0,,,,1,1
 AEMH100024,7,0,1990,LAHANE HARIBHAN VITHALRAO,,Maharashtra,PATHRI,GEN,SHS,,37437,M,1,6,FALSE,FALSE,42.83,14717,16.84,,,3,6
 AEMH100024,8,0,1995,LAHANE HARIBHAU VITHALRAO,,Maharashtra,PATHRI,GEN,SHS,SHS,42598,M,1,6,FALSE,TRUE,39.21,17865,16.45,,,3,6
 AEMH100024,9,0,1999,LAHANE HARIBHAU VITHALRAO,,Maharashtra,PATHRI,GEN,SHS,SHS,39242,M,1,6,FALSE,TRUE,39.06,6891,6.86,,,3,6

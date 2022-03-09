@@ -1,4 +1,32 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
+,3,1,2018,Babita Devi,,Jharkhand,GOMIYA,,JMM,,60552,,1,28,FALSE,FALSE,34.8,1341,0.77,,,1,1
+,3,1,2018,Lambodar Mahto,,Jharkhand,GOMIYA,,AJSUP,JMM,59211,,2,28,TRUE,FALSE,34.03,17173,9.87,,,1,1
+,3,1,2018,Madhav Lal Singh,,Jharkhand,GOMIYA,,BJP,AJSUP,42038,,3,28,TRUE,FALSE,24.16,38187,21.95,,,1,1
+,3,1,2018,Nikhil Kumar Soren,,Jharkhand,GOMIYA,,IND,BJP,1996,,5,28,FALSE,FALSE,1.15,573,0.33,,,1,1
+,3,1,2018,HemLal Mahto,,Jharkhand,GOMIYA,,IND,IND,1423,,6,28,FALSE,FALSE,0.82,38,0.02,,,1,1
+,3,1,2018,Umesh Kumr Mahto,,Jharkhand,GOMIYA,,JMM(Ulgulan),IND,1385,,7,28,FALSE,FALSE,0.8,499,0.29,,,1,1
+,3,1,2018,Gautam Tiwari,,Jharkhand,GOMIYA,,IND,JMM(Ulgulan),886,,8,28,FALSE,FALSE,0.51,249,0.14,,,1,1
+,3,1,2018,Dhananjay Kumar Prajapati,,Jharkhand,GOMIYA,,IND,IND,637,,9,28,FALSE,FALSE,0.37,43,0.02,,,1,1
+,3,1,2018,Deonarayan Murmu,,Jharkhand,GOMIYA,,JDP,IND,594,,10,28,FALSE,FALSE,0.34,158,0.09,,,1,1
+,3,1,2018,Juli Devi,,Jharkhand,GOMIYA,,LJVM,JDP,436,,11,28,TRUE,FALSE,0.25,38,0.02,,,1,1
+,3,1,2018,Tekochand Mahto,,Jharkhand,GOMIYA,,IND,LJVM,398,,12,28,FALSE,FALSE,0.23,84,0.05,,,1,1
+,3,1,2018,MD. Sultan,,Jharkhand,GOMIYA,,RLSP,IND,314,,13,28,FALSE,FALSE,0.18,35,0.02,,,1,1
+,3,1,2018,Khudi Ram Mahto,,Jharkhand,GOMIYA,,IND,RLSP,279,,14,28,FALSE,FALSE,0.16,0,0,,,1,1
+,3,1,2018,Seema Devi,,Jharkhand,SILLI,,JMM,IND,77129,,1,28,FALSE,FALSE,52.28,13510,9.16,,,1,1
+,3,1,2018,Sudesh Kumar Mahto,,Jharkhand,SILLI,,AP,JMM,63619,,2,28,TRUE,FALSE,43.13,61262,41.53,,,1,1
+,3,1,2018,Amit Singh Munda,,Jharkhand,SILLI,,IND,AP,1239,,4,28,FALSE,FALSE,0.84,191,0.13,,,1,1
+,3,1,2018,Seema Devi,,Jharkhand,SILLI,,IND,IND,1048,,5,28,FALSE,FALSE,0.71,239,0.16,,,1,1
+,3,1,2018,Jyoti Prasad,,Jharkhand,SILLI,,RLSP,IND,809,,6,28,FALSE,FALSE,0.55,477,0.32,,,1,1
+,3,1,2018,Lalchan Mahto,,Jharkhand,SILLI,,IND,RLSP,332,,7,28,FALSE,FALSE,0.23,50,0.03,,,1,1
+,3,1,2018,Sanjay Prasad Yadav,,Jharkhand,SILLI,,JAP (L),IND,282,,8,28,FALSE,FALSE,0.19,46,0.03,,,1,1
+,3,1,2018,Deepak Kumar Manjhi,,Jharkhand,SILLI,,IND,JAP (L),236,,9,28,FALSE,FALSE,0.16,3,0,,,1,1
+,3,1,2018,Dhanpati Mahto,,Jharkhand,SILLI,,IND,IND,233,,10,28,FALSE,FALSE,0.16,0,0,,,1,1
+,3,1,2018,Sitaram Munda,,Jharkhand,SILLI,,JDP,IND,233,,11,28,FALSE,FALSE,0.16,0,0,,,1,1
+,3,1,2018,Naman Bixal Kongari,,Jharkhand,KOLEBIRA,ST,INC,JDP,40355,,1,28,TRUE,FALSE,33.93,9665,8.13,,,1,1
+,3,1,2018,Basant Soreng,,Jharkhand,KOLEBIRA,ST,BJP,INC,30690,,2,28,TRUE,FALSE,25.8,6888,5.79,,,1,1
+,3,1,2018,Anil Kandulna,,Jharkhand,KOLEBIRA,ST,RSP,BJP,23802,,3,28,TRUE,FALSE,20.01,7347,6.18,,,1,1
+,3,1,2018,Menon Ekka,,Jharkhand,KOLEBIRA,ST,Jharkhand Party,RSP,16455,,4,28,TRUE,FALSE,13.83,12503,10.51,,,1,1
+,3,1,2018,Basant Dung-Dung,,Jharkhand,KOLEBIRA,ST,IND,Jharkhand Party,3952,,5,28,FALSE,FALSE,3.32,257,0.22,,,1,1
 AEBH104264,1,0,2005,LALCHAND MAHTO,GEN,Jharkhand,DUMRI,GEN,RJD,,23774,M,2,3,FALSE,FALSE,23.58,6803,6.75,45,,,3
 AEBH104264,2,0,2009,LALCHAND MAHTO,GEN,Jharkhand,DUMRI,GEN,IND,RJD,19084,M,3,3,FALSE,FALSE,19.26,15184,15.32,55,,,3
 AEBH104264,3,0,2014,LALCHAND MAHTO,GEN,Jharkhand,DUMRI,GEN,BJP,IND,45503,M,2,3,FALSE,FALSE,26.29,28773,16.62,62,,,3

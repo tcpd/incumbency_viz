@@ -4,7 +4,7 @@
     "Assembly": "VS",
     "File_Prefix": "up",
     "Min_Assembly":3,
-    "Max_Assembly" : 17,
+    "Max_Assembly" : 18,
     "Name": "Uttar Pradesh Vidhan Sabha"
   },{
       "State_Name": "Uttarakhand",
@@ -12,7 +12,7 @@
       "Assembly": "VS",
       "File_Prefix": "uk",
       "Min_Assembly":1,
-      "Max_Assembly" : 4,
+      "Max_Assembly" : 5,
       "Name": "Uttarakhand Vidhan Sabha"
     },{
     "State_Name": "Himachal_Pradesh",
@@ -28,7 +28,7 @@
     "Assembly": "VS",
     "File_Prefix": "pb",
     "Min_Assembly":3,
-    "Max_Assembly" : 15,
+    "Max_Assembly" : 16,
     "Name": "Punjab Vidhan Sabha"
   },{
     "State_Name": "Goa",
@@ -36,7 +36,7 @@
     "Assembly": "VS",
     "File_Prefix": "ga",
     "Min_Assembly":1,
-    "Max_Assembly" : 7,
+    "Max_Assembly" : 8,
     "Name": "Goa Vidhan Sabha"
   },{
     "State_Name": "Goa_Daman_&_Diu",
@@ -175,7 +175,7 @@
   "File_Prefix": "mn",
   "Assembly": "VS",
   "Min_Assembly":1,
-  "Max_Assembly" : 12,
+  "Max_Assembly" : 13,
   "Name": "Manipur Vidhan Sabha"
 },
 {
