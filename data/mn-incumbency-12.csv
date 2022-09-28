@@ -1,9 +1,4 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
-,12,1,2020,NOTA,,Manipur,WANGOI,GEN,nan,,96,,4,5,FALSE,FALSE,0.35,0,0,,,,1
-,12,1,2020,NOTA,,Manipur,LILONG,GEN,nan,nan,153,,3,5,FALSE,FALSE,0.49,11,0.03,,,,1
-,12,1,2020,NOTA,,Manipur,WANGJING TENTHA,GEN,nan,nan,159,,4,5,FALSE,FALSE,0.54,0,0,,,,1
-,12,1,2020,NOTA,,Manipur,SAITU,GEN,nan,nan,117,,3,5,FALSE,FALSE,0.32,0,0,,,,1
-,12,1,2020,NOTA,,Manipur,SINGHAT,GEN,nan,nan,0,,2,5,FALSE,FALSE,,0,,,,,1
 AEMN197746,10,1,2007,Thokehom Lokeshwar Singh,,Manipur,Khundrakpam,GEN,INC,,9570,M,1,3,FALSE,FALSE,45.48,2168,10.3,,,3,3
 AEMN197746,11,0,2012,THOKCHOM LOKESHWAR SINGH,GEN,Manipur,KHUNDRAKPAM,GEN,INC,INC,9182,M,1,3,FALSE,TRUE,49.37,5504,29.59,45,,3,3
 AEMN197746,12,0,2017,THOKCHOM LOKESHWAR SINGH,GEN,Manipur,KHUNDRAKPAM,GEN,INC,INC,12849,M,1,3,FALSE,TRUE,56.12,3059,13.36,49,,3,3

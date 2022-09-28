@@ -1,9 +1,4 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
-,15,1,2018,NOTA,,Punjab,SHAHKOT,,nan,,1268,,4,5,FALSE,FALSE,0.96,331,0.25,,,,1
-,15,1,2019,NOTA,,Punjab,PHAGWARA,SC,nan,nan,966,,6,5,FALSE,FALSE,0.93,260,0.25,,,,1
-,15,1,2019,NOTA,,Punjab,MUKERIAN,GEN,nan,nan,879,,5,5,FALSE,FALSE,0.76,321,0.28,,,,1
-,15,1,2019,NOTA,,Punjab,DAKHA,GEN,nan,nan,642,,5,5,FALSE,FALSE,0.49,107,0.08,,,,1
-,15,1,2019,NOTA,,Punjab,JALALABAD,GEN,nan,nan,701,,5,5,FALSE,FALSE,0.45,186,0.12,,,,1
 AEPB100213,11,1,1998,Mohinder Kaur,,Punjab,SHAMCHURASI,SC,SAD,,31758,F,1,5,FALSE,FALSE,50.37,9362,14.85,,,3,5
 AEPB100213,12,0,2002,MOHINDER KAUR JOSH,,Punjab,SHAM CHAURASI,SC,IND,SAD,22965,F,2,5,FALSE,TRUE,29.34,11439,14.62,,,3,5
 AEPB100213,13,0,2007,MOHINDER KAUR,SC,Punjab,SHAM CHAURASI,SC,SAD,IND,37739,F,1,5,FALSE,FALSE,40.46,2817,3.02,56,,3,5
