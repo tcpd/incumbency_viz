@@ -92,8 +92,8 @@ pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Na
 ,16,1,2019,Virendra Kumar,SC,Bihar,DEHRI,GEN,Voters Party  International,IND,1326,MALE,9,103,FALSE,FALSE,0.92,323,0.22,46,,1,1
 ,16,1,2019,Anand Kumar Chaudhary,GENERAL,Bihar,DEHRI,GEN,Bahujan Mukti Party,Voters Party  International,1003,MALE,10,103,TRUE,FALSE,0.7,21,0.01,34,,1,1
 ,16,1,2019,Ram Govind Dhar Dubey,GENERAL,Bihar,DEHRI,GEN,IND,Bahujan Mukti Party,982,MALE,11,103,FALSE,FALSE,0.68,193,0.13,49,,1,1
-,16,1,2019,Pradeep Kumar Choudhary,GENERAL,Bihar,DEHRI,GEN,Suheldev Bharatiya Samaj Party,IND,789,MALE,12,103,FALSE,FALSE,0.55,280,0.2,49,,1,1
-,16,1,2019,Krishna Kumar,GENERAL,Bihar,DEHRI,GEN,Lok Jan Vikas Morcha,Suheldev Bharatiya Samaj Party,509,MALE,13,103,TRUE,FALSE,0.35,0,0,38,,1,1
+,16,1,2019,Pradeep Kumar Choudhary,GENERAL,Bihar,DEHRI,GEN,SBSP,IND,789,MALE,12,103,FALSE,FALSE,0.55,280,0.2,49,,1,1
+,16,1,2019,Krishna Kumar,GENERAL,Bihar,DEHRI,GEN,Lok Jan Vikas Morcha,SBSP,509,MALE,13,103,TRUE,FALSE,0.35,0,0,38,,1,1
 ,16,1,2019,Kaushal Yadav,GENERAL,Bihar,NAWADA,GEN,JD(U),Lok Jan Vikas Morcha,53880,MALE,1,103,TRUE,FALSE,32.67,11126,6.75,49,,1,1
 ,16,1,2019,Shrawan Kumar,GENERAL,Bihar,NAWADA,GEN,IND,JD(U),42754,MALE,2,103,FALSE,FALSE,25.92,6397,3.88,45,,1,1
 ,16,1,2019,Dhirendra Kumar Sinha,GENERAL,Bihar,NAWADA,GEN,HAM,IND,36357,MALE,3,103,FALSE,FALSE,22.04,19645,11.91,48,,1,1
