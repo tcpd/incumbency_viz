@@ -1,13 +1,16 @@
 # this script generates the csv files (pids.csv and rows.csv) needed by the incumbency visualization
 
+# Update (16/Nov/2022 - SGw) - this script only generates {state-code}-assembly-{assembly_no}.csv files
+# A separate script needs to be created for updating {state-code}-pids.csv
+
 library(data.table)
 
 library(jsonlite)
 library(readr)
 library(dplyr)
 args = commandArgs(TRUE)
-assemblies = fromJSON("assemblies.json")
-tcpd_git_link = "~/github/tcpd_data/data/"
+assemblies = fromJSON("../incumbency/assets/assemblies.json")
+tcpd_git_link = "/Users/shivam/Desktop/tcpd-data/"
 
 cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name","Constituency_Type", "Party","Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
@@ -15,7 +18,7 @@ cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", 
 createPartyExpanded = function(partyFile, outFilePre){
   party_data = fread(partyFile, na="")
   expanded.party.names = unique(subset(party_data,!is.na(Expanded_Party_Name),select=c("Party","Expanded_Party_Name")))
-  fwrite(expanded.party.names,paste0("../data/",outFilePre,"-party-expanded.csv"))
+  fwrite(expanded.party.names,paste0("../incumbency/data/",outFilePre,"-party-expanded.csv"))
 }
 
 createAssemblyData = function(filePath, cols_to_get, outFilePre){
@@ -63,7 +66,7 @@ createAssemblyData = function(filePath, cols_to_get, outFilePre){
     dt = merge (dt, terms_contested_by_pid, by=c('pid'), all.x = TRUE)
     dt$Position[which(dt$Position < 0 )] = NA
     dt$No_Terms= NULL
-    fwrite(dt, file=paste0('../data/',outFilePre,'-incumbency-',assembly,'.csv'))
+    fwrite(dt, file=paste0('../incumbency/data/',outFilePre,'-incumbency-',assembly,'.csv'))
   }
 
 
