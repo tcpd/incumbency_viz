@@ -10,7 +10,7 @@ library(readr)
 library(dplyr)
 args = commandArgs(TRUE)
 assemblies = fromJSON("../incumbency/assets/assemblies.json")
-tcpd_git_link = "~/github/tcpd_data/data/"
+tcpd_git_link = "/Users/shivam/Desktop/tcpd-data/"
 
 cols_to_get = c("Assembly_No", "Poll_No", "Year", "Candidate","Candidate_Type", "State_Name", "Constituency_Name","Constituency_Type", "Party","Last_Party", "pid", "Votes", "Sex", "Position", "Contested", "No_Terms", "Turncoat", "Incumbent", "Vote_Share_Percentage", "Margin", "Margin_Percentage")
 
@@ -87,6 +87,7 @@ if (length(args) > 0)  {
 for(i in sts){
   state = assemblies[i,]
   assembly = state$State_Name
+
   outFilePre = state$File_Prefix
   if(assembly == "All_States"){
     filePath <- paste0(tcpd_git_link,'GE/Data/derived/mastersheet.csv')
@@ -96,8 +97,16 @@ for(i in sts){
     filePath <- paste0(tcpd_git_link,'AE/Data/',assembly,'/derived/mastersheet.csv')
     partyFile <- paste0(tcpd_git_link,'AE/Data/',assembly,'/derived/lokdhaba/ae_party_statistics.csv')
   }
-  createPartyExpanded(partyFile, outFilePre)
-  createAssemblyData(filePath, cols_to_get, outFilePre)
+
+  if(file.exists(filePath))
+  {
+    createPartyExpanded(partyFile, outFilePre)
+    createAssemblyData(filePath, cols_to_get, outFilePre)
+  }
+  else{
+    print("Skipping")
+    print(state)
+  }
 }
 
 
