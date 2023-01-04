@@ -365,17 +365,15 @@ a.infotooltip img.static {
 .landing-header {
   padding: 2px 100px;
   background-color: white;/* #f5efe0;*/
-  color: #C4122F;*/
+  color: #C4122F;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 img.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 15%;
-  float: right;
-}
-
-h2.home{
-  text-align: left!important;
+  max-width: 40vw;
 }
