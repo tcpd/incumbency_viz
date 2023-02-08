@@ -238,7 +238,7 @@
         "State_Code": "OD",
         "File_Prefix": "od",
         "Assembly": "VS",
-        "Min_Assembly": 4,
+        "Min_Assembly": 3,
         "Max_Assembly": 16,
         "Name": "Odisha Vidhan Sabha"
     },

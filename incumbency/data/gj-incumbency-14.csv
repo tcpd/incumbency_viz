@@ -1,186 +1,186 @@
 pid,Assembly_No,Poll_No,Year,Candidate,Candidate_Type,State_Name,Constituency_Name,Constituency_Type,Party,Last_Party,Votes,Sex,Position,Contested,Turncoat,Incumbent,Vote_Share_Percentage,Margin,Margin_Percentage,Age,Alliance,Terms,Terms_Contested
-,14,0,2022,NOTA,,Gujarat,ABDASA,GEN,None of the Above,,2942,,4,182,FALSE,FALSE,1.8,1207,0.74,,,,1
-,14,0,2022,NOTA,,Gujarat,MANDVI,GEN,None of the Above,None of the Above,2427,,5,182,FALSE,FALSE,1.43,581,0.34,,,,1
-,14,0,2022,NOTA,,Gujarat,BHUJ,GEN,None of the Above,None of the Above,3462,,5,182,FALSE,FALSE,1.92,2346,1.3,,,,1
-,14,0,2022,NOTA,,Gujarat,ANJAR,GEN,None of the Above,None of the Above,2485,,4,182,FALSE,FALSE,1.42,126,0.07,,,,1
-,14,0,2022,NOTA,,Gujarat,GANDHIDHAM,SC,None of the Above,None of the Above,3105,,4,182,FALSE,FALSE,2.05,2095,1.38,,,,1
-,14,0,2022,NOTA,,Gujarat,RAPAR,GEN,None of the Above,None of the Above,3942,,3,182,FALSE,FALSE,2.72,1508,1.04,,,,1
-,14,0,2022,NOTA,,Gujarat,VAV,GEN,None of the Above,None of the Above,3997,,4,182,FALSE,FALSE,1.76,1708,0.75,,,,1
-,14,0,2022,NOTA,,Gujarat,THARAD,GEN,None of the Above,None of the Above,3466,,3,182,FALSE,FALSE,1.6,1588,0.73,,,,1
-,14,0,2022,NOTA,,Gujarat,DHANERA,GEN,None of the Above,None of the Above,3811,,4,182,FALSE,FALSE,1.86,1657,0.81,,,,1
-,14,0,2022,NOTA,,Gujarat,DANTA,ST,None of the Above,None of the Above,5213,,4,182,FALSE,FALSE,2.84,3131,1.71,,,,1
-,14,0,2022,NOTA,,Gujarat,VADGAM,SC,None of the Above,None of the Above,2877,,4,182,FALSE,FALSE,1.46,643,0.33,,,,1
-,14,0,2022,NOTA,,Gujarat,PALANPUR,GEN,None of the Above,None of the Above,2702,,4,182,FALSE,FALSE,1.5,1435,0.79,,,,1
-,14,0,2022,NOTA,,Gujarat,DEESA,GEN,None of the Above,None of the Above,2851,,5,182,FALSE,FALSE,1.32,1615,0.75,,,,1
-,14,0,2022,NOTA,,Gujarat,DEODAR,GEN,None of the Above,None of the Above,3071,,4,182,FALSE,FALSE,1.59,605,0.31,,,,1
-,14,0,2022,NOTA,,Gujarat,KANKREJ,GEN,None of the Above,None of the Above,3811,,4,182,FALSE,FALSE,1.89,1672,0.83,,,,1
-,14,0,2022,NOTA,,Gujarat,RADHANPUR,GEN,None of the Above,None of the Above,3571,,3,182,FALSE,FALSE,1.8,932,0.47,,,,1
-,14,0,2022,NOTA,,Gujarat,CHANASMA,GEN,None of the Above,None of the Above,3293,,4,182,FALSE,FALSE,1.77,1835,0.99,,,,1
-,14,0,2022,NOTA,,Gujarat,PATAN,GEN,None of the Above,None of the Above,2481,,4,182,FALSE,FALSE,1.2,148,0.07,,,,1
-,14,0,2022,NOTA,,Gujarat,SIDHPUR,GEN,None of the Above,None of the Above,1857,,5,182,FALSE,FALSE,0.98,720,0.38,,,,1
-,14,0,2022,NOTA,,Gujarat,KHERALU,GEN,None of the Above,None of the Above,2648,,4,182,FALSE,FALSE,1.73,48,0.03,,,,1
-,14,0,2022,NOTA,,Gujarat,UNJHA,GEN,None of the Above,None of the Above,1775,,4,182,FALSE,FALSE,1.2,963,0.65,,,,1
-,14,0,2022,NOTA,,Gujarat,VISNAGAR,GEN,None of the Above,None of the Above,2325,,4,182,FALSE,FALSE,1.45,1549,0.97,,,,1
-,14,0,2022,NOTA,,Gujarat,BECHARAJI,GEN,None of the Above,None of the Above,2466,,5,182,FALSE,FALSE,1.52,1589,0.98,,,,1
-,14,0,2022,NOTA,,Gujarat,KADI,SC,None of the Above,None of the Above,2505,,4,182,FALSE,FALSE,1.25,1006,0.5,,,,1
-,14,0,2022,NOTA,,Gujarat,MEHSANA,GEN,None of the Above,None of the Above,2449,,5,182,FALSE,FALSE,1.39,1630,0.92,,,,1
-,14,0,2022,NOTA,,Gujarat,VIJAPUR,GEN,None of the Above,None of the Above,2059,,4,182,FALSE,FALSE,1.29,1507,0.95,,,,1
-,14,0,2022,NOTA,,Gujarat,HIMATNAGAR,GEN,None of the Above,None of the Above,2456,,4,182,FALSE,FALSE,1.2,1275,0.62,,,,1
-,14,0,2022,NOTA,,Gujarat,IDAR,SC,None of the Above,None of the Above,3568,,4,182,FALSE,FALSE,1.73,0,0,,,,1
-,14,0,2022,NOTA,,Gujarat,KHEDBRAHMA,ST,None of the Above,None of the Above,7331,,4,182,FALSE,FALSE,3.56,4739,2.3,,,,1
-,14,0,2022,NOTA,,Gujarat,BHILODA,ST,None of the Above,None of the Above,2916,,5,182,FALSE,FALSE,1.41,305,0.15,,,,1
-,14,0,2022,NOTA,,Gujarat,MODASA,GEN,None of the Above,None of the Above,2585,,4,182,FALSE,FALSE,1.39,742,0.4,,,,1
-,14,0,2022,NOTA,,Gujarat,BAYAD,GEN,None of the Above,None of the Above,2304,,5,182,FALSE,FALSE,1.34,640,0.37,,,,1
-,14,0,2022,NOTA,,Gujarat,PRANTIJ,GEN,None of the Above,None of the Above,3114,,4,182,FALSE,FALSE,1.69,2004,1.09,,,,1
-,14,0,2022,NOTA,,Gujarat,DEHGAM,GEN,None of the Above,None of the Above,2689,,4,182,FALSE,FALSE,1.76,1597,1.05,,,,1
-,14,0,2022,NOTA,,Gujarat,GANDHINAGAR SOUTH,GEN,None of the Above,None of the Above,4442,,4,182,FALSE,FALSE,1.81,2749,1.12,,,,1
-,14,0,2022,NOTA,,Gujarat,GANDHINAGAR NORTH,GEN,None of the Above,None of the Above,2613,,4,182,FALSE,FALSE,1.66,1562,0.99,,,,1
-,14,0,2022,NOTA,,Gujarat,MANSA,GEN,None of the Above,None of the Above,2232,,4,182,FALSE,FALSE,1.35,1242,0.75,,,,1
-,14,0,2022,NOTA,,Gujarat,KALOL,GEN,None of the Above,None of the Above,2394,,3,182,FALSE,FALSE,1.37,325,0.19,,,,1
-,14,0,2022,NOTA,,Gujarat,VIRAMGAM,GEN,None of the Above,None of the Above,3253,,4,182,FALSE,FALSE,1.63,2035,1.02,,,,1
-,14,0,2022,NOTA,,Gujarat,SANAND,GEN,None of the Above,None of the Above,2528,,5,182,FALSE,FALSE,1.3,640,0.33,,,,1
-,14,0,2022,NOTA,,Gujarat,GHATLODIA,GEN,None of the Above,None of the Above,3993,,4,182,FALSE,FALSE,1.55,3214,1.25,,,,1
-,14,0,2022,NOTA,,Gujarat,VEJALPUR,GEN,None of the Above,None of the Above,2890,,4,182,FALSE,FALSE,1.27,575,0.25,,,,1
-,14,0,2022,NOTA,,Gujarat,VATVA,GEN,None of the Above,None of the Above,2742,,4,182,FALSE,FALSE,1.16,1130,0.48,,,,1
-,14,0,2022,NOTA,,Gujarat,ELLIS BRIDGE,GEN,None of the Above,None of the Above,3056,,4,182,FALSE,FALSE,2.06,1979,1.33,,,,1
-,14,0,2022,NOTA,,Gujarat,NARANPURA,GEN,None of the Above,None of the Above,2637,,4,182,FALSE,FALSE,1.89,1605,1.15,,,,1
-,14,0,2022,NOTA,,Gujarat,NIKOL,GEN,None of the Above,None of the Above,1939,,4,182,FALSE,FALSE,1.28,1223,0.81,,,,1
-,14,0,2022,NOTA,,Gujarat,NARODA,GEN,None of the Above,None of the Above,1485,,4,182,FALSE,FALSE,0.94,169,0.11,,,,1
-,14,0,2022,NOTA,,Gujarat,THAKKARBAPA NAGAR,GEN,None of the Above,None of the Above,1910,,4,182,FALSE,FALSE,1.4,1450,1.06,,,,1
-,14,0,2022,NOTA,,Gujarat,BAPUNAGAR,GEN,None of the Above,None of the Above,871,,5,182,FALSE,FALSE,0.72,234,0.19,,,,1
-,14,0,2022,NOTA,,Gujarat,AMRAIWADI,GEN,None of the Above,None of the Above,1224,,5,182,FALSE,FALSE,0.77,537,0.34,,,,1
-,14,0,2022,NOTA,,Gujarat,DARIAPUR,GEN,None of the Above,None of the Above,1290,,5,182,FALSE,FALSE,1.03,1078,0.86,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMALPUR-KHADIA,GEN,None of the Above,None of the Above,1534,,5,182,FALSE,FALSE,1.2,1102,0.86,,,,1
-,14,0,2022,NOTA,,Gujarat,MANINAGAR,GEN,None of the Above,None of the Above,2660,,4,182,FALSE,FALSE,1.72,1937,1.26,,,,1
-,14,0,2022,NOTA,,Gujarat,DANILIMDA,SC,None of the Above,None of the Above,2181,,5,182,FALSE,FALSE,1.39,680,0.43,,,,1
-,14,0,2022,NOTA,,Gujarat,SABARMATI,GEN,None of the Above,None of the Above,2275,,4,182,FALSE,FALSE,1.45,1610,1.03,,,,1
-,14,0,2022,NOTA,,Gujarat,ASARWA,SC,None of the Above,None of the Above,1726,,4,182,FALSE,FALSE,1.38,1189,0.95,,,,1
-,14,0,2022,NOTA,,Gujarat,DASKROI,GEN,None of the Above,None of the Above,4189,,4,182,FALSE,FALSE,1.66,3078,1.22,,,,1
-,14,0,2022,NOTA,,Gujarat,DHOLKA,GEN,None of the Above,None of the Above,2325,,4,182,FALSE,FALSE,1.36,249,0.15,,,,1
-,14,0,2022,NOTA,,Gujarat,DHANDHUKA,GEN,None of the Above,None of the Above,2893,,4,182,FALSE,FALSE,1.74,1900,1.14,,,,1
-,14,0,2022,NOTA,,Gujarat,DASADA,SC,None of the Above,None of the Above,3147,,4,182,FALSE,FALSE,1.88,2093,1.25,,,,1
-,14,0,2022,NOTA,,Gujarat,LIMBDI,GEN,None of the Above,None of the Above,2645,,4,182,FALSE,FALSE,1.44,1032,0.56,,,,1
-,14,0,2022,NOTA,,Gujarat,WADHWAN,GEN,None of the Above,None of the Above,2875,,4,182,FALSE,FALSE,1.63,1870,1.06,,,,1
-,14,0,2022,NOTA,,Gujarat,CHOTILA,GEN,None of the Above,None of the Above,2582,,4,182,FALSE,FALSE,1.55,1250,0.75,,,,1
-,14,0,2022,NOTA,,Gujarat,DHRANGADHRA,GEN,None of the Above,None of the Above,3613,,4,182,FALSE,FALSE,1.72,2089,0.99,,,,1
-,14,0,2022,NOTA,,Gujarat,MORVI,GEN,None of the Above,None of the Above,1176,,6,182,FALSE,FALSE,0.61,133,0.07,,,,1
-,14,0,2022,NOTA,,Gujarat,TANKARA,GEN,None of the Above,None of the Above,1993,,4,182,FALSE,FALSE,1.12,323,0.18,,,,1
-,14,0,2022,NOTA,,Gujarat,WANKANER,GEN,None of the Above,None of the Above,2473,,4,182,FALSE,FALSE,1.22,716,0.35,,,,1
-,14,0,2022,NOTA,,Gujarat,RAJKOT EAST,GEN,None of the Above,None of the Above,2794,,4,182,FALSE,FALSE,1.5,1254,0.67,,,,1
-,14,0,2022,NOTA,,Gujarat,RAJKOT WEST,GEN,None of the Above,None of the Above,3419,,4,182,FALSE,FALSE,1.68,2614,1.28,,,,1
-,14,0,2022,NOTA,,Gujarat,RAJKOT SOUTH,GEN,None of the Above,None of the Above,2353,,5,182,FALSE,FALSE,1.54,2058,1.34,,,,1
-,14,0,2022,NOTA,,Gujarat,RAJKOT RURAL,SC,None of the Above,None of the Above,3038,,4,182,FALSE,FALSE,1.33,1412,0.62,,,,1
-,14,0,2022,NOTA,,Gujarat,JASDAN,GEN,None of the Above,None of the Above,2073,,4,182,FALSE,FALSE,1.28,1282,0.79,,,,1
-,14,0,2022,NOTA,,Gujarat,GONDAL,GEN,None of the Above,None of the Above,2164,,4,182,FALSE,FALSE,1.5,1548,1.07,,,,1
-,14,0,2022,NOTA,,Gujarat,JETPUR,GEN,None of the Above,None of the Above,2287,,5,182,FALSE,FALSE,1.31,364,0.21,,,,1
-,14,0,2022,NOTA,,Gujarat,DHORAJI,GEN,None of the Above,None of the Above,1620,,4,182,FALSE,FALSE,1.04,43,0.03,,,,1
-,14,0,2022,NOTA,,Gujarat,KALAWAD,SC,None of the Above,None of the Above,2127,,4,182,FALSE,FALSE,1.62,871,0.66,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMNAGAR RURAL,GEN,None of the Above,None of the Above,2285,,5,182,FALSE,FALSE,1.4,1625,1,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMNAGAR NORTH,GEN,None of the Above,None of the Above,2444,,4,182,FALSE,FALSE,1.59,356,0.23,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMNAGAR SOUTH,GEN,None of the Above,None of the Above,2182,,4,182,FALSE,FALSE,1.64,1073,0.81,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMJODHPUR,GEN,None of the Above,None of the Above,1543,,4,182,FALSE,FALSE,1.03,656,0.44,,,,1
-,14,0,2022,NOTA,,Gujarat,KHAMBHALIA,GEN,None of the Above,None of the Above,2582,,4,182,FALSE,FALSE,1.36,1332,0.7,,,,1
-,14,0,2022,NOTA,,Gujarat,DWARKA,GEN,None of the Above,None of the Above,2919,,4,182,FALSE,FALSE,1.62,1528,0.85,,,,1
-,14,0,2022,NOTA,,Gujarat,PORBANDAR,GEN,None of the Above,None of the Above,2769,,4,182,FALSE,FALSE,1.67,2095,1.26,,,,1
-,14,0,2022,NOTA,,Gujarat,KUTIYANA,GEN,None of the Above,None of the Above,1963,,5,182,FALSE,FALSE,1.52,837,0.65,,,,1
-,14,0,2022,NOTA,,Gujarat,MANAVADAR,GEN,None of the Above,None of the Above,1568,,4,182,FALSE,FALSE,1.02,198,0.13,,,,1
-,14,0,2022,NOTA,,Gujarat,JUNAGADH,GEN,None of the Above,None of the Above,2002,,4,182,FALSE,FALSE,1.23,1102,0.68,,,,1
-,14,0,2022,NOTA,,Gujarat,VISAVADAR,GEN,None of the Above,None of the Above,1765,,5,182,FALSE,FALSE,1.2,1130,0.77,,,,1
-,14,0,2022,NOTA,,Gujarat,KESHOD,GEN,None of the Above,None of the Above,1719,,5,182,FALSE,FALSE,1.11,957,0.62,,,,1
-,14,0,2022,NOTA,,Gujarat,MANGROL,GEN,None of the Above,None of the Above,1760,,5,182,FALSE,FALSE,1.19,813,0.55,,,,1
-,14,0,2022,NOTA,,Gujarat,SOMNATH,GEN,None of the Above,None of the Above,1530,,5,182,FALSE,FALSE,0.79,61,0.03,,,,1
-,14,0,2022,NOTA,,Gujarat,TALALA,GEN,None of the Above,None of the Above,1486,,5,182,FALSE,FALSE,0.99,418,0.28,,,,1
-,14,0,2022,NOTA,,Gujarat,KODINAR,SC,None of the Above,None of the Above,2025,,4,182,FALSE,FALSE,1.34,672,0.44,,,,1
-,14,0,2022,NOTA,,Gujarat,UNA,GEN,None of the Above,None of the Above,3092,,4,182,FALSE,FALSE,1.82,1950,1.15,,,,1
-,14,0,2022,NOTA,,Gujarat,DHARI,GEN,None of the Above,None of the Above,1845,,6,182,FALSE,FALSE,1.55,964,0.81,,,,1
-,14,0,2022,NOTA,,Gujarat,AMRELI,GEN,None of the Above,None of the Above,2138,,4,182,FALSE,FALSE,1.32,753,0.46,,,,1
-,14,0,2022,NOTA,,Gujarat,LATHI,GEN,None of the Above,None of the Above,2040,,4,182,FALSE,FALSE,1.54,1101,0.83,,,,1
-,14,0,2022,NOTA,,Gujarat,SAVARKUNDLA,GEN,None of the Above,None of the Above,2520,,4,182,FALSE,FALSE,1.82,1562,1.13,,,,1
-,14,0,2022,NOTA,,Gujarat,RAJULA,GEN,None of the Above,None of the Above,2829,,5,182,FALSE,FALSE,1.57,1333,0.74,,,,1
-,14,0,2022,NOTA,,Gujarat,MAHUVA,GEN,None of the Above,None of the Above,2619,,4,182,FALSE,FALSE,1.69,1594,1.03,,,,1
-,14,0,2022,NOTA,,Gujarat,TALAJA,GEN,None of the Above,None of the Above,2482,,4,182,FALSE,FALSE,1.58,798,0.51,,,,1
-,14,0,2022,NOTA,,Gujarat,GARIADHAR,GEN,None of the Above,None of the Above,1491,,5,182,FALSE,FALSE,1.06,575,0.41,,,,1
-,14,0,2022,NOTA,,Gujarat,PALITANA,GEN,None of the Above,None of the Above,1930,,4,182,FALSE,FALSE,1.15,373,0.22,,,,1
-,14,0,2022,NOTA,,Gujarat,BHAVNAGAR RURAL,GEN,None of the Above,None of the Above,2917,,4,182,FALSE,FALSE,1.6,1496,0.82,,,,1
-,14,0,2022,NOTA,,Gujarat,BHAVNAGAR EAST,GEN,None of the Above,None of the Above,2796,,4,182,FALSE,FALSE,1.72,997,0.61,,,,1
-,14,0,2022,NOTA,,Gujarat,BHAVNAGAR WEST,GEN,None of the Above,None of the Above,2417,,4,182,FALSE,FALSE,1.5,1731,1.07,,,,1
-,14,0,2022,NOTA,,Gujarat,GADHADA,SC,None of the Above,None of the Above,2031,,4,182,FALSE,FALSE,1.49,643,0.47,,,,1
-,14,0,2022,NOTA,,Gujarat,BOTAD,GEN,None of the Above,None of the Above,2433,,4,182,FALSE,FALSE,1.3,400,0.21,,,,1
-,14,0,2022,NOTA,,Gujarat,KHAMBHAT,GEN,None of the Above,None of the Above,2590,,5,182,FALSE,FALSE,1.63,11,0.01,,,,1
-,14,0,2022,NOTA,,Gujarat,BORSAD,GEN,None of the Above,None of the Above,2093,,3,182,FALSE,FALSE,1.15,62,0.03,,,,1
-,14,0,2022,NOTA,,Gujarat,ANKLAV,GEN,None of the Above,None of the Above,2692,,3,182,FALSE,FALSE,1.61,1089,0.65,,,,1
-,14,0,2022,NOTA,,Gujarat,UMRETH,GEN,None of the Above,None of the Above,3857,,5,182,FALSE,FALSE,2.07,1434,0.77,,,,1
-,14,0,2022,NOTA,,Gujarat,ANAND,GEN,None of the Above,None of the Above,2157,,4,182,FALSE,FALSE,1.11,813,0.42,,,,1
-,14,0,2022,NOTA,,Gujarat,PETLAD,GEN,None of the Above,None of the Above,2434,,4,182,FALSE,FALSE,1.43,1505,0.88,,,,1
-,14,0,2022,NOTA,,Gujarat,SOJITRA,GEN,None of the Above,None of the Above,2766,,4,182,FALSE,FALSE,1.79,1478,0.96,,,,1
-,14,0,2022,NOTA,,Gujarat,MATAR,GEN,None of the Above,None of the Above,2777,,4,182,FALSE,FALSE,1.56,1223,0.69,,,,1
-,14,0,2022,NOTA,,Gujarat,NADIAD,GEN,None of the Above,None of the Above,3672,,4,182,FALSE,FALSE,2.22,2901,1.75,,,,1
-,14,0,2022,NOTA,,Gujarat,MEHEMDABAD,GEN,None of the Above,None of the Above,3535,,4,182,FALSE,FALSE,1.94,2302,1.26,,,,1
-,14,0,2022,NOTA,,Gujarat,MAHUDHA,GEN,None of the Above,None of the Above,2533,,4,182,FALSE,FALSE,1.44,1386,0.79,,,,1
-,14,0,2022,NOTA,,Gujarat,THASRA,GEN,None of the Above,None of the Above,2714,,5,182,FALSE,FALSE,1.38,389,0.2,,,,1
-,14,0,2022,NOTA,,Gujarat,KAPADWANJ,GEN,None of the Above,None of the Above,3223,,4,182,FALSE,FALSE,1.55,779,0.38,,,,1
-,14,0,2022,NOTA,,Gujarat,BALASINOR,GEN,None of the Above,None of the Above,2724,,5,182,FALSE,FALSE,1.49,1297,0.71,,,,1
-,14,0,2022,NOTA,,Gujarat,LUNAWADA,GEN,None of the Above,None of the Above,3288,,6,182,FALSE,FALSE,1.79,1797,0.98,,,,1
-,14,0,2022,NOTA,,Gujarat,SANTRAMPUR,ST,None of the Above,None of the Above,3039,,5,182,FALSE,FALSE,2.13,1855,1.3,,,,1
-,14,0,2022,NOTA,,Gujarat,SHEHRA,GEN,None of the Above,None of the Above,4708,,4,182,FALSE,FALSE,2.6,2873,1.58,,,,1
-,14,0,2022,NOTA,,Gujarat,MORVA HADAF,ST,None of the Above,None of the Above,2574,,4,182,FALSE,FALSE,1.82,763,0.54,,,,1
-,14,0,2022,NOTA,,Gujarat,GODHRA,GEN,None of the Above,None of the Above,3548,,5,182,FALSE,FALSE,1.9,1259,0.68,,,,1
-,14,0,2022,NOTA,,Gujarat,KALOL,GEN,None of the Above,None of the Above,3992,,4,182,FALSE,FALSE,2.11,1515,0.8,,,,1
-,14,0,2022,NOTA,,Gujarat,HALOL,GEN,None of the Above,None of the Above,3460,,5,182,FALSE,FALSE,1.74,733,0.37,,,,1
-,14,0,2022,NOTA,,Gujarat,FATEPURA,ST,None of the Above,None of the Above,4327,,4,182,FALSE,FALSE,3.11,2617,1.88,,,,1
-,14,0,2022,NOTA,,Gujarat,JHALOD,ST,None of the Above,None of the Above,4646,,4,182,FALSE,FALSE,2.89,3121,1.94,,,,1
-,14,0,2022,NOTA,,Gujarat,LIMKHEDA,ST,None of the Above,None of the Above,2357,,5,182,FALSE,FALSE,1.57,330,0.22,,,,1
-,14,0,2022,NOTA,,Gujarat,DAHOD,ST,None of the Above,None of the Above,3046,,5,182,FALSE,FALSE,1.83,1432,0.86,,,,1
-,14,0,2022,NOTA,,Gujarat,GARBADA,ST,None of the Above,None of the Above,4152,,5,182,FALSE,FALSE,2.83,1930,1.32,,,,1
-,14,0,2022,NOTA,,Gujarat,DEVGADH BARIA,GEN,None of the Above,None of the Above,4821,,4,182,FALSE,FALSE,2.47,2837,1.46,,,,1
-,14,0,2022,NOTA,,Gujarat,SAVLI,GEN,None of the Above,None of the Above,1594,,5,182,FALSE,FALSE,0.91,627,0.36,,,,1
-,14,0,2022,NOTA,,Gujarat,VAGHODIA,GEN,None of the Above,None of the Above,2622,,6,182,FALSE,FALSE,1.44,1538,0.84,,,,1
-,14,0,2022,NOTA,,Gujarat,CHHOTA UDAIPUR,ST,None of the Above,None of the Above,5093,,4,182,FALSE,FALSE,2.93,3080,1.77,,,,1
-,14,0,2022,NOTA,,Gujarat,JETPUR,ST,None of the Above,None of the Above,4598,,4,182,FALSE,FALSE,2.54,272,0.15,,,,1
-,14,0,2022,NOTA,,Gujarat,SANKHEDA,ST,None of the Above,None of the Above,4143,,4,182,FALSE,FALSE,2.13,2125,1.09,,,,1
-,14,0,2022,NOTA,,Gujarat,DABHOI,GEN,None of the Above,None of the Above,2655,,4,182,FALSE,FALSE,1.55,1749,1.02,,,,1
-,14,0,2022,NOTA,,Gujarat,VADODARA CITY,SC,None of the Above,None of the Above,4022,,4,182,FALSE,FALSE,2.17,3214,1.74,,,,1
-,14,0,2022,NOTA,,Gujarat,SAYAJIGANJ,GEN,None of the Above,None of the Above,3432,,4,182,FALSE,FALSE,1.92,2181,1.22,,,,1
-,14,0,2022,NOTA,,Gujarat,AKOTA,GEN,None of the Above,None of the Above,2839,,4,182,FALSE,FALSE,1.72,1918,1.16,,,,1
-,14,0,2022,NOTA,,Gujarat,RAOPURA,GEN,None of the Above,None of the Above,3183,,4,182,FALSE,FALSE,1.84,2487,1.44,,,,1
-,14,0,2022,NOTA,,Gujarat,MANJALPUR,GEN,None of the Above,None of the Above,3234,,4,182,FALSE,FALSE,2.04,994,0.63,,,,1
-,14,0,2022,NOTA,,Gujarat,PADRA,GEN,None of the Above,None of the Above,2071,,4,182,FALSE,FALSE,1.13,72,0.04,,,,1
-,14,0,2022,NOTA,,Gujarat,KARANJ,GEN,None of the Above,None of the Above,2293,,4,182,FALSE,FALSE,1.5,785,0.51,,,,1
-,14,0,2022,NOTA,,Gujarat,NANDOD,ST,None of the Above,None of the Above,3104,,5,182,FALSE,FALSE,1.75,1400,0.79,,,,1
-,14,0,2022,NOTA,,Gujarat,DEDIAPADA,ST,None of the Above,None of the Above,2974,,5,182,FALSE,FALSE,1.61,0,0,,,,1
-,14,0,2022,NOTA,,Gujarat,JAMBUSAR,GEN,None of the Above,None of the Above,2273,,4,182,FALSE,FALSE,1.38,1446,0.88,,,,1
-,14,0,2022,NOTA,,Gujarat,VAGRA,GEN,None of the Above,None of the Above,2421,,3,182,FALSE,FALSE,1.51,497,0.31,,,,1
-,14,0,2022,NOTA,,Gujarat,JHAGADIA,ST,None of the Above,None of the Above,3012,,6,182,FALSE,FALSE,1.53,0,0,,,,1
-,14,0,2022,NOTA,,Gujarat,BHARUCH,GEN,None of the Above,None of the Above,2722,,4,182,FALSE,FALSE,1.58,2111,1.23,,,,1
-,14,0,2022,NOTA,,Gujarat,ANKLESHWAR,GEN,None of the Above,None of the Above,2327,,4,182,FALSE,FALSE,1.45,1691,1.05,,,,1
-,14,0,2022,NOTA,,Gujarat,OLPAD,GEN,None of the Above,None of the Above,3123,,4,182,FALSE,FALSE,1.06,856,0.29,,,,1
-,14,0,2022,NOTA,,Gujarat,MANGROL,ST,None of the Above,None of the Above,3111,,4,182,FALSE,FALSE,1.85,1850,1.1,,,,1
-,14,0,2022,NOTA,,Gujarat,MANDVI,ST,None of the Above,None of the Above,2902,,4,182,FALSE,FALSE,1.53,610,0.32,,,,1
-,14,0,2022,NOTA,,Gujarat,KAMREJ,GEN,None of the Above,None of the Above,2291,,4,182,FALSE,FALSE,0.69,899,0.27,,,,1
-,14,0,2022,NOTA,,Gujarat,SURAT EAST,GEN,None of the Above,None of the Above,1494,,4,182,FALSE,FALSE,1.07,479,0.34,,,,1
-,14,0,2022,NOTA,,Gujarat,SURAT NORTH,GEN,None of the Above,None of the Above,831,,4,182,FALSE,FALSE,0.86,489,0.51,,,,1
-,14,0,2022,NOTA,,Gujarat,VARACHHA ROAD,GEN,None of the Above,None of the Above,878,,4,182,FALSE,FALSE,0.72,594,0.49,,,,1
-,14,0,2022,NOTA,,Gujarat,KARANJ,GEN,None of the Above,None of the Above,756,,4,182,FALSE,FALSE,0.85,538,0.6,,,,1
-,14,0,2022,NOTA,,Gujarat,LIMBAYAT,GEN,None of the Above,None of the Above,1069,,5,182,FALSE,FALSE,0.6,97,0.05,,,,1
-,14,0,2022,NOTA,,Gujarat,UDHNA,GEN,None of the Above,None of the Above,1820,,5,182,FALSE,FALSE,1.22,1344,0.9,,,,1
-,14,0,2022,NOTA,,Gujarat,MAJURA,GEN,None of the Above,None of the Above,2315,,4,182,FALSE,FALSE,1.42,1411,0.87,,,,1
-,14,0,2022,NOTA,,Gujarat,KATARGAM,GEN,None of the Above,None of the Above,1529,,4,182,FALSE,FALSE,0.74,909,0.44,,,,1
-,14,0,2022,NOTA,,Gujarat,SURAT WEST,GEN,None of the Above,None of the Above,2441,,4,182,FALSE,FALSE,1.5,1987,1.22,,,,1
-,14,0,2022,NOTA,,Gujarat,CHORASI,GEN,None of the Above,None of the Above,4169,,4,182,FALSE,FALSE,1.29,2108,0.65,,,,1
-,14,0,2022,NOTA,,Gujarat,BARDOLI,SC,None of the Above,None of the Above,4211,,4,182,FALSE,FALSE,2.35,2137,1.19,,,,1
-,14,0,2022,NOTA,,Gujarat,MAHUVA,ST,None of the Above,None of the Above,3131,,4,182,FALSE,FALSE,1.84,0,0,,,,1
-,14,0,2022,NOTA,,Gujarat,VYARA,ST,None of the Above,None of the Above,3779,,4,182,FALSE,FALSE,2.21,2488,1.45,,,,1
-,14,0,2022,NOTA,,Gujarat,NIZAR,ST,None of the Above,None of the Above,4465,,5,182,FALSE,FALSE,2.01,858,0.39,,,,1
-,14,0,2022,NOTA,,Gujarat,DANGS,ST,None of the Above,None of the Above,1910,,4,182,FALSE,FALSE,1.45,442,0.34,,,,1
-,14,0,2022,NOTA,,Gujarat,JALALPORE,GEN,None of the Above,None of the Above,3549,,4,182,FALSE,FALSE,2.23,2308,1.45,,,,1
-,14,0,2022,NOTA,,Gujarat,NAVSARI,GEN,None of the Above,None of the Above,3064,,4,182,FALSE,FALSE,1.85,2169,1.31,,,,1
-,14,0,2022,NOTA,,Gujarat,GANDEVI,ST,None of the Above,None of the Above,3775,,4,182,FALSE,FALSE,1.79,0,0,,,,1
-,14,0,2022,NOTA,,Gujarat,VANSDA,ST,None of the Above,None of the Above,3803,,4,182,FALSE,FALSE,1.61,1996,0.84,,,,1
-,14,0,2022,NOTA,,Gujarat,DHARAMPUR,ST,None of the Above,None of the Above,4189,,5,182,FALSE,FALSE,2.12,2244,1.13,,,,1
-,14,0,2022,NOTA,,Gujarat,VALSAD,GEN,None of the Above,None of the Above,2815,,4,182,FALSE,FALSE,1.6,1935,1.1,,,,1
-,14,0,2022,NOTA,,Gujarat,PARDI,GEN,None of the Above,None of the Above,2316,,4,182,FALSE,FALSE,1.39,1532,0.92,,,,1
-,14,0,2022,NOTA,,Gujarat,KAPRADA,ST,None of the Above,None of the Above,4020,,4,182,FALSE,FALSE,1.88,1475,0.69,,,,1
-,14,0,2022,NOTA,,Gujarat,UMBERGAON,ST,None of the Above,None of the Above,2772,,4,182,FALSE,FALSE,1.6,914,0.53,,,,1
+,14,0,2022,NOTA,,Gujarat,ABDASA,GEN,None of the Above,,2942,,4,,,FALSE,1.8,1207,0.74,,,,1
+,14,0,2022,NOTA,,Gujarat,MANDVI,GEN,None of the Above,,2427,,5,,,FALSE,1.43,581,0.34,,,,1
+,14,0,2022,NOTA,,Gujarat,BHUJ,GEN,None of the Above,,3462,,5,,,FALSE,1.92,2346,1.3,,,,1
+,14,0,2022,NOTA,,Gujarat,ANJAR,GEN,None of the Above,,2485,,4,,,FALSE,1.42,126,0.07,,,,1
+,14,0,2022,NOTA,,Gujarat,GANDHIDHAM,SC,None of the Above,,3105,,4,,,FALSE,2.05,2095,1.38,,,,1
+,14,0,2022,NOTA,,Gujarat,RAPAR,GEN,None of the Above,,3942,,3,,,FALSE,2.72,1508,1.04,,,,1
+,14,0,2022,NOTA,,Gujarat,VAV,GEN,None of the Above,,3997,,4,,,FALSE,1.76,1708,0.75,,,,1
+,14,0,2022,NOTA,,Gujarat,THARAD,GEN,None of the Above,,3466,,3,,,FALSE,1.6,1588,0.73,,,,1
+,14,0,2022,NOTA,,Gujarat,DHANERA,GEN,None of the Above,,3811,,4,,,FALSE,1.86,1657,0.81,,,,1
+,14,0,2022,NOTA,,Gujarat,DANTA,ST,None of the Above,,5213,,4,,,FALSE,2.84,3131,1.71,,,,1
+,14,0,2022,NOTA,,Gujarat,VADGAM,SC,None of the Above,,2877,,4,,,FALSE,1.46,643,0.33,,,,1
+,14,0,2022,NOTA,,Gujarat,PALANPUR,GEN,None of the Above,,2702,,4,,,FALSE,1.5,1435,0.79,,,,1
+,14,0,2022,NOTA,,Gujarat,DEESA,GEN,None of the Above,,2851,,5,,,FALSE,1.32,1615,0.75,,,,1
+,14,0,2022,NOTA,,Gujarat,DEODAR,GEN,None of the Above,,3071,,4,,,FALSE,1.59,605,0.31,,,,1
+,14,0,2022,NOTA,,Gujarat,KANKREJ,GEN,None of the Above,,3811,,4,,,FALSE,1.89,1672,0.83,,,,1
+,14,0,2022,NOTA,,Gujarat,RADHANPUR,GEN,None of the Above,,3571,,3,,,FALSE,1.8,932,0.47,,,,1
+,14,0,2022,NOTA,,Gujarat,CHANASMA,GEN,None of the Above,,3293,,4,,,FALSE,1.77,1835,0.99,,,,1
+,14,0,2022,NOTA,,Gujarat,PATAN,GEN,None of the Above,,2481,,4,,,FALSE,1.2,148,0.07,,,,1
+,14,0,2022,NOTA,,Gujarat,SIDHPUR,GEN,None of the Above,,1857,,5,,,FALSE,0.98,720,0.38,,,,1
+,14,0,2022,NOTA,,Gujarat,KHERALU,GEN,None of the Above,,2648,,4,,,FALSE,1.73,48,0.03,,,,1
+,14,0,2022,NOTA,,Gujarat,UNJHA,GEN,None of the Above,,1775,,4,,,FALSE,1.2,963,0.65,,,,1
+,14,0,2022,NOTA,,Gujarat,VISNAGAR,GEN,None of the Above,,2325,,4,,,FALSE,1.45,1549,0.97,,,,1
+,14,0,2022,NOTA,,Gujarat,BECHARAJI,GEN,None of the Above,,2466,,5,,,FALSE,1.52,1589,0.98,,,,1
+,14,0,2022,NOTA,,Gujarat,KADI,SC,None of the Above,,2505,,4,,,FALSE,1.25,1006,0.5,,,,1
+,14,0,2022,NOTA,,Gujarat,MEHSANA,GEN,None of the Above,,2449,,5,,,FALSE,1.39,1630,0.92,,,,1
+,14,0,2022,NOTA,,Gujarat,VIJAPUR,GEN,None of the Above,,2059,,4,,,FALSE,1.29,1507,0.95,,,,1
+,14,0,2022,NOTA,,Gujarat,HIMATNAGAR,GEN,None of the Above,,2456,,4,,,FALSE,1.2,1275,0.62,,,,1
+,14,0,2022,NOTA,,Gujarat,IDAR,SC,None of the Above,,3568,,4,,,FALSE,1.73,0,0,,,,1
+,14,0,2022,NOTA,,Gujarat,KHEDBRAHMA,ST,None of the Above,,7331,,4,,,FALSE,3.56,4739,2.3,,,,1
+,14,0,2022,NOTA,,Gujarat,BHILODA,ST,None of the Above,,2916,,5,,,FALSE,1.41,305,0.15,,,,1
+,14,0,2022,NOTA,,Gujarat,MODASA,GEN,None of the Above,,2585,,4,,,FALSE,1.39,742,0.4,,,,1
+,14,0,2022,NOTA,,Gujarat,BAYAD,GEN,None of the Above,,2304,,5,,,FALSE,1.34,640,0.37,,,,1
+,14,0,2022,NOTA,,Gujarat,PRANTIJ,GEN,None of the Above,,3114,,4,,,FALSE,1.69,2004,1.09,,,,1
+,14,0,2022,NOTA,,Gujarat,DEHGAM,GEN,None of the Above,,2689,,4,,,FALSE,1.76,1597,1.05,,,,1
+,14,0,2022,NOTA,,Gujarat,GANDHINAGAR SOUTH,GEN,None of the Above,,4442,,4,,,FALSE,1.81,2749,1.12,,,,1
+,14,0,2022,NOTA,,Gujarat,GANDHINAGAR NORTH,GEN,None of the Above,,2613,,4,,,FALSE,1.66,1562,0.99,,,,1
+,14,0,2022,NOTA,,Gujarat,MANSA,GEN,None of the Above,,2232,,4,,,FALSE,1.35,1242,0.75,,,,1
+,14,0,2022,NOTA,,Gujarat,KALOL,GEN,None of the Above,,2394,,3,,,FALSE,1.37,325,0.19,,,,1
+,14,0,2022,NOTA,,Gujarat,VIRAMGAM,GEN,None of the Above,,3253,,4,,,FALSE,1.63,2035,1.02,,,,1
+,14,0,2022,NOTA,,Gujarat,SANAND,GEN,None of the Above,,2528,,5,,,FALSE,1.3,640,0.33,,,,1
+,14,0,2022,NOTA,,Gujarat,GHATLODIA,GEN,None of the Above,,3993,,4,,,FALSE,1.55,3214,1.25,,,,1
+,14,0,2022,NOTA,,Gujarat,VEJALPUR,GEN,None of the Above,,2890,,4,,,FALSE,1.27,575,0.25,,,,1
+,14,0,2022,NOTA,,Gujarat,VATVA,GEN,None of the Above,,2742,,4,,,FALSE,1.16,1130,0.48,,,,1
+,14,0,2022,NOTA,,Gujarat,ELLIS BRIDGE,GEN,None of the Above,,3056,,4,,,FALSE,2.06,1979,1.33,,,,1
+,14,0,2022,NOTA,,Gujarat,NARANPURA,GEN,None of the Above,,2637,,4,,,FALSE,1.89,1605,1.15,,,,1
+,14,0,2022,NOTA,,Gujarat,NIKOL,GEN,None of the Above,,1939,,4,,,FALSE,1.28,1223,0.81,,,,1
+,14,0,2022,NOTA,,Gujarat,NARODA,GEN,None of the Above,,1485,,4,,,FALSE,0.94,169,0.11,,,,1
+,14,0,2022,NOTA,,Gujarat,THAKKARBAPA NAGAR,GEN,None of the Above,,1910,,4,,,FALSE,1.4,1450,1.06,,,,1
+,14,0,2022,NOTA,,Gujarat,BAPUNAGAR,GEN,None of the Above,,871,,5,,,FALSE,0.72,234,0.19,,,,1
+,14,0,2022,NOTA,,Gujarat,AMRAIWADI,GEN,None of the Above,,1224,,5,,,FALSE,0.77,537,0.34,,,,1
+,14,0,2022,NOTA,,Gujarat,DARIAPUR,GEN,None of the Above,,1290,,5,,,FALSE,1.03,1078,0.86,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMALPUR-KHADIA,GEN,None of the Above,,1534,,5,,,FALSE,1.2,1102,0.86,,,,1
+,14,0,2022,NOTA,,Gujarat,MANINAGAR,GEN,None of the Above,,2660,,4,,,FALSE,1.72,1937,1.26,,,,1
+,14,0,2022,NOTA,,Gujarat,DANILIMDA,SC,None of the Above,,2181,,5,,,FALSE,1.39,680,0.43,,,,1
+,14,0,2022,NOTA,,Gujarat,SABARMATI,GEN,None of the Above,,2275,,4,,,FALSE,1.45,1610,1.03,,,,1
+,14,0,2022,NOTA,,Gujarat,ASARWA,SC,None of the Above,,1726,,4,,,FALSE,1.38,1189,0.95,,,,1
+,14,0,2022,NOTA,,Gujarat,DASKROI,GEN,None of the Above,,4189,,4,,,FALSE,1.66,3078,1.22,,,,1
+,14,0,2022,NOTA,,Gujarat,DHOLKA,GEN,None of the Above,,2325,,4,,,FALSE,1.36,249,0.15,,,,1
+,14,0,2022,NOTA,,Gujarat,DHANDHUKA,GEN,None of the Above,,2893,,4,,,FALSE,1.74,1900,1.14,,,,1
+,14,0,2022,NOTA,,Gujarat,DASADA,SC,None of the Above,,3147,,4,,,FALSE,1.88,2093,1.25,,,,1
+,14,0,2022,NOTA,,Gujarat,LIMBDI,GEN,None of the Above,,2645,,4,,,FALSE,1.44,1032,0.56,,,,1
+,14,0,2022,NOTA,,Gujarat,WADHWAN,GEN,None of the Above,,2875,,4,,,FALSE,1.63,1870,1.06,,,,1
+,14,0,2022,NOTA,,Gujarat,CHOTILA,GEN,None of the Above,,2582,,4,,,FALSE,1.55,1250,0.75,,,,1
+,14,0,2022,NOTA,,Gujarat,DHRANGADHRA,GEN,None of the Above,,3613,,4,,,FALSE,1.72,2089,0.99,,,,1
+,14,0,2022,NOTA,,Gujarat,MORVI,GEN,None of the Above,,1176,,6,,,FALSE,0.61,133,0.07,,,,1
+,14,0,2022,NOTA,,Gujarat,TANKARA,GEN,None of the Above,,1993,,4,,,FALSE,1.12,323,0.18,,,,1
+,14,0,2022,NOTA,,Gujarat,WANKANER,GEN,None of the Above,,2473,,4,,,FALSE,1.22,716,0.35,,,,1
+,14,0,2022,NOTA,,Gujarat,RAJKOT EAST,GEN,None of the Above,,2794,,4,,,FALSE,1.5,1254,0.67,,,,1
+,14,0,2022,NOTA,,Gujarat,RAJKOT WEST,GEN,None of the Above,,3419,,4,,,FALSE,1.68,2614,1.28,,,,1
+,14,0,2022,NOTA,,Gujarat,RAJKOT SOUTH,GEN,None of the Above,,2353,,5,,,FALSE,1.54,2058,1.34,,,,1
+,14,0,2022,NOTA,,Gujarat,RAJKOT RURAL,SC,None of the Above,,3038,,4,,,FALSE,1.33,1412,0.62,,,,1
+,14,0,2022,NOTA,,Gujarat,JASDAN,GEN,None of the Above,,2073,,4,,,FALSE,1.28,1282,0.79,,,,1
+,14,0,2022,NOTA,,Gujarat,GONDAL,GEN,None of the Above,,2164,,4,,,FALSE,1.5,1548,1.07,,,,1
+,14,0,2022,NOTA,,Gujarat,JETPUR,GEN,None of the Above,,2287,,5,,,FALSE,1.31,364,0.21,,,,1
+,14,0,2022,NOTA,,Gujarat,DHORAJI,GEN,None of the Above,,1620,,4,,,FALSE,1.04,43,0.03,,,,1
+,14,0,2022,NOTA,,Gujarat,KALAWAD,SC,None of the Above,,2127,,4,,,FALSE,1.62,871,0.66,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMNAGAR RURAL,GEN,None of the Above,,2285,,5,,,FALSE,1.4,1625,1,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMNAGAR NORTH,GEN,None of the Above,,2444,,4,,,FALSE,1.59,356,0.23,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMNAGAR SOUTH,GEN,None of the Above,,2182,,4,,,FALSE,1.64,1073,0.81,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMJODHPUR,GEN,None of the Above,,1543,,4,,,FALSE,1.03,656,0.44,,,,1
+,14,0,2022,NOTA,,Gujarat,KHAMBHALIA,GEN,None of the Above,,2582,,4,,,FALSE,1.36,1332,0.7,,,,1
+,14,0,2022,NOTA,,Gujarat,DWARKA,GEN,None of the Above,,2919,,4,,,FALSE,1.62,1528,0.85,,,,1
+,14,0,2022,NOTA,,Gujarat,PORBANDAR,GEN,None of the Above,,2769,,4,,,FALSE,1.67,2095,1.26,,,,1
+,14,0,2022,NOTA,,Gujarat,KUTIYANA,GEN,None of the Above,,1963,,5,,,FALSE,1.52,837,0.65,,,,1
+,14,0,2022,NOTA,,Gujarat,MANAVADAR,GEN,None of the Above,,1568,,4,,,FALSE,1.02,198,0.13,,,,1
+,14,0,2022,NOTA,,Gujarat,JUNAGADH,GEN,None of the Above,,2002,,4,,,FALSE,1.23,1102,0.68,,,,1
+,14,0,2022,NOTA,,Gujarat,VISAVADAR,GEN,None of the Above,,1765,,5,,,FALSE,1.2,1130,0.77,,,,1
+,14,0,2022,NOTA,,Gujarat,KESHOD,GEN,None of the Above,,1719,,5,,,FALSE,1.11,957,0.62,,,,1
+,14,0,2022,NOTA,,Gujarat,MANGROL,GEN,None of the Above,,1760,,5,,,FALSE,1.19,813,0.55,,,,1
+,14,0,2022,NOTA,,Gujarat,SOMNATH,GEN,None of the Above,,1530,,5,,,FALSE,0.79,61,0.03,,,,1
+,14,0,2022,NOTA,,Gujarat,TALALA,GEN,None of the Above,,1486,,5,,,FALSE,0.99,418,0.28,,,,1
+,14,0,2022,NOTA,,Gujarat,KODINAR,SC,None of the Above,,2025,,4,,,FALSE,1.34,672,0.44,,,,1
+,14,0,2022,NOTA,,Gujarat,UNA,GEN,None of the Above,,3092,,4,,,FALSE,1.82,1950,1.15,,,,1
+,14,0,2022,NOTA,,Gujarat,DHARI,GEN,None of the Above,,1845,,6,,,FALSE,1.55,964,0.81,,,,1
+,14,0,2022,NOTA,,Gujarat,AMRELI,GEN,None of the Above,,2138,,4,,,FALSE,1.32,753,0.46,,,,1
+,14,0,2022,NOTA,,Gujarat,LATHI,GEN,None of the Above,,2040,,4,,,FALSE,1.54,1101,0.83,,,,1
+,14,0,2022,NOTA,,Gujarat,SAVARKUNDLA,GEN,None of the Above,,2520,,4,,,FALSE,1.82,1562,1.13,,,,1
+,14,0,2022,NOTA,,Gujarat,RAJULA,GEN,None of the Above,,2829,,5,,,FALSE,1.57,1333,0.74,,,,1
+,14,0,2022,NOTA,,Gujarat,MAHUVA,GEN,None of the Above,,2619,,4,,,FALSE,1.69,1594,1.03,,,,1
+,14,0,2022,NOTA,,Gujarat,TALAJA,GEN,None of the Above,,2482,,4,,,FALSE,1.58,798,0.51,,,,1
+,14,0,2022,NOTA,,Gujarat,GARIADHAR,GEN,None of the Above,,1491,,5,,,FALSE,1.06,575,0.41,,,,1
+,14,0,2022,NOTA,,Gujarat,PALITANA,GEN,None of the Above,,1930,,4,,,FALSE,1.15,373,0.22,,,,1
+,14,0,2022,NOTA,,Gujarat,BHAVNAGAR RURAL,GEN,None of the Above,,2917,,4,,,FALSE,1.6,1496,0.82,,,,1
+,14,0,2022,NOTA,,Gujarat,BHAVNAGAR EAST,GEN,None of the Above,,2796,,4,,,FALSE,1.72,997,0.61,,,,1
+,14,0,2022,NOTA,,Gujarat,BHAVNAGAR WEST,GEN,None of the Above,,2417,,4,,,FALSE,1.5,1731,1.07,,,,1
+,14,0,2022,NOTA,,Gujarat,GADHADA,SC,None of the Above,,2031,,4,,,FALSE,1.49,643,0.47,,,,1
+,14,0,2022,NOTA,,Gujarat,BOTAD,GEN,None of the Above,,2433,,4,,,FALSE,1.3,400,0.21,,,,1
+,14,0,2022,NOTA,,Gujarat,KHAMBHAT,GEN,None of the Above,,2590,,5,,,FALSE,1.63,11,0.01,,,,1
+,14,0,2022,NOTA,,Gujarat,BORSAD,GEN,None of the Above,,2093,,3,,,FALSE,1.15,62,0.03,,,,1
+,14,0,2022,NOTA,,Gujarat,ANKLAV,GEN,None of the Above,,2692,,3,,,FALSE,1.61,1089,0.65,,,,1
+,14,0,2022,NOTA,,Gujarat,UMRETH,GEN,None of the Above,,3857,,5,,,FALSE,2.07,1434,0.77,,,,1
+,14,0,2022,NOTA,,Gujarat,ANAND,GEN,None of the Above,,2157,,4,,,FALSE,1.11,813,0.42,,,,1
+,14,0,2022,NOTA,,Gujarat,PETLAD,GEN,None of the Above,,2434,,4,,,FALSE,1.43,1505,0.88,,,,1
+,14,0,2022,NOTA,,Gujarat,SOJITRA,GEN,None of the Above,,2766,,4,,,FALSE,1.79,1478,0.96,,,,1
+,14,0,2022,NOTA,,Gujarat,MATAR,GEN,None of the Above,,2777,,4,,,FALSE,1.56,1223,0.69,,,,1
+,14,0,2022,NOTA,,Gujarat,NADIAD,GEN,None of the Above,,3672,,4,,,FALSE,2.22,2901,1.75,,,,1
+,14,0,2022,NOTA,,Gujarat,MEHEMDABAD,GEN,None of the Above,,3535,,4,,,FALSE,1.94,2302,1.26,,,,1
+,14,0,2022,NOTA,,Gujarat,MAHUDHA,GEN,None of the Above,,2533,,4,,,FALSE,1.44,1386,0.79,,,,1
+,14,0,2022,NOTA,,Gujarat,THASRA,GEN,None of the Above,,2714,,5,,,FALSE,1.38,389,0.2,,,,1
+,14,0,2022,NOTA,,Gujarat,KAPADWANJ,GEN,None of the Above,,3223,,4,,,FALSE,1.55,779,0.38,,,,1
+,14,0,2022,NOTA,,Gujarat,BALASINOR,GEN,None of the Above,,2724,,5,,,FALSE,1.49,1297,0.71,,,,1
+,14,0,2022,NOTA,,Gujarat,LUNAWADA,GEN,None of the Above,,3288,,6,,,FALSE,1.79,1797,0.98,,,,1
+,14,0,2022,NOTA,,Gujarat,SANTRAMPUR,ST,None of the Above,,3039,,5,,,FALSE,2.13,1855,1.3,,,,1
+,14,0,2022,NOTA,,Gujarat,SHEHRA,GEN,None of the Above,,4708,,4,,,FALSE,2.6,2873,1.58,,,,1
+,14,0,2022,NOTA,,Gujarat,MORVA HADAF,ST,None of the Above,,2574,,4,,,FALSE,1.82,763,0.54,,,,1
+,14,0,2022,NOTA,,Gujarat,GODHRA,GEN,None of the Above,,3548,,5,,,FALSE,1.9,1259,0.68,,,,1
+,14,0,2022,NOTA,,Gujarat,KALOL,GEN,None of the Above,,3992,,4,,,FALSE,2.11,1515,0.8,,,,1
+,14,0,2022,NOTA,,Gujarat,HALOL,GEN,None of the Above,,3460,,5,,,FALSE,1.74,733,0.37,,,,1
+,14,0,2022,NOTA,,Gujarat,FATEPURA,ST,None of the Above,,4327,,4,,,FALSE,3.11,2617,1.88,,,,1
+,14,0,2022,NOTA,,Gujarat,JHALOD,ST,None of the Above,,4646,,4,,,FALSE,2.89,3121,1.94,,,,1
+,14,0,2022,NOTA,,Gujarat,LIMKHEDA,ST,None of the Above,,2357,,5,,,FALSE,1.57,330,0.22,,,,1
+,14,0,2022,NOTA,,Gujarat,DAHOD,ST,None of the Above,,3046,,5,,,FALSE,1.83,1432,0.86,,,,1
+,14,0,2022,NOTA,,Gujarat,GARBADA,ST,None of the Above,,4152,,5,,,FALSE,2.83,1930,1.32,,,,1
+,14,0,2022,NOTA,,Gujarat,DEVGADH BARIA,GEN,None of the Above,,4821,,4,,,FALSE,2.47,2837,1.46,,,,1
+,14,0,2022,NOTA,,Gujarat,SAVLI,GEN,None of the Above,,1594,,5,,,FALSE,0.91,627,0.36,,,,1
+,14,0,2022,NOTA,,Gujarat,VAGHODIA,GEN,None of the Above,,2622,,6,,,FALSE,1.44,1538,0.84,,,,1
+,14,0,2022,NOTA,,Gujarat,CHHOTA UDAIPUR,ST,None of the Above,,5093,,4,,,FALSE,2.93,3080,1.77,,,,1
+,14,0,2022,NOTA,,Gujarat,JETPUR,ST,None of the Above,,4598,,4,,,FALSE,2.54,272,0.15,,,,1
+,14,0,2022,NOTA,,Gujarat,SANKHEDA,ST,None of the Above,,4143,,4,,,FALSE,2.13,2125,1.09,,,,1
+,14,0,2022,NOTA,,Gujarat,DABHOI,GEN,None of the Above,,2655,,4,,,FALSE,1.55,1749,1.02,,,,1
+,14,0,2022,NOTA,,Gujarat,VADODARA CITY,SC,None of the Above,,4022,,4,,,FALSE,2.17,3214,1.74,,,,1
+,14,0,2022,NOTA,,Gujarat,SAYAJIGANJ,GEN,None of the Above,,3432,,4,,,FALSE,1.92,2181,1.22,,,,1
+,14,0,2022,NOTA,,Gujarat,AKOTA,GEN,None of the Above,,2839,,4,,,FALSE,1.72,1918,1.16,,,,1
+,14,0,2022,NOTA,,Gujarat,RAOPURA,GEN,None of the Above,,3183,,4,,,FALSE,1.84,2487,1.44,,,,1
+,14,0,2022,NOTA,,Gujarat,MANJALPUR,GEN,None of the Above,,3234,,4,,,FALSE,2.04,994,0.63,,,,1
+,14,0,2022,NOTA,,Gujarat,PADRA,GEN,None of the Above,,2071,,4,,,FALSE,1.13,72,0.04,,,,1
+,14,0,2022,NOTA,,Gujarat,KARANJ,GEN,None of the Above,,2293,,4,,,FALSE,1.5,785,0.51,,,,1
+,14,0,2022,NOTA,,Gujarat,NANDOD,ST,None of the Above,,3104,,5,,,FALSE,1.75,1400,0.79,,,,1
+,14,0,2022,NOTA,,Gujarat,DEDIAPADA,ST,None of the Above,,2974,,5,,,FALSE,1.61,0,0,,,,1
+,14,0,2022,NOTA,,Gujarat,JAMBUSAR,GEN,None of the Above,,2273,,4,,,FALSE,1.38,1446,0.88,,,,1
+,14,0,2022,NOTA,,Gujarat,VAGRA,GEN,None of the Above,,2421,,3,,,FALSE,1.51,497,0.31,,,,1
+,14,0,2022,NOTA,,Gujarat,JHAGADIA,ST,None of the Above,,3012,,6,,,FALSE,1.53,0,0,,,,1
+,14,0,2022,NOTA,,Gujarat,BHARUCH,GEN,None of the Above,,2722,,4,,,FALSE,1.58,2111,1.23,,,,1
+,14,0,2022,NOTA,,Gujarat,ANKLESHWAR,GEN,None of the Above,,2327,,4,,,FALSE,1.45,1691,1.05,,,,1
+,14,0,2022,NOTA,,Gujarat,OLPAD,GEN,None of the Above,,3123,,4,,,FALSE,1.06,856,0.29,,,,1
+,14,0,2022,NOTA,,Gujarat,MANGROL,ST,None of the Above,,3111,,4,,,FALSE,1.85,1850,1.1,,,,1
+,14,0,2022,NOTA,,Gujarat,MANDVI,ST,None of the Above,,2902,,4,,,FALSE,1.53,610,0.32,,,,1
+,14,0,2022,NOTA,,Gujarat,KAMREJ,GEN,None of the Above,,2291,,4,,,FALSE,0.69,899,0.27,,,,1
+,14,0,2022,NOTA,,Gujarat,SURAT EAST,GEN,None of the Above,,1494,,4,,,FALSE,1.07,479,0.34,,,,1
+,14,0,2022,NOTA,,Gujarat,SURAT NORTH,GEN,None of the Above,,831,,4,,,FALSE,0.86,489,0.51,,,,1
+,14,0,2022,NOTA,,Gujarat,VARACHHA ROAD,GEN,None of the Above,,878,,4,,,FALSE,0.72,594,0.49,,,,1
+,14,0,2022,NOTA,,Gujarat,KARANJ,GEN,None of the Above,,756,,4,,,FALSE,0.85,538,0.6,,,,1
+,14,0,2022,NOTA,,Gujarat,LIMBAYAT,GEN,None of the Above,,1069,,5,,,FALSE,0.6,97,0.05,,,,1
+,14,0,2022,NOTA,,Gujarat,UDHNA,GEN,None of the Above,,1820,,5,,,FALSE,1.22,1344,0.9,,,,1
+,14,0,2022,NOTA,,Gujarat,MAJURA,GEN,None of the Above,,2315,,4,,,FALSE,1.42,1411,0.87,,,,1
+,14,0,2022,NOTA,,Gujarat,KATARGAM,GEN,None of the Above,,1529,,4,,,FALSE,0.74,909,0.44,,,,1
+,14,0,2022,NOTA,,Gujarat,SURAT WEST,GEN,None of the Above,,2441,,4,,,FALSE,1.5,1987,1.22,,,,1
+,14,0,2022,NOTA,,Gujarat,CHORASI,GEN,None of the Above,,4169,,4,,,FALSE,1.29,2108,0.65,,,,1
+,14,0,2022,NOTA,,Gujarat,BARDOLI,SC,None of the Above,,4211,,4,,,FALSE,2.35,2137,1.19,,,,1
+,14,0,2022,NOTA,,Gujarat,MAHUVA,ST,None of the Above,,3131,,4,,,FALSE,1.84,0,0,,,,1
+,14,0,2022,NOTA,,Gujarat,VYARA,ST,None of the Above,,3779,,4,,,FALSE,2.21,2488,1.45,,,,1
+,14,0,2022,NOTA,,Gujarat,NIZAR,ST,None of the Above,,4465,,5,,,FALSE,2.01,858,0.39,,,,1
+,14,0,2022,NOTA,,Gujarat,DANGS,ST,None of the Above,,1910,,4,,,FALSE,1.45,442,0.34,,,,1
+,14,0,2022,NOTA,,Gujarat,JALALPORE,GEN,None of the Above,,3549,,4,,,FALSE,2.23,2308,1.45,,,,1
+,14,0,2022,NOTA,,Gujarat,NAVSARI,GEN,None of the Above,,3064,,4,,,FALSE,1.85,2169,1.31,,,,1
+,14,0,2022,NOTA,,Gujarat,GANDEVI,ST,None of the Above,,3775,,4,,,FALSE,1.79,0,0,,,,1
+,14,0,2022,NOTA,,Gujarat,VANSDA,ST,None of the Above,,3803,,4,,,FALSE,1.61,1996,0.84,,,,1
+,14,0,2022,NOTA,,Gujarat,DHARAMPUR,ST,None of the Above,,4189,,5,,,FALSE,2.12,2244,1.13,,,,1
+,14,0,2022,NOTA,,Gujarat,VALSAD,GEN,None of the Above,,2815,,4,,,FALSE,1.6,1935,1.1,,,,1
+,14,0,2022,NOTA,,Gujarat,PARDI,GEN,None of the Above,,2316,,4,,,FALSE,1.39,1532,0.92,,,,1
+,14,0,2022,NOTA,,Gujarat,KAPRADA,ST,None of the Above,,4020,,4,,,FALSE,1.88,1475,0.69,,,,1
+,14,0,2022,NOTA,,Gujarat,UMBERGAON,ST,None of the Above,,2772,,4,,,FALSE,1.6,914,0.53,,,,1
 AEGJ000139,13,0,2017,KANTIBHAI SHABHAIBHAI PARMAR,GEN,Gujarat,THASRA,GEN,INC,,87567,M,1,2,FALSE,FALSE,49.38,7028,3.96,60,,1,2
 AEGJ000139,14,0,2022,Parmar Kantibhai Shabhaibhai,,Gujarat,THASRA,GEN,INC,INC,59429,M,2,2,FALSE,TRUE,30.24,53774,27.37,67,,1,2
 AEGJ10014,9,0,1998,PATEL NATHABHAI HEGOLABHAI,,Gujarat,DHANERA,GEN,INC,,42504,M,2,3,FALSE,FALSE,39.56,36601,34.07,,,1,3
@@ -1672,7 +1672,7 @@ AEGJ10777,13,0,2017,PARESH DHANANI,GEN,Gujarat,AMRELI,GEN,INC,INC,87032,M,1,5,FA
 AEGJ10777,14,0,2022,DHANANI PARESHKUMAR DHIRAJLAL,,Gujarat,AMRELI,GEN,INC,INC,42377,M,2,5,FALSE,TRUE,26.12,15932,9.82,46,,3,5
 AEGJ10853,10,0,2002,DHAPA DHARAMSHI RAMJIBHAI,,Gujarat,BHAVNAGAR NORTH,GEN,SP,,1123,M,5,3,FALSE,FALSE,1.16,180,0.19,,,,3
 AEGJ10853,13,0,2017,DHARAMASHIBHAI RAMJIBHAI DHAPA,GEN,Gujarat,BHAVNAGAR WEST,GEN,VPP,SP,3501,M,3,3,TRUE,FALSE,2.31,311,0.21,43,,,3
-AEGJ10853,14,0,2022,DHARAMSHIBHAI RAMJIBHAI DHAPA,,Gujarat,BHAVNAGAR EAST,GEN,Vyavastha Parivartan Party,VPP,1781,M,6,3,TRUE,FALSE,1.1,1240,0.76,47,,,3
+AEGJ10853,14,0,2022,DHARAMSHIBHAI RAMJIBHAI DHAPA,,Gujarat,BHAVNAGAR EAST,GEN,Vyavastha Parivartan Party,VPP,1781,M,6,3,FALSE,FALSE,1.1,1240,0.76,47,,,3
 AEGJ10890,10,0,2002,PATEL BABUBHAI JAMNADAS,,Gujarat,DASKROI,GEN,BJP,,94687,M,1,5,FALSE,FALSE,55.69,28199,16.59,,,5,5
 AEGJ10890,11,0,2007,PATEL BABUBHAI JAMNADAS (BJP),GEN,Gujarat,DASKROI,GEN,BJP,BJP,102356,M,1,5,FALSE,TRUE,52.73,23342,12.02,59,,5,5
 AEGJ10890,12,0,2012,BABUBHAI JAMNADAS PATEL,GEN,Gujarat,DASKROI,GEN,BJP,BJP,95813,M,1,5,FALSE,TRUE,55.09,37633,21.64,64,,5,5
@@ -1948,7 +1948,7 @@ AEGJ13967,14,0,2022,MITESHBHAI KALABHAI GARASIYA,,Gujarat,JHALOD,ST,INC,INC,2199
 AEGJ13987,11,0,2007,MEDA JAGDISHBHAI MANILAL,ST,Gujarat,LIMDI,ST,BSP,,3181,M,4,4,FALSE,FALSE,3.14,0,0,27,,,4
 AEGJ13987,12,0,2012,MEDA JAGDISHBHAI MANILAL,ST,Gujarat,GARBADA,ST,BNJD,BSP,8166,M,3,4,TRUE,FALSE,6.78,4179,3.47,32,,,4
 AEGJ13987,13,0,2017,JAGDISHBHAI MANILAL MEDA,ST,Gujarat,GARBADA,ST,BNJD,BNJD,2150,M,6,4,FALSE,FALSE,1.7,644,0.51,38,,,4
-AEGJ13987,14,0,2022,JAGDISHBHAI MANILAL MEDA,,Gujarat,GARBADA,ST,Bharatiya National Janta Dal,BNJD,2130,M,7,4,TRUE,FALSE,1.45,768,0.52,43,,,4
+AEGJ13987,14,0,2022,JAGDISHBHAI MANILAL MEDA,,Gujarat,GARBADA,ST,Bharatiya National Janta Dal,BNJD,2130,M,7,4,FALSE,FALSE,1.45,768,0.52,43,,,4
 AEGJ13988,12,0,2012,BHABHOR DHULABHAI DITABHAI,ST,Gujarat,GARBADA,ST,BSP,,3987,M,4,2,FALSE,FALSE,3.31,1040,0.86,57,,,2
 AEGJ13988,14,0,2022,BHABHOR DHULABHAI DITABHAI,,Gujarat,GARBADA,ST,BSP,BSP,2222,M,6,2,FALSE,FALSE,1.51,92,0.06,67,,,2
 AEGJ13991,11,0,2007,SMR. BARIYA CHANDRIKABEN CHHAGANBHAI,ST,Gujarat,LIMKHEDA,ST,INC,,34370,F,1,4,FALSE,FALSE,38.13,3440,3.82,38,,3,4
@@ -2013,7 +2013,7 @@ AEGJ14395,13,1,2020,Jitubhai Harjibhai Chaudhari,ST,Gujarat,KAPRADA,ST,BJP,INC,1
 AEGJ14395,14,0,2022,Jitubhai Harjibhai Chaudhari,,Gujarat,KAPRADA,ST,BJP,BJP,90999,M,1,6,FALSE,TRUE,42.64,32968,15.45,58,,5,5
 AEGJ14404,12,0,2012,BOCHAL HASMUKHBHAI RAMANBHAI,ST,Gujarat,UMBERGAON,ST,CPM,,880,M,7,3,FALSE,FALSE,0.62,69,0.05,37,,,3
 AEGJ14404,13,0,2017,BOCHAL HASMUKHBHAI RAMANBHAI,ST,Gujarat,UMBERGAON,ST,CPM,CPM,1348,M,4,3,FALSE,FALSE,0.85,14,0.01,41,,,3
-AEGJ14404,14,0,2022,BOCHAL HASMUKHBHAI RAMANBHAI,,Gujarat,UMBERGAON,ST,Communist Party of India(Marxist),CPM,1778,M,6,3,TRUE,FALSE,1.03,1014,0.59,46,,,3
+AEGJ14404,14,0,2022,BOCHAL HASMUKHBHAI RAMANBHAI,,Gujarat,UMBERGAON,ST,Communist Party of India(Marxist),CPM,1778,M,6,3,FALSE,FALSE,1.03,1014,0.59,46,,,3
 AEGJ1466,13,0,2017,CHAUDHARI ANANDBHAI MOHANBHAI,ST,Gujarat,MANDVI,ST,INC,,96483,M,1,2,FALSE,FALSE,53.1,50776,27.95,46,,1,2
 AEGJ1466,14,0,2022,ANANDBHAI MOHANBHAI CHAUDHARI,,Gujarat,MANDVI,ST,INC,INC,56393,M,2,2,FALSE,TRUE,29.74,7285,3.84,51,,1,2
 AEGJ1530,13,0,2017,CHAUHAN ARJUNSINH UDESINH,GEN,Gujarat,MEHEMDABAD,GEN,BJP,,88908,M,1,2,FALSE,FALSE,51.86,20915,12.2,41,,2,2
@@ -2219,7 +2219,7 @@ AEGJ54,14,0,2022,YOGESH R. PATEL (BAPJI),,Gujarat,ANAND,GEN,BJP,BJP,111859,M,1,2
 AEGJ5473,13,0,2017,RATHOD DINESHBHAI LAKHABHAI,SC,Gujarat,BHAVNAGAR WEST,GEN,BSP,,774,M,7,2,FALSE,FALSE,0.51,394,0.26,34,,,2
 AEGJ5473,14,0,2022,DINESHBHAI LAKHABHAI RATHOD,,Gujarat,BHAVNAGAR WEST,GEN,BSP,BSP,674,M,6,2,FALSE,FALSE,0.42,162,0.1,39,,,2
 AEGJ5517,13,0,2017,CHAUHAN KAMLESHBHAI ARJANBHAI,GEN,Gujarat,BOTAD,GEN,VPP,,249,M,23,2,FALSE,FALSE,0.14,53,0.03,35,,,2
-AEGJ5517,14,0,2022,CHAUHAN KAMLESHBHAI ARJANBHAI,,Gujarat,BOTAD,GEN,Vyavastha Parivartan Party,VPP,457,M,11,2,TRUE,FALSE,0.24,66,0.04,40,,,2
+AEGJ5517,14,0,2022,CHAUHAN KAMLESHBHAI ARJANBHAI,,Gujarat,BOTAD,GEN,Vyavastha Parivartan Party,VPP,457,M,11,2,FALSE,FALSE,0.24,66,0.04,40,,,2
 AEGJ5544,6,0,1985,ARUN SUBODH MEHTA,,Gujarat,BHAVNAGAR NORTH,GEN,CPM,,7197,M,3,8,FALSE,FALSE,17.48,6094,14.8,,,,8
 AEGJ5544,7,0,1990,ARUN SUBODHBHAI MAHETA,,Gujarat,BHAVNAGAR NORTH,GEN,CPM,CPM,18246,M,2,8,FALSE,FALSE,34.67,11634,22.1,,,,8
 AEGJ5544,8,0,1995,ARUN MEHTA,,Gujarat,BHAVNAGAR NORTH,GEN,CPM,CPM,26736,M,2,8,FALSE,FALSE,27.71,4554,4.72,,,,8
@@ -2227,7 +2227,7 @@ AEGJ5544,9,0,1998,ARUN MEHTA,,Gujarat,BHAVNAGAR NORTH,GEN,CPM,CPM,19665,M,3,8,FA
 AEGJ5544,10,0,2002,ARUN MEHTA,,Gujarat,BHAVNAGAR NORTH,GEN,CPM,CPM,30626,M,2,8,FALSE,FALSE,31.68,25033,25.89,,,,8
 AEGJ5544,11,0,2007,ARUN MEHTA,GEN,Gujarat,BHAVNAGAR NORTH,GEN,CPM,CPM,32567,M,2,8,FALSE,FALSE,32.06,29313,28.85,49,,,8
 AEGJ5544,12,0,2012,ARUN SUBODH MEHTA,GEN,Gujarat,BHAVNAGAR EAST,GEN,CPM,CPM,5149,M,3,8,FALSE,FALSE,3.57,2694,1.87,54,,,8
-AEGJ5544,14,0,2022,ARUN MEHTA,,Gujarat,BHAVNAGAR EAST,GEN,Communist Party of India(Marxist),CPM,1799,M,5,8,TRUE,FALSE,1.11,18,0.01,65,,,8
+AEGJ5544,14,0,2022,ARUN MEHTA,,Gujarat,BHAVNAGAR EAST,GEN,Communist Party of India(Marxist),CPM,1799,M,5,8,FALSE,FALSE,1.11,18,0.01,65,,,8
 AEGJ5674,13,0,2017,GAJENDRASINH HARISINH RAJ,GEN,Gujarat,ANKLAV,GEN,AINHCP,,679,M,7,2,FALSE,FALSE,0.44,402,0.26,53,,,2
 AEGJ5674,14,0,2022,GAJENDRASINH HARISINH RAJ,,Gujarat,ANKLAV,GEN,AAAP,AINHCP,1603,M,4,2,TRUE,FALSE,0.96,250,0.15,58,,,2
 AEGJ5741,13,0,2017,GOHEL HARSHADBHAI ISHVARBHAI,SC,Gujarat,PETLAD,GEN,BSP,,1684,M,4,2,FALSE,FALSE,1.06,527,0.33,32,,,2
@@ -2325,7 +2325,7 @@ AEGJ7445,10,0,2002,THUMAR VIRJIBHAI KESHAVBHAI,,Gujarat,BABRA,GEN,INC,INC,46734,
 AEGJ7445,13,0,2017,VIRAJIBHAI THUMMAR,GEN,Gujarat,LATHI,GEN,INC,INC,64743,M,1,6,FALSE,FALSE,49.94,9343,7.21,54,,3,6
 AEGJ7445,14,0,2022,VIRJIBHAI THUMMAR,,Gujarat,LATHI,GEN,INC,INC,35592,M,2,6,FALSE,TRUE,26.95,8949,6.78,62,,3,6
 AEGJ7506,13,0,2017,GURAV KAMLESHBHAI SHRAVANBHAI,ST,Gujarat,KAPRADA,ST,CPI(ML)(L),,1362,M,6,2,FALSE,FALSE,0.7,0,0,28,,,2
-AEGJ7506,14,0,2022,Gurav Kamleshbhai Shravanbhai,,Gujarat,KAPRADA,ST,Communist Party of India(Marxist-Leninist)(Liberation),CPI(ML)(L),1464,M,7,2,TRUE,FALSE,0.69,265,0.12,33,,,2
+AEGJ7506,14,0,2022,Gurav Kamleshbhai Shravanbhai,,Gujarat,KAPRADA,ST,Communist Party of India(Marxist-Leninist)(Liberation),CPI(ML)(L),1464,M,7,2,FALSE,FALSE,0.69,265,0.12,33,,,2
 AEGJ7607,8,0,1995,NAKRANI KESHUBHAI HIRJIBHAI,,Gujarat,SIHOR,GEN,BJP,,44310,M,1,7,FALSE,FALSE,49.28,9800,10.9,,,6,7
 AEGJ7607,9,0,1998,KESHUBHAI HIRJIBHAI NAKARANI,,Gujarat,SIHOR,GEN,BJP,BJP,42667,M,1,7,FALSE,TRUE,51.4,6847,8.25,,,6,7
 AEGJ7607,10,0,2002,NAKARANI KESHUBHAI HIRAJIBHAI,,Gujarat,SIHOR,GEN,BJP,BJP,52100,M,1,7,FALSE,TRUE,50.86,6292,6.14,,,6,7
