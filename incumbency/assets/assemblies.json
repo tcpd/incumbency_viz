@@ -194,7 +194,7 @@
         "File_Prefix": "ml",
         "Assembly": "VS",
         "Min_Assembly": 1,
-        "Max_Assembly": 10,
+        "Max_Assembly": 11,
         "Name": "Meghalaya Vidhan Sabha"
     },
     {
@@ -212,7 +212,7 @@
         "File_Prefix": "nl",
         "Assembly": "VS",
         "Min_Assembly": 1,
-        "Max_Assembly": 13,
+        "Max_Assembly": 14,
         "Name": "Nagaland Vidhan Sabha"
     },
     {
@@ -257,7 +257,7 @@
         "File_Prefix": "tr",
         "Assembly": "VS",
         "Min_Assembly": 1,
-        "Max_Assembly": 11,
+        "Max_Assembly": 12,
         "Name": "Tripura Vidhan Sabha"
     },
     {
