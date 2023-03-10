@@ -185,6 +185,7 @@ def create_assembly_data(tar_assembly):
             if(column in tmp_df.columns):
                 tmp_df[column] = tmp_df[column].fillna("").astype("str").str.upper()
 
+        tmp_df['Constituency_Name'] = tmp_df['Constituency_Name'].astype("str").str.strip()
         tmp_df.to_csv(OUT_FILE_PATH, index = False)
 
 def create_party_file(tar_assembly):
