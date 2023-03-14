@@ -286,5 +286,32 @@
         "Min_Assembly": 1,
         "Max_Assembly": 10,
         "Name": "Karnataka Vidhan Sabha"
+    },
+    {
+        "State_Name": "Madhya_Pradesh",
+        "State_Code": "MP",
+        "File_Prefix": "mp",
+        "Assembly": "VS",
+        "Min_Assembly": 3,
+        "Max_Assembly": 15,
+        "Name": "Madhya Pradesh Vidhan Sabha"
+    },
+    {
+        "State_Name": "Madras",
+        "State_Code": "tn_md",
+        "File_Prefix": "tn_md",
+        "Assembly": "VS",
+        "Min_Assembly": 3,
+        "Max_Assembly": 4,
+        "Name": "Madras Vidhan Sabha"
+    },
+    {
+        "State_Name": "Mysore",
+        "State_Code": "myso",
+        "File_Prefix": "myso",
+        "Assembly": "VS",
+        "Min_Assembly": 3,
+        "Max_Assembly": 5,
+        "Name": "Mysore Vidhan Sabha"
     }
 ]
