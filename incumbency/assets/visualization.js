@@ -103,18 +103,9 @@ function main(assembly_data) {
 	st_url=assembly[0].State_Name.replace("&", "%26");
 
 
-	if(et==="LS"){
-	if(st==="all"){
-		var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st=all&an="+assemblyNo;
-	}else{
-		var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=GE&st="+st_url+"&an="+assemblyNo;
-	}
-
-	}else{
-	var ld_url = "https://lokdhaba.ashoka.edu.in/browse-data?et=AE&st="+st_url+"&an="+assemblyNo;
-	}
-
-	document.getElementById('browselink').href = ld_url;
+	let tar_el = (et === 'LS') ? 'GE' : 'AE';
+	let ld_url = `https://lokdhaba.ashoka.edu.in/browse-data?et=${tar_el}`;
+	document.getElementById('browselink').setAttribute("href",  ld_url);
 
 	var pids_url = 'data/'+ pre +'-pids.csv';
 
