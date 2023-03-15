@@ -755,7 +755,21 @@ function main(assembly_data) {
 				var LEGEND_MARGIN = 100; // in x dimension
 
 				var width = (SYMBOLS_PER_ROW + 1) * partywise.length * (Math.sqrt(symbolSize) + 3); // horizontal
-				var height = (TOP_MARGIN + MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW) * Math.sqrt(symbolSize);
+				
+				// Patch by SGw (15/03/2023) 
+				// This seems to be a magic equation of sorts. Why the sqrt of symbol size? 
+				// It does not work anyway - most election visualisations experience cutoff under this formula
+				//var height = (TOP_MARGIN + MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW) * Math.sqrt(symbolSize);
+
+
+				// Magic numbers 
+				// - HEIGHT_VIEW_PARTIES is TOP_MARGIN + 12 (experimentally found)
+				// - HEIGHT_PER_ROW is 18.25 (again, experimentally found)
+				var HEIGHT_VIEW_PARTIES = TOP_MARGIN + 12;
+				var HEIGHT_PER_ROW = 18.25;
+
+				let n_rows = (MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW);
+				var height = HEIGHT_VIEW_PARTIES + (HEIGHT_PER_ROW * n_rows);
 
 				var svg = d3.select('#viz').append('svg').attr('width', width + (wonlost === '2'?LEGEND_MARGIN:0) ).attr('height', height).attr('align','center');
 
