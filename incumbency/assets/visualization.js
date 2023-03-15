@@ -768,7 +768,8 @@ function main(assembly_data) {
 				var HEIGHT_VIEW_PARTIES = TOP_MARGIN + 12;
 				var HEIGHT_PER_ROW = 18.25;
 
-				let n_rows = (MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW);
+				let n_rows = Math.ceil((MAX_SYMBOLS_IN_ONE_PARTY / SYMBOLS_PER_ROW)) + 1;
+				console.log("max symbols", MAX_SYMBOLS_IN_ONE_PARTY);
 				var height = HEIGHT_VIEW_PARTIES + (HEIGHT_PER_ROW * n_rows);
 
 				var svg = d3.select('#viz').append('svg').attr('width', width + (wonlost === '2'?LEGEND_MARGIN:0) ).attr('height', height).attr('align','center');
