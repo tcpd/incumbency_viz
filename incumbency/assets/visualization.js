@@ -583,7 +583,13 @@ function main(assembly_data) {
 						filteredRows = filteredRows.filter(function(i) {
 							return i.Contested === 1;
 						});
+						
+					} else if (turncoats === 'FIRST_TIME_MLAS') {
+						filteredRows = filteredRows.filter(function(i) {
+							return i.Terms === "1" && i.Position === 1;
+						});
 					}
+					
 
 					if (sex === 'FEMALE') {
 						filteredRows = filteredRows.filter(function(i) {
